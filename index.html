@@ -38,7 +38,7 @@ html{scroll-behavior:smooth}
 .still-thumb{border-radius:7px;transition:filter .35s ease,transform .35s ease}
 .still:hover .still-thumb{filter:brightness(1.04)}
 .stills-loop{animation:stills-drift var(--duration,24s) linear infinite}
-.stills-viewport:hover .stills-loop,.stills-viewport:focus-within .stills-loop{animation-play-state:paused}
+.stills-viewport:hover .stills-loop{animation-play-state:paused}
 @keyframes stills-drift{to{transform:translateX(calc(-50% - 8.5px))}}
 /* スチル拡大：背景と画像が柔らかくフェード＆ズーム */
 dialog{border-radius:12px;box-shadow:0 25px 80px #17100c40;opacity:0;transform:translateY(18px) scale(.975);transition:opacity .32s ease,transform .38s cubic-bezier(.22,1,.36,1),display .32s allow-discrete,overlay .32s allow-discrete}
@@ -75,6 +75,38 @@ dialog[open]:not(.is-closing)::backdrop{background:#27221eb8}
 .theme-profile > .portrait{background:linear-gradient(145deg,var(--character-pale),#f3ece3 88%)}
 .theme-profile .profile-quote{color:var(--character-deep)}
 @media(prefers-reduced-motion:no-preference){.theme-profile .status-item,.theme-profile .profile-tag{transition:background-color .3s ease}}
+
+/* シナリオ詳細：立ち絵を顔〜肩中心にトリミング表示 */
+.people .portrait img{object-fit:cover;object-position:center top;}
+/* フリガナは名前と同じ列から開始。HOラベルは左列に維持 */
+.profile-name-area{display:grid;grid-template-columns:max-content minmax(0,1fr);column-gap:12px;align-items:center;}
+.profile-name-area .profile-reading{grid-column:2;grid-row:1;margin:0 0 5px;}
+.profile-name-area .profile-name-line{display:contents;}
+.profile-name-area .profile-tags{grid-column:1;grid-row:2;}
+.profile-name-area .profile-name-line h1{grid-column:2;grid-row:2;}
+.profile-name-area:not(:has(.profile-tag)){grid-template-columns:0 minmax(0,1fr);column-gap:0;}
+
+/* 探索者プロフィール：全員共通の表示枠に全身立ち絵を収める */
+.profile.theme-profile{align-items:start}
+.profile.theme-profile > .portrait{
+  height: min(620px, 76vh);
+  min-height:0;
+  align-self:start;
+  overflow:hidden;
+  padding:18px;
+  box-sizing:border-box;
+}
+.profile.theme-profile > .portrait img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center center;
+}
+.profile.theme-profile > .details{height:auto}
+@media(max-width:750px){
+  .profile.theme-profile > .portrait{height:min(500px, 65vh);min-height:0;padding:14px}
+}
 </style></head><body><header><a class="brand" href="#/">Our Stories</a><nav><a href="#/">HOME</a></nav></header><main id="app"></main><footer>© OUR STORIES — AN ARCHIVE OF MANY STORIES</footer><dialog id="lightbox"><button class="close" id="close" aria-label="閉じる">×</button><div class="dialog-art" id="dialog-art"></div><p id="dialog-caption"></p></dialog><script>
 /* 編集する場所：ここに組み合わせを追加するとHOMEにカードが増えます。
    同じscenario（シナリオ名）でもidが違えば別カード・別ページになります。
@@ -102,7 +134,7 @@ const kanaRows=[['あ','あいうえお'],['か','かきくけこがぎぐげご
 const collator=new Intl.Collator('ja',{sensitivity:'base',numeric:true});
 function reading(s){return String(s.yomi||s.scenario||'').normalize('NFKC').trim().toLowerCase().replace(/[ァ-ヶ]/g,c=>String.fromCharCode(c.charCodeAt(0)-96));}
 function kanaGroup(s){const first=reading(s).charAt(0);const found=kanaRows.find(([,letters])=>letters.includes(first));return found?found[0]:'その他';}
-function homeMarkup(){const sorted=[...stories].sort((a,b)=>collator.compare(reading(a),reading(b))||collator.compare(a.pair,b.pair));const groups=new Map();for(const s of sorted){const key=kanaGroup(s);if(!groups.has(key))groups.set(key,[]);groups.get(key).push(s)}
+function homeMarkup(){const sorted=[...stories].sort((a,b)=>collator.compare(reading(a),reading(b))||collator.compare(a.id,b.id));const groups=new Map();for(const s of sorted){const key=kanaGroup(s);if(!groups.has(key))groups.set(key,[]);groups.get(key).push(s)}
  const card=s=>`<a class="card" href="#/scenario/${esc(s.id)}"><div class="card-image">${art(s.image,'画像',s.tone)}</div><div class="card-name">${esc(s.scenario)}</div></a>`;
  const keys=[...kanaRows.map(r=>r[0]),'その他'];
  return `<div class="collection"><span>SCENARIO COLLECTION</span><small>${stories.length} STORIES</small></div><nav class="kana-index" aria-label="五十音索引">${keys.map(k=>groups.has(k)?`<a href="#kana-${k}" data-kana="${k}">${k}</a>`:`<span aria-label="${k}行は登録なし">${k}</span>`).join('')}</nav>${keys.filter(k=>groups.has(k)).map(k=>`<section class="kana-section" id="kana-${k}"><h2 class="kana-heading">${k==='その他'?'その他':k+'行'}</h2><div class="cards">${groups.get(k).map(card).join('')}</div></section>`).join('')}`;
@@ -115,7 +147,7 @@ function characterTheme(hex){
  return `--character-accent:${blend([255,255,255],.08)};--character-deep:${blend([55,47,41],.55)};--character-pale:${blend([255,253,249],.81)}`;
 }
 const app=document.getElementById('app');const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const art=(image,label,tone='',portrait=false)=>image?`<img src="${esc(image)}" alt="${esc(label)}">`:`<div class="${portrait?'portrait-placeholder':'placeholder-image '+esc(tone)}">${esc(label)}</div>`;
-function render(){const bits=(location.hash.slice(2)||'').split('/');const kind=bits[0];const story=stories.find(s=>s.id===bits[1]);if(kind==='scenario'&&story){app.innerHTML=`<a class="back" href="#/">← シナリオ一覧へ戻る</a><div class="page-title"><div class="eyebrow">SCENARIO / ${esc(story.pair)}</div><h1>${esc(story.scenario)}</h1><p>${esc(story.description)}</p></div><div class="people">${story.people.map((p,i)=>`<a class="person" href="#/profile/${esc(story.id)}/${esc(p.id)}"><div class="portrait ${i%2?'alt':''}">${art(p.image,'立ち絵',story.tone,true)}</div><h2>${esc(p.name)}</h2><p>${esc(p.label||p.ho||p.role||'')} ・ PROFILE →</p></a>`).join('')}</div><section class="gallery"><div class="section-title">GALLERY / スチル</div><div class="stills-viewport" aria-label="スチル一覧"><div class="stills ${story.stills.length>1?'stills-loop':''}" style="--count:${story.stills.length};--duration:${Math.max(18,story.stills.length*8)}s">${(story.stills.length>1?[...story.stills,...story.stills]:story.stills).map((s,i)=>`<button class="still" data-still="${i%story.stills.length}" ${i>=story.stills.length?'tabindex="-1" aria-hidden="true"':''}><div class="still-thumb">${art(s.image,'画像',story.tone)}</div><small>${esc(s.title)}</small></button>`).join('')}</div></div><section class="session-records" aria-labelledby="session-records-heading"><h2 class="section-title" id="session-records-heading">SESSION RECORDS</h2><p class="records-intro">ふたりが歩んだ物語の記録</p>${recordMarkup(story)}</section></section>`;app.querySelectorAll('[data-still]').forEach(b=>b.addEventListener('click',()=>openStill(story.stills[Number(b.dataset.still)])));}
+function render(){const bits=(location.hash.slice(2)||'').split('/');const kind=bits[0];const story=stories.find(s=>s.id===bits[1]);if(kind==='scenario'&&story){app.innerHTML=`<a class="back" href="#/">← シナリオ一覧へ戻る</a><div class="page-title"><div class="eyebrow">SCENARIO</div><h1>${esc(story.scenario)}</h1><p>${esc(story.description)}</p></div><div class="people">${story.people.map((p,i)=>`<a class="person" href="#/profile/${esc(story.id)}/${esc(p.id)}"><div class="portrait ${i%2?'alt':''}">${art(p.image,'立ち絵',story.tone,true)}</div><h2>${esc(p.name)}</h2><p>${esc(p.label||p.ho||p.role||'')} ・ PROFILE →</p></a>`).join('')}</div><section class="gallery"><div class="section-title">GALLERY / スチル</div><div class="stills-viewport" aria-label="スチル一覧"><div class="stills ${story.stills.length>1?'stills-loop':''}" style="--count:${story.stills.length};--duration:${Math.max(18,story.stills.length*8)}s">${(story.stills.length>1?[...story.stills,...story.stills]:story.stills).map((s,i)=>`<button class="still" data-still="${i%story.stills.length}" ${i>=story.stills.length?'tabindex="-1" aria-hidden="true"':''}><div class="still-thumb">${art(s.image,'画像',story.tone)}</div><small>${esc(s.title)}</small></button>`).join('')}</div></div><section class="session-records" aria-labelledby="session-records-heading"><h2 class="section-title" id="session-records-heading">SESSION RECORDS</h2><p class="records-intro">ふたりが歩んだ物語の記録</p>${recordMarkup(story)}</section></section>`;app.querySelectorAll('[data-still]').forEach(b=>b.addEventListener('click',()=>openStill(story.stills[Number(b.dataset.still)])));}
 else if(kind==='profile'&&story){const p=story.people.find(p=>p.id===bits[2]);if(!p){location.hash='#/';return}const fields=[['BIRTHDAY',p.birthday],['AGE',p.age],['HEIGHT',p.height],['OCCUPATION',p.job],['FAMILY',p.family],['LIKES',p.likes],['DISLIKES',p.dislikes]];const statKeys=['STR','CON','POW','DEX','APP','SIZ','INT','EDU'];const stats=p.stats||{};const statMarkup=statKeys.filter(k=>stats[k]!==undefined&&stats[k]!==null&&stats[k]!=='').map(k=>`<div class="status-item"><span class="stat-label">${k}</span><span class="stat-value">${esc(stats[k])}</span></div>`).join('');const csLink=/^https?:\/\//i.test(p.csUrl||'')?`<a class="cs-link" href="${esc(p.csUrl)}" target="_blank" rel="noopener noreferrer">CHARACTER SHEET <span aria-hidden="true">↗</span></a>`:'';app.innerHTML=`<a class="back" href="#/scenario/${esc(story.id)}">← ${esc(story.scenario)} に戻る</a><div class="profile theme-profile" style="${characterTheme(p.color)}"><div class="portrait">${art(p.image,'立ち絵',story.tone,true)}</div><div class="details"><div class="eyebrow">EXPLORER PROFILE</div><div class="profile-name-area"><p class="profile-reading">${esc(p.reading||'')}</p><div class="profile-name-line"><div class="profile-tags">${(p.label||p.ho||p.role)?`<span class="profile-tag">${esc(p.label||p.ho||p.role)}</span>`:''}</div><h1>${esc(p.name)}</h1></div></div>${p.quote?`<p class="profile-quote">${esc(p.quote)}</p>`:''}<dl>${fields.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v||'—')}</dd>`).join('')}</dl><section class="status-panel"><h2 class="status-heading">STATUS</h2>${statMarkup?`<div class="status-grid">${statMarkup}</div>`:`<p class="status-empty">ステータス未登録</p>`}${csLink}</section></div></div>`;}
 else{app.innerHTML=homeMarkup();app.querySelectorAll('[data-kana]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.getElementById('kana-'+a.dataset.kana)?.scrollIntoView({behavior:reduceMotion.matches?'auto':'smooth',block:'start'});}));}window.scrollTo(0,0)}
 const lightbox=document.getElementById('lightbox');let closing=false;
