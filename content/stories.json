@@ -1,6 +1,113 @@
 {
   "stories": [
     {
+      "scenario": "ハイフェッツをなぞる病",
+      "yomi": "はいふぇっつをなぞるやまい",
+      "description": "これは天才と秀才の物語である。",
+      "image": "/images/henrik-donnestad-t2sai-aqipi-unsplash.jpg",
+      "people": [
+        {
+          "color": "#2B4D51",
+          "family": "父、母",
+          "height": "183cm",
+          "name": "五十鈴　澪",
+          "reading": "イスズ　レイ",
+          "dislikes": "我慢、肉、漬物、声が大きい（怒鳴ってくる）人",
+          "label": "HO天才",
+          "id": "",
+          "image": "/images/五十鈴.png",
+          "quote": "「仕方ないじゃん、できちゃったんだから」",
+          "likes": "セックス、バニラアイス、甘えさせてくれる人",
+          "birthday": "10月23日",
+          "job": "画家",
+          "stats": {
+            "STR": 11,
+            "CON": 13,
+            "POW": 11,
+            "DEX": 14,
+            "APP": 15,
+            "SIZ": 14,
+            "INT": 17,
+            "EDU": 16
+          },
+          "age": "28歳",
+          "csUrl": "https://iachara.com/view/6142970"
+        },
+        {
+          "color": "#AE5765",
+          "family": "父、母",
+          "height": "175cm",
+          "name": "村瀬　肇",
+          "reading": "ムラセ　ハジメ",
+          "dislikes": "ミーハー、天才",
+          "label": "HO秀才",
+          "image": "/images/村瀬.png",
+          "quote": "「他人からの評価でしか描けないんだったら、やめればいい」",
+          "likes": "五十鈴の作品、油画、モンブラン",
+          "birthday": "4月21日",
+          "job": "画家",
+          "stats": {
+            "STR": 13,
+            "CON": 10,
+            "POW": 14,
+            "DEX": 15,
+            "APP": 11,
+            "SIZ": 13,
+            "INT": 16,
+            "EDU": 18
+          },
+          "age": "28歳",
+          "csUrl": "https://iachara.com/view/5911318"
+        }
+      ],
+      "stills": [
+        {
+          "title": "ヘンデル",
+          "image": "/images/ヘンデル.png"
+        },
+        {
+          "title": "しゅーまい",
+          "image": "/images/しゅーまい.png"
+        }
+      ],
+      "records": [
+        {
+          "scenario": "ヘンゼルがグレーテルをたべた日",
+          "end": "END　3",
+          "kpc": "五十鈴　澪",
+          "pc": "村瀬　肇",
+          "date": "2026-04-29"
+        },
+        {
+          "scenario": "Sugar mineD",
+          "date": "2026-04-20",
+          "kpc": "五十鈴　澪",
+          "pc": "村瀬　肇"
+        },
+        {
+          "scenario": "浴槽に沈める",
+          "end": "惨劇",
+          "date": "2026-04-08",
+          "kpc": "五十鈴　澪",
+          "pc": "村瀬　肇"
+        },
+        {
+          "scenario": "ヤゼル",
+          "end": "いらない",
+          "kpc": "五十鈴　澪",
+          "pc": "村瀬　肇",
+          "date": "2023-09-04"
+        },
+        {
+          "date": "2023-05-28",
+          "scenario": "ハイフェッツをなぞる病",
+          "kpc": "五十鈴　澪",
+          "pc": "村瀬　肇",
+          "end": ""
+        }
+      ]
+    },
+    {
       "records": [],
       "stills": [],
       "people": [
