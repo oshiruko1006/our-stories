@@ -103,7 +103,7 @@ const collator=new Intl.Collator('ja',{sensitivity:'base',numeric:true});
 function reading(s){return String(s.yomi||s.scenario||'').normalize('NFKC').trim().toLowerCase().replace(/[ァ-ヶ]/g,c=>String.fromCharCode(c.charCodeAt(0)-96));}
 function kanaGroup(s){const first=reading(s).charAt(0);const found=kanaRows.find(([,letters])=>letters.includes(first));return found?found[0]:'その他';}
 function homeMarkup(){const sorted=[...stories].sort((a,b)=>collator.compare(reading(a),reading(b))||collator.compare(a.pair,b.pair));const groups=new Map();for(const s of sorted){const key=kanaGroup(s);if(!groups.has(key))groups.set(key,[]);groups.get(key).push(s)}
- const card=s=>`<a class="card" href="#/scenario/${esc(s.id)}"><div class="card-image">${art(s.image,'画像',s.tone)}</div><div class="card-name">${esc(s.scenario)}</div><div class="card-meta">${esc(s.pair)}</div></a>`;
+ const card=s=>`<a class="card" href="#/scenario/${esc(s.id)}"><div class="card-image">${art(s.image,'画像',s.tone)}</div><div class="card-name">${esc(s.scenario)}</div></a>`;
  const keys=[...kanaRows.map(r=>r[0]),'その他'];
  return `<div class="collection"><span>SCENARIO COLLECTION</span><small>${stories.length} STORIES</small></div><nav class="kana-index" aria-label="五十音索引">${keys.map(k=>groups.has(k)?`<a href="#kana-${k}" data-kana="${k}">${k}</a>`:`<span aria-label="${k}行は登録なし">${k}</span>`).join('')}</nav>${keys.filter(k=>groups.has(k)).map(k=>`<section class="kana-section" id="kana-${k}"><h2 class="kana-heading">${k==='その他'?'その他':k+'行'}</h2><div class="cards">${groups.get(k).map(card).join('')}</div></section>`).join('')}`;
 }
