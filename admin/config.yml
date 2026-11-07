@@ -1,0 +1,234 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: images
+public_folder: /images
+locale: ja
+collections:
+- name: site
+  label: サイトの内容
+  files:
+  - name: stories
+    label: うちよそ・シナリオ一覧
+    file: content/stories.json
+    format: json
+    fields:
+    - label: うちよそごとのシナリオカード
+      name: stories
+      widget: list
+      summary: '{{fields.scenario}} / {{fields.pair}}'
+      fields:
+      - label: 組み合わせID（変更すると既存リンクが変わります）
+        name: id
+        widget: string
+        required: true
+        pattern:
+        - ^[a-zA-Z0-9_-]+$
+        - 半角英数字と - _ のみ
+      - label: シナリオ名
+        name: scenario
+        widget: string
+        required: true
+      - label: ふりがな（五十音順に使用）
+        name: yomi
+        widget: string
+        required: true
+      - label: 組み合わせ表示名（例：A × B）
+        name: pair
+        widget: string
+        required: true
+      - label: 説明文
+        name: description
+        widget: text
+        required: false
+      - label: サムネイル
+        name: image
+        widget: image
+        required: false
+      - label: 仮画像の色
+        name: tone
+        widget: select
+        required: false
+        options:
+        - label: ベージュ
+          value: ''
+        - label: ブルー
+          value: blue
+        - label: ローズ
+          value: rose
+      - label: 探索者（2人）
+        name: people
+        widget: list
+        required: true
+        min: 2
+        max: 2
+        summary: '{{fields.name}}'
+        fields:
+        - label: 識別ID（同じ組内で重複不可。半角英数字）
+          name: id
+          widget: string
+          required: true
+          pattern:
+          - ^[a-zA-Z0-9_-]+$
+          - 半角英数字と - _ のみ
+        - label: 名前
+          name: name
+          widget: string
+          required: true
+        - label: フリガナ
+          name: reading
+          widget: string
+          required: false
+        - label: 名前の前のラベル（HO名・PC・KPCからひとつ）
+          name: label
+          widget: string
+          required: false
+        - label: イメージカラー（#RRGGBB）
+          name: color
+          widget: string
+          required: false
+          default: '#7FA9A5'
+        - label: 立ち絵
+          name: image
+          widget: image
+          required: false
+        - label: 一言セリフ
+          name: quote
+          widget: text
+          required: false
+        - label: 誕生日
+          name: birthday
+          widget: string
+          required: false
+        - label: 年齢
+          name: age
+          widget: string
+          required: false
+        - label: 身長
+          name: height
+          widget: string
+          required: false
+        - label: 職業
+          name: job
+          widget: string
+          required: false
+        - label: 家族構成
+          name: family
+          widget: string
+          required: false
+        - label: 好き
+          name: likes
+          widget: string
+          required: false
+        - label: 苦手
+          name: dislikes
+          widget: string
+          required: false
+        - label: ステータス
+          name: stats
+          widget: object
+          required: false
+          fields:
+          - label: STR
+            name: STR
+            widget: number
+            required: false
+            value_type: int
+            min: 0
+            max: 999
+          - label: CON
+            name: CON
+            widget: number
+            required: false
+            value_type: int
+            min: 0
+            max: 999
+          - label: POW
+            name: POW
+            widget: number
+            required: false
+            value_type: int
+            min: 0
+            max: 999
+          - label: DEX
+            name: DEX
+            widget: number
+            required: false
+            value_type: int
+            min: 0
+            max: 999
+          - label: APP
+            name: APP
+            widget: number
+            required: false
+            value_type: int
+            min: 0
+            max: 999
+          - label: SIZ
+            name: SIZ
+            widget: number
+            required: false
+            value_type: int
+            min: 0
+            max: 999
+          - label: INT
+            name: INT
+            widget: number
+            required: false
+            value_type: int
+            min: 0
+            max: 999
+          - label: EDU
+            name: EDU
+            widget: number
+            required: false
+            value_type: int
+            min: 0
+            max: 999
+        - label: いあきゃら公開CS URL（別タブ）
+          name: csUrl
+          widget: string
+          required: false
+      - label: スチル一覧
+        name: stills
+        widget: list
+        required: false
+        summary: '{{fields.title}}'
+        fields:
+        - label: スチル名
+          name: title
+          widget: string
+          required: true
+        - label: 画像
+          name: image
+          widget: image
+          required: false
+      - label: SESSION RECORDS
+        name: records
+        widget: list
+        required: false
+        summary: '{{fields.date}} / {{fields.scenario}}'
+        fields:
+        - label: 日付
+          name: date
+          widget: datetime
+          required: true
+          format: YYYY-MM-DD
+          date_format: YYYY-MM-DD
+          time_format: false
+        - label: シナリオ名
+          name: scenario
+          widget: string
+          required: true
+        - label: KPC
+          name: kpc
+          widget: string
+          required: false
+        - label: PC
+          name: pc
+          widget: string
+          required: false
+        - label: エンド
+          name: end
+          widget: string
+          required: false

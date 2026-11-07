@@ -1,0 +1,247 @@
+{
+  "stories": [
+    {
+      "id": "pair-01",
+      "scenario": "サンプルシナリオ",
+      "yomi": "さんぷるしなりお",
+      "pair": "探索者 A × 探索者 B",
+      "description": "ふたりの物語を、ここに。",
+      "image": "",
+      "tone": "",
+      "people": [
+        {
+          "id": "a",
+          "color": "#7FA9A5",
+          "name": "探索者 A",
+          "label": "HO1",
+          "birthday": "4月12日",
+          "age": "24歳",
+          "height": "175cm",
+          "job": "大学院生",
+          "family": "父、母、妹",
+          "reading": "たんさくしゃ えー",
+          "quote": "「……まあ、なんとかなるでしょ」",
+          "likes": "読書、紅茶",
+          "dislikes": "大きな音",
+          "stats": {
+            "STR": 60,
+            "CON": 65,
+            "POW": 55,
+            "DEX": 70,
+            "APP": 60,
+            "SIZ": 55,
+            "INT": 75,
+            "EDU": 65
+          },
+          "csUrl": "",
+          "image": ""
+        },
+        {
+          "id": "b",
+          "color": "#C58E9B",
+          "name": "探索者 B",
+          "label": "HO2",
+          "birthday": "9月3日",
+          "age": "25歳",
+          "height": "180cm",
+          "job": "作家",
+          "family": "母、兄",
+          "reading": "たんさくしゃ びー",
+          "quote": "「君がそう言うなら、信じるよ」",
+          "likes": "コーヒー、散歩",
+          "dislikes": "人混み",
+          "stats": {
+            "STR": 70,
+            "CON": 55,
+            "POW": 65,
+            "DEX": 60,
+            "APP": 65,
+            "SIZ": 70,
+            "INT": 70,
+            "EDU": 75
+          },
+          "csUrl": "",
+          "image": ""
+        }
+      ],
+      "stills": [
+        {
+          "title": "思い出 01",
+          "image": ""
+        },
+        {
+          "title": "思い出 02",
+          "image": ""
+        }
+      ],
+      "records": [
+        {
+          "date": "2026-04-12",
+          "scenario": "サンプルシナリオ",
+          "kpc": "探索者 A",
+          "pc": "探索者 B",
+          "end": "END A"
+        },
+        {
+          "date": "2026-06-21",
+          "scenario": "二人の休日",
+          "kpc": "探索者 B",
+          "pc": "探索者 A",
+          "end": "生還"
+        }
+      ]
+    },
+    {
+      "id": "pair-02",
+      "scenario": "サンプルシナリオ",
+      "yomi": "さんぷるしなりお",
+      "pair": "探索者 C × 探索者 D",
+      "description": "同じシナリオ、違うふたりの記録。",
+      "image": "",
+      "tone": "blue",
+      "people": [
+        {
+          "id": "c",
+          "color": "#91A8C2",
+          "name": "探索者 C",
+          "label": "HO1",
+          "age": "23歳",
+          "height": "168cm",
+          "job": "学生",
+          "family": "父、母",
+          "reading": "たんさくしゃ しー",
+          "likes": "甘いもの",
+          "dislikes": "早起き",
+          "stats": {
+            "STR": 55,
+            "CON": 60,
+            "POW": 60,
+            "DEX": 75,
+            "APP": 70,
+            "SIZ": 50,
+            "INT": 65,
+            "EDU": 60
+          },
+          "csUrl": "",
+          "image": ""
+        },
+        {
+          "id": "d",
+          "color": "#9B9A80",
+          "name": "探索者 D",
+          "label": "HO2",
+          "age": "26歳",
+          "height": "178cm",
+          "job": "研究員",
+          "family": "一人暮らし",
+          "reading": "たんさくしゃ でぃー",
+          "likes": "静かな場所",
+          "dislikes": "騒音",
+          "stats": {
+            "STR": 60,
+            "CON": 70,
+            "POW": 70,
+            "DEX": 55,
+            "APP": 60,
+            "SIZ": 65,
+            "INT": 80,
+            "EDU": 80
+          },
+          "csUrl": "",
+          "image": ""
+        }
+      ],
+      "stills": [
+        {
+          "title": "ふたりの記録",
+          "image": ""
+        }
+      ],
+      "records": [
+        {
+          "date": "2026-05-03",
+          "scenario": "サンプルシナリオ",
+          "kpc": "探索者 C",
+          "pc": "探索者 D",
+          "end": "END B"
+        }
+      ]
+    },
+    {
+      "id": "pair-03",
+      "scenario": "別のシナリオ",
+      "yomi": "べつのしなりお",
+      "pair": "探索者 E × 探索者 F",
+      "description": "また別の物語。",
+      "image": "",
+      "tone": "rose",
+      "people": [
+        {
+          "id": "e",
+          "color": "#C69D76",
+          "name": "探索者 E",
+          "label": "HO1",
+          "age": "22歳",
+          "height": "170cm",
+          "job": "探偵",
+          "family": "姉",
+          "reading": "たんさくしゃ いー",
+          "likes": "謎解き",
+          "dislikes": "退屈",
+          "stats": {
+            "STR": 65,
+            "CON": 60,
+            "POW": 50,
+            "DEX": 70,
+            "APP": 65,
+            "SIZ": 60,
+            "INT": 75,
+            "EDU": 65
+          },
+          "csUrl": "",
+          "image": ""
+        },
+        {
+          "id": "f",
+          "color": "#9A8DB6",
+          "name": "探索者 F",
+          "label": "HO2",
+          "age": "24歳",
+          "height": "176cm",
+          "job": "司書",
+          "family": "父、母、弟",
+          "reading": "たんさくしゃ えふ",
+          "likes": "古書",
+          "dislikes": "虫",
+          "stats": {
+            "STR": 50,
+            "CON": 55,
+            "POW": 75,
+            "DEX": 60,
+            "APP": 70,
+            "SIZ": 55,
+            "INT": 80,
+            "EDU": 85
+          },
+          "csUrl": "",
+          "image": ""
+        }
+      ],
+      "stills": [
+        {
+          "title": "記念の一枚",
+          "image": ""
+        }
+      ],
+      "records": [
+        {
+          "date": "2026-07-18",
+          "scenario": "別のシナリオ",
+          "kpc": "探索者 E",
+          "pc": "探索者 F",
+          "end": "END 1"
+        }
+      ]
+    }
+  ]
+}

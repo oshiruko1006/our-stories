@@ -1,0 +1,153 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Our Stories</title><style>
+:root{--bg:#faf7f0;--paper:#fffdfa;--ink:#51483f;--muted:#8d8074;--line:#d8cabc;--dark:#76695c}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:'Yu Mincho','Hiragino Mincho ProN','Noto Serif JP',serif;line-height:1.8}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer;color:inherit}header{border-bottom:0;padding:17px max(24px,5vw);display:flex;align-items:center;justify-content:space-between;background:var(--paper)}.brand{font-size:18px;letter-spacing:.1em}nav{font:12px Georgia,serif;letter-spacing:.12em}main{max-width:1140px;margin:auto;padding:34px 24px 100px}.collection{display:flex;align-items:center;justify-content:space-between;border-bottom:0;margin-bottom:27px;padding-bottom:12px;font:12px Georgia,serif;letter-spacing:.16em}.collection small{color:var(--muted);font:11px sans-serif;letter-spacing:0}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}.card{display:block;border:0;border-radius:10px;padding:12px 12px 18px;background:var(--paper);box-shadow:0 3px 18px #6d58420b;transition:transform .2s,box-shadow .2s}.card:hover,.person:hover{transform:translateY(-4px);box-shadow:0 12px 26px #53402c12}.card-image{border:0;border-radius:6px;aspect-ratio:1.48;display:grid;place-items:center;overflow:hidden;background:#eee6db}.card-image img{width:100%;height:100%;object-fit:cover}.placeholder-image{width:100%;height:100%;display:grid;place-items:center;background:linear-gradient(135deg,#eee4d7,#d8c8b7);font-size:13px;letter-spacing:.14em;color:#78695b}.placeholder-image.blue{background:linear-gradient(135deg,#e3e8e4,#b9c7c6)}.placeholder-image.rose{background:linear-gradient(135deg,#f2e7e4,#d6b9b2)}.card-name{padding:18px 8px 0;font-size:17px;letter-spacing:.08em}.card-meta{padding:3px 8px 0;color:var(--muted);font-size:12px}.back{display:inline-block;color:var(--muted);font-size:13px;margin:0 0 28px}.page-title{text-align:center;margin:12px 0 46px}.page-title h1{font-weight:400;font-size:clamp(26px,4vw,40px);margin:7px 0}.eyebrow{font:11px Georgia,serif;letter-spacing:.24em;color:var(--muted)}.page-title p{color:var(--muted);font-size:13px}.people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;max-width:850px;margin:auto}.person{text-align:center;transition:transform .2s,box-shadow .2s}.portrait{height:430px;background:#e8ded1;position:relative;display:grid;place-items:center;overflow:hidden}.portrait.alt{background:#dfe2df}.portrait img{height:100%;width:100%;object-fit:contain}.portrait-placeholder{font-size:14px;color:#958575;letter-spacing:.13em}.person h2{font-size:20px;font-weight:400;margin:13px 0 0}.person p{font-size:12px;color:var(--muted);margin:0}.gallery{margin-top:90px}.section-title{border-bottom:1px solid var(--line);padding-bottom:12px;font:13px Georgia,serif;letter-spacing:.16em;margin-bottom:22px}.stills{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.still{border:0;padding:0;text-align:left;background:transparent}.still-thumb{aspect-ratio:4/3;display:grid;place-items:center;background:#e4d7c8;color:#8c7b6b;font-size:14px;overflow:hidden}.still-thumb img{width:100%;height:100%;object-fit:cover}.still small{display:block;margin-top:7px;color:var(--muted)}.spoiler{border:1px solid var(--line);padding:22px;margin-top:35px;background:var(--paper)}.spoiler button{border:1px solid var(--dark);background:transparent;padding:7px 18px}.spoiler-body{margin-top:15px;font-size:13px}.hidden{display:none!important}.profile{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:start}.profile .portrait{height:560px}.details{background:var(--paper);padding:28px}.details h1{font-weight:400;font-size:30px;margin:10px 0 20px}.details dl{display:grid;grid-template-columns:80px 1fr;gap:13px;font-size:14px}.details dt{color:var(--muted);font:11px Georgia,serif;letter-spacing:.07em;align-self:baseline;padding-top:3px}.details dd{margin:0;border-bottom:1px solid var(--line)}.details p{font-size:14px}dialog{border:0;padding:22px;background:var(--paper);max-width:min(90vw,780px);width:100%;color:var(--ink)}dialog::backdrop{background:#27221ed1}.close{float:right;border:0;background:transparent;font-size:24px}.dialog-art{clear:both;min-height:240px;display:grid;place-items:center;background:#e4d7c8}.dialog-art img{max-width:100%;max-height:75vh;object-fit:contain}footer{text-align:center;border-top:0;padding:28px;color:var(--muted);font:11px Georgia,serif;letter-spacing:.14em}@media(max-width:750px){.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{padding:9px}.card-name{font-size:14px;padding-top:11px}.card-meta{font-size:11px}.portrait{height:300px}.stills{grid-template-columns:repeat(2,1fr)}.profile{grid-template-columns:1fr;gap:25px}.profile .portrait{height:400px}}@media(max-width:430px){main{padding:24px 15px 70px}.cards{gap:12px}.card{padding:7px}.card-name{font-size:13px}.card-meta{font-size:10px}.people{gap:12px}.portrait{height:230px}.person h2{font-size:16px}.collection small{display:none}}
+
+/* うちよそごとの通過シナリオ記録 */
+.session-records{margin-top:64px}.session-records .section-title{font-weight:400}.session-records .records-wrap{box-shadow:0 3px 18px #6d584209}@media(max-width:600px){.session-records{margin-top:48px}}
+.records-intro{font-size:12px;color:var(--muted);margin:8px 0 16px}
+.records-wrap{overflow-x:auto;margin-top:17px;border-radius:8px;background:#fffdfa}
+.records-table{width:100%;border-collapse:collapse;font-size:13px;min-width:560px;text-align:left}
+.records-table th{font-weight:400;color:var(--muted);background:#f2ece3;font-size:12px;letter-spacing:.06em}
+.records-table th,.records-table td{padding:13px 15px;border-bottom:1px solid #e9e0d5;vertical-align:top}
+.records-table tbody tr:last-child td{border-bottom:0}
+.records-table td:first-child{white-space:nowrap;color:var(--muted)}
+.records-empty{padding:12px 0;color:var(--muted);font-size:13px}
+@media(max-width:600px){.spoiler{padding:17px}.records-table{font-size:12px}}
+/* 五十音の索引と行ごとの区切り */
+.kana-index{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 42px;align-items:center}
+.kana-index a,.kana-index span{min-width:37px;padding:5px 9px;text-align:center;border-radius:20px;font-size:13px;background:#fffdfa;color:var(--dark);transition:background .2s,transform .2s}
+.kana-index a:hover{background:#e8dccb;transform:translateY(-2px)}
+.kana-index span{opacity:.35}
+.kana-section{margin-bottom:54px;scroll-margin-top:20px}
+.kana-heading{display:flex;align-items:center;gap:12px;margin:0 0 18px;font-weight:400;font-size:13px;letter-spacing:.10em;color:var(--muted)}
+.kana-heading:after{content:"";height:1px;background:#e5dbce;flex:1}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* ページ切替：やわらかな横スライド＋フェード */
+@keyframes page-enter{from{opacity:0;transform:translate3d(22px,0,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@keyframes page-exit{from{opacity:1;transform:translate3d(0,0,0)}to{opacity:0;transform:translate3d(-16px,0,0)}}
+#app{min-height:50vh}#app.page-enter{animation:page-enter .42s cubic-bezier(.22,1,.36,1) both}
+#app.page-exit{animation:page-exit .17s ease-in both;pointer-events:none}
+.card,.person,.still{transition:transform .32s cubic-bezier(.22,1,.36,1),box-shadow .32s ease,opacity .25s ease}
+.card:active,.person:active{transform:scale(.985)}
+@media(prefers-reduced-motion:reduce){#app.page-enter,#app.page-exit{animation:none!important}.card,.person,.still{transition:none!important}}
+/* スチル一覧：ゆっくり流れるシームレスなループ。ホバー・フォーカスで一時停止 */
+.stills-viewport{overflow:hidden;position:relative;mask-image:linear-gradient(to right,transparent,#000 3%,#000 97%,transparent)}
+.stills{display:flex;gap:17px;width:max-content;max-width:none;align-items:flex-start}
+.still{flex:0 0 clamp(190px,26vw,315px);width:clamp(190px,26vw,315px);border-radius:8px;overflow:hidden;transition:transform .3s ease,opacity .3s ease}
+.still:hover{transform:translateY(-3px)}
+.still-thumb{border-radius:7px;transition:filter .35s ease,transform .35s ease}
+.still:hover .still-thumb{filter:brightness(1.04)}
+.stills-loop{animation:stills-drift var(--duration,24s) linear infinite}
+.stills-viewport:hover .stills-loop,.stills-viewport:focus-within .stills-loop{animation-play-state:paused}
+@keyframes stills-drift{to{transform:translateX(calc(-50% - 8.5px))}}
+/* スチル拡大：背景と画像が柔らかくフェード＆ズーム */
+dialog{border-radius:12px;box-shadow:0 25px 80px #17100c40;opacity:0;transform:translateY(18px) scale(.975);transition:opacity .32s ease,transform .38s cubic-bezier(.22,1,.36,1),display .32s allow-discrete,overlay .32s allow-discrete}
+dialog[open]:not(.is-closing){opacity:1;transform:translateY(0) scale(1)}
+dialog.is-closing{opacity:0;transform:translateY(12px) scale(.98)}
+dialog::backdrop{background:#27221e00;transition:background .35s ease,display .35s allow-discrete,overlay .35s allow-discrete}
+dialog[open]:not(.is-closing)::backdrop{background:#27221eb8}
+@starting-style{dialog[open]:not(.is-closing){opacity:0;transform:translateY(18px) scale(.975)}dialog[open]:not(.is-closing)::backdrop{background:#27221e00}}
+@media(max-width:750px){.still{flex-basis:220px;width:220px}}
+@media(prefers-reduced-motion:reduce){.stills-loop{animation:none}.stills-viewport{overflow-x:auto;mask-image:none}.stills{width:max-content}dialog,dialog::backdrop{transition:none!important}}
+
+/* セリフ：名前の下に余白を取って、静かに浮かび上がる */
+.profile-quote{margin:8px 0 25px;padding:10px 4px 12px;color:#806f60;text-align:center;font-size:clamp(13px,1.45vw,16px);font-style:italic;letter-spacing:.055em;line-height:2;animation:quote-reveal .9s .2s ease both;white-space:pre-line}
+@keyframes quote-reveal{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.profile-quote{animation:none}}
+/* プロフィール：名前、HO/PCラベル、CSステータス */
+.profile-name-area{margin:8px 0 22px}.profile-reading{font-size:11px;letter-spacing:.14em;color:var(--muted);margin:0 0 5px 0}.profile-name-line{display:flex;flex-wrap:wrap;align-items:center;gap:12px}.profile-name-line h1{margin:0;font-size:clamp(24px,3vw,32px);line-height:1.45}.profile-tags{display:flex;gap:5px;flex-wrap:wrap}.profile-tag{display:inline-block;padding:3px 9px;border-radius:30px;background:#eee7de;color:#7b6b5c;font:11px Georgia,'Yu Gothic',sans-serif;letter-spacing:.04em}.details dl{grid-template-columns:105px 1fr;gap:12px 14px;margin:0 0 27px}.details dd{padding-bottom:7px;overflow-wrap:anywhere}.status-panel{border-top:none;padding-top:0;margin-top:20px}.status-heading{font:12px Georgia,serif;letter-spacing:.15em;color:var(--muted);margin:0 0 13px}.status-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.status-item{background:#f6f1ea;border-radius:6px;text-align:center;padding:10px 4px}.status-item .stat-label{display:block;font:10px Georgia,serif;color:#958778;letter-spacing:.08em}.status-item .stat-value{display:block;font:17px Georgia,serif;color:var(--ink);margin-top:2px}.cs-link{display:inline-flex;align-items:center;gap:5px;margin-top:16px;font-size:12px;color:#7e6b59;border-bottom:1px solid #c8b9a9}.cs-link:hover{color:#4e4035}.cs-link span{display:inline-block;transition:transform .25s ease}.cs-link:hover span{transform:translate(2px,-2px)}.status-empty{font-size:12px;color:var(--muted)}@media(max-width:430px){.details{padding:22px 18px}.status-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.status-item .stat-value{font-size:15px}}
+
+/* プロフィールの立ち絵と情報パネルを同じ高さに揃える */
+@media (min-width:751px){
+  .profile{align-items:stretch}
+  .profile > .portrait{height:auto;min-height:560px;align-self:stretch}
+  .profile > .details{height:100%;min-width:0}
+}
+
+/* 探索者ごとのイメージカラー：背景はアイボリーのまま、控えめなアクセントに */
+.profile.theme-profile{--character-accent:#719b98;--character-deep:#487b78;--character-pale:#e4efed}
+.theme-profile .profile-name-line h1{color:var(--character-deep)}
+.theme-profile .profile-tag{background:var(--character-pale);color:var(--character-deep)}
+.theme-profile .status-heading{color:var(--character-deep)}
+.theme-profile .status-item{background:var(--character-pale)}
+.theme-profile .status-item .stat-label{color:var(--character-deep)}
+.theme-profile .cs-link:hover{color:var(--character-deep);border-bottom-color:var(--character-accent)}
+.theme-profile > .portrait{background:linear-gradient(145deg,var(--character-pale),#f3ece3 88%)}
+.theme-profile .profile-quote{color:var(--character-deep)}
+@media(prefers-reduced-motion:no-preference){.theme-profile .status-item,.theme-profile .profile-tag{transition:background-color .3s ease}}
+</style></head><body><header><a class="brand" href="#/">Our Stories</a><nav><a href="#/">HOME</a></nav></header><main id="app"></main><footer>© OUR STORIES — AN ARCHIVE OF MANY STORIES</footer><dialog id="lightbox"><button class="close" id="close" aria-label="閉じる">×</button><div class="dialog-art" id="dialog-art"></div><p id="dialog-caption"></p></dialog><script>
+/* 編集する場所：ここに組み合わせを追加するとHOMEにカードが増えます。
+   同じscenario（シナリオ名）でもidが違えば別カード・別ページになります。
+   yomi: 'しなりおのよみ' をひらがなで設定すると五十音順に並びます。
+   画像を使う場合は image: 'images/ファイル名.jpg' のように指定してください。 */
+let stories=[
+ {id:'pair-01',scenario:'サンプルシナリオ',yomi:'さんぷるしなりお',pair:'探索者 A × 探索者 B',description:'ふたりの物語を、ここに。',image:'',tone:'',people:[{id:'a',color:'#7FA9A5',name:'探索者 A',label:'HO1',birthday:'4月12日',age:'24歳',height:'175cm',job:'大学院生',family:'父、母、妹',reading:'たんさくしゃ えー',quote:'「……まあ、なんとかなるでしょ」',likes:'読書、紅茶',dislikes:'大きな音',stats:{STR:60,CON:65,POW:55,DEX:70,APP:60,SIZ:55,INT:75,EDU:65},csUrl:'',image:''},{id:'b',color:'#C58E9B',name:'探索者 B',label:'HO2',birthday:'9月3日',age:'25歳',height:'180cm',job:'作家',family:'母、兄',reading:'たんさくしゃ びー',quote:'「君がそう言うなら、信じるよ」',likes:'コーヒー、散歩',dislikes:'人混み',stats:{STR:70,CON:55,POW:65,DEX:60,APP:65,SIZ:70,INT:70,EDU:75},csUrl:'',image:''}],stills:[{title:'思い出 01',image:''},{title:'思い出 02',image:''}],records:[{date:'2026-04-12',scenario:'サンプルシナリオ',kpc:'探索者 A',pc:'探索者 B',end:'END A'},{date:'2026-06-21',scenario:'二人の休日',kpc:'探索者 B',pc:'探索者 A',end:'生還'}]},
+ {id:'pair-02',scenario:'サンプルシナリオ',yomi:'さんぷるしなりお',pair:'探索者 C × 探索者 D',description:'同じシナリオ、違うふたりの記録。',image:'',tone:'blue',people:[{id:'c',color:'#91A8C2',name:'探索者 C',label:'HO1',age:'23歳',height:'168cm',job:'学生',family:'父、母',reading:'たんさくしゃ しー',likes:'甘いもの',dislikes:'早起き',stats:{STR:55,CON:60,POW:60,DEX:75,APP:70,SIZ:50,INT:65,EDU:60},csUrl:'',image:''},{id:'d',color:'#9B9A80',name:'探索者 D',label:'HO2',age:'26歳',height:'178cm',job:'研究員',family:'一人暮らし',reading:'たんさくしゃ でぃー',likes:'静かな場所',dislikes:'騒音',stats:{STR:60,CON:70,POW:70,DEX:55,APP:60,SIZ:65,INT:80,EDU:80},csUrl:'',image:''}],stills:[{title:'ふたりの記録',image:''}],records:[{date:'2026-05-03',scenario:'サンプルシナリオ',kpc:'探索者 C',pc:'探索者 D',end:'END B'}]},
+ {id:'pair-03',scenario:'別のシナリオ',yomi:'べつのしなりお',pair:'探索者 E × 探索者 F',description:'また別の物語。',image:'',tone:'rose',people:[{id:'e',color:'#C69D76',name:'探索者 E',label:'HO1',age:'22歳',height:'170cm',job:'探偵',family:'姉',reading:'たんさくしゃ いー',likes:'謎解き',dislikes:'退屈',stats:{STR:65,CON:60,POW:50,DEX:70,APP:65,SIZ:60,INT:75,EDU:65},csUrl:'',image:''},{id:'f',color:'#9A8DB6',name:'探索者 F',label:'HO2',age:'24歳',height:'176cm',job:'司書',family:'父、母、弟',reading:'たんさくしゃ えふ',likes:'古書',dislikes:'虫',stats:{STR:50,CON:55,POW:75,DEX:60,APP:70,SIZ:55,INT:80,EDU:85},csUrl:'',image:''}],stills:[{title:'記念の一枚',image:''}],records:[{date:'2026-07-18',scenario:'別のシナリオ',kpc:'探索者 E',pc:'探索者 F',end:'END 1'}]}
+];
+// color: 探索者のイメージカラーを #7FA9A5 のような6桁のカラーコードで指定します。
+// プロフィール編集：quote=名前の下に表示する一言セリフ、reading=フリガナ、label=名前の前に表示するラベル（HO名・PC・KPCからひとつ）、family=家族構成、likes=好き、dislikes=苦手。
+// stats はいあきゃらのCSを参照して入力する能力値（8項目）。csUrl にいあきゃらの公開CS URLを入れるとリンクが表示されます。
+// ※ いあきゃらから能力値を自動取得する仕組みではありません。
+// 外部CSから能力値を自動取得する機能はありません。
+// records: この組み合わせで通過したシナリオを日付・シナリオ名・KPC・PC・エンドの順に登録します。
+// 日付は YYYY-MM-DD 形式。records に行を追加すれば自動で表に反映されます。
+function recordMarkup(story){
+ const records=[...(story.records||[])].sort((a,b)=>String(a.date||'').localeCompare(String(b.date||'')));
+ if(!records.length)return '<p class="records-empty">通過記録はまだありません。</p>';
+ const columns=[['date','日付'],['scenario','シナリオ名'],['kpc','KPC'],['pc','PC'],['end','エンド']];
+ return `<div class="records-wrap"><table class="records-table"><thead><tr>${columns.map(([,name])=>`<th scope="col">${name}</th>`).join('')}</tr></thead><tbody>${records.map(r=>`<tr>${columns.map(([key])=>`<td>${esc(key==='date'?String(r[key]||'').replace(/-/g,'/'):r[key]||'—')}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+}
+const kanaRows=[['あ','あいうえお'],['か','かきくけこがぎぐげご'],['さ','さしすせそざじずぜぞ'],['た','たちつてとだぢづでど'],['な','なにぬねの'],['は','はひふへほばびぶべぼぱぴぷぺぽ'],['ま','まみむめも'],['や','やゆよ'],['ら','らりるれろ'],['わ','わをん']];
+const collator=new Intl.Collator('ja',{sensitivity:'base',numeric:true});
+function reading(s){return String(s.yomi||s.scenario||'').normalize('NFKC').trim().toLowerCase().replace(/[ァ-ヶ]/g,c=>String.fromCharCode(c.charCodeAt(0)-96));}
+function kanaGroup(s){const first=reading(s).charAt(0);const found=kanaRows.find(([,letters])=>letters.includes(first));return found?found[0]:'その他';}
+function homeMarkup(){const sorted=[...stories].sort((a,b)=>collator.compare(reading(a),reading(b))||collator.compare(a.pair,b.pair));const groups=new Map();for(const s of sorted){const key=kanaGroup(s);if(!groups.has(key))groups.set(key,[]);groups.get(key).push(s)}
+ const card=s=>`<a class="card" href="#/scenario/${esc(s.id)}"><div class="card-image">${art(s.image,'画像',s.tone)}</div><div class="card-name">${esc(s.scenario)}</div><div class="card-meta">${esc(s.pair)}</div></a>`;
+ const keys=[...kanaRows.map(r=>r[0]),'その他'];
+ return `<div class="collection"><span>SCENARIO COLLECTION</span><small>${stories.length} STORIES</small></div><nav class="kana-index" aria-label="五十音索引">${keys.map(k=>groups.has(k)?`<a href="#kana-${k}" data-kana="${k}">${k}</a>`:`<span aria-label="${k}行は登録なし">${k}</span>`).join('')}</nav>${keys.filter(k=>groups.has(k)).map(k=>`<section class="kana-section" id="kana-${k}"><h2 class="kana-heading">${k==='その他'?'その他':k+'行'}</h2><div class="cards">${groups.get(k).map(card).join('')}</div></section>`).join('')}`;
+}
+// color は #RRGGBB 形式で指定。薄い背景と読みやすい濃い文字色を自動生成します。
+function characterTheme(hex){
+ const match=/^#([0-9a-f]{6})$/i.exec(String(hex||''));
+ const rgb=match?[0,2,4].map(i=>parseInt(match[1].slice(i,i+2),16)):[127,169,165];
+ const blend=(target,weight)=>'#'+rgb.map((c,i)=>Math.round(c*(1-weight)+target[i]*weight).toString(16).padStart(2,'0')).join('');
+ return `--character-accent:${blend([255,255,255],.08)};--character-deep:${blend([55,47,41],.55)};--character-pale:${blend([255,253,249],.81)}`;
+}
+const app=document.getElementById('app');const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));const art=(image,label,tone='',portrait=false)=>image?`<img src="${esc(image)}" alt="${esc(label)}">`:`<div class="${portrait?'portrait-placeholder':'placeholder-image '+esc(tone)}">${esc(label)}</div>`;
+function render(){const bits=(location.hash.slice(2)||'').split('/');const kind=bits[0];const story=stories.find(s=>s.id===bits[1]);if(kind==='scenario'&&story){app.innerHTML=`<a class="back" href="#/">← シナリオ一覧へ戻る</a><div class="page-title"><div class="eyebrow">SCENARIO / ${esc(story.pair)}</div><h1>${esc(story.scenario)}</h1><p>${esc(story.description)}</p></div><div class="people">${story.people.map((p,i)=>`<a class="person" href="#/profile/${esc(story.id)}/${esc(p.id)}"><div class="portrait ${i%2?'alt':''}">${art(p.image,'立ち絵',story.tone,true)}</div><h2>${esc(p.name)}</h2><p>${esc(p.label||p.ho||p.role||'')} ・ PROFILE →</p></a>`).join('')}</div><section class="gallery"><div class="section-title">GALLERY / スチル</div><div class="stills-viewport" aria-label="スチル一覧"><div class="stills ${story.stills.length>1?'stills-loop':''}" style="--count:${story.stills.length};--duration:${Math.max(18,story.stills.length*8)}s">${(story.stills.length>1?[...story.stills,...story.stills]:story.stills).map((s,i)=>`<button class="still" data-still="${i%story.stills.length}" ${i>=story.stills.length?'tabindex="-1" aria-hidden="true"':''}><div class="still-thumb">${art(s.image,'画像',story.tone)}</div><small>${esc(s.title)}</small></button>`).join('')}</div></div><section class="session-records" aria-labelledby="session-records-heading"><h2 class="section-title" id="session-records-heading">SESSION RECORDS</h2><p class="records-intro">ふたりが歩んだ物語の記録</p>${recordMarkup(story)}</section></section>`;app.querySelectorAll('[data-still]').forEach(b=>b.addEventListener('click',()=>openStill(story.stills[Number(b.dataset.still)])));}
+else if(kind==='profile'&&story){const p=story.people.find(p=>p.id===bits[2]);if(!p){location.hash='#/';return}const fields=[['BIRTHDAY',p.birthday],['AGE',p.age],['HEIGHT',p.height],['OCCUPATION',p.job],['FAMILY',p.family],['LIKES',p.likes],['DISLIKES',p.dislikes]];const statKeys=['STR','CON','POW','DEX','APP','SIZ','INT','EDU'];const stats=p.stats||{};const statMarkup=statKeys.filter(k=>stats[k]!==undefined&&stats[k]!==null&&stats[k]!=='').map(k=>`<div class="status-item"><span class="stat-label">${k}</span><span class="stat-value">${esc(stats[k])}</span></div>`).join('');const csLink=/^https?:\/\//i.test(p.csUrl||'')?`<a class="cs-link" href="${esc(p.csUrl)}" target="_blank" rel="noopener noreferrer">CHARACTER SHEET <span aria-hidden="true">↗</span></a>`:'';app.innerHTML=`<a class="back" href="#/scenario/${esc(story.id)}">← ${esc(story.scenario)} に戻る</a><div class="profile theme-profile" style="${characterTheme(p.color)}"><div class="portrait">${art(p.image,'立ち絵',story.tone,true)}</div><div class="details"><div class="eyebrow">EXPLORER PROFILE</div><div class="profile-name-area"><p class="profile-reading">${esc(p.reading||'')}</p><div class="profile-name-line"><div class="profile-tags">${(p.label||p.ho||p.role)?`<span class="profile-tag">${esc(p.label||p.ho||p.role)}</span>`:''}</div><h1>${esc(p.name)}</h1></div></div>${p.quote?`<p class="profile-quote">${esc(p.quote)}</p>`:''}<dl>${fields.map(([k,v])=>`<dt>${esc(k)}</dt><dd>${esc(v||'—')}</dd>`).join('')}</dl><section class="status-panel"><h2 class="status-heading">STATUS</h2>${statMarkup?`<div class="status-grid">${statMarkup}</div>`:`<p class="status-empty">ステータス未登録</p>`}${csLink}</section></div></div>`;}
+else{app.innerHTML=homeMarkup();app.querySelectorAll('[data-kana]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.getElementById('kana-'+a.dataset.kana)?.scrollIntoView({behavior:reduceMotion.matches?'auto':'smooth',block:'start'});}));}window.scrollTo(0,0)}
+const lightbox=document.getElementById('lightbox');let closing=false;
+function openStill(s){document.getElementById('dialog-art').innerHTML=art(s.image,'画像');document.getElementById('dialog-caption').textContent=s.title;lightbox.classList.remove('is-closing');closing=false;lightbox.showModal()}
+function closeStill(){if(!lightbox.open||closing)return;if(reduceMotion.matches){lightbox.close();return}closing=true;lightbox.classList.add('is-closing');setTimeout(()=>{lightbox.close();lightbox.classList.remove('is-closing');closing=false},220)}
+document.getElementById('close').onclick=closeStill;
+lightbox.addEventListener('click',e=>{if(e.target===lightbox)closeStill()});
+lightbox.addEventListener('cancel',e=>{e.preventDefault();closeStill()});// ハッシュ遷移時にコンテンツを滑らかに切り替える（戻る操作にも対応）
+let transitionToken=0;
+const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+function navigateSmooth(){
+  const token=++transitionToken;
+  app.classList.remove('page-enter','page-exit');
+  if(reduceMotion.matches){render();return}
+  app.classList.add('page-exit');
+  setTimeout(()=>{
+    if(token!==transitionToken)return;
+    render();
+    app.classList.remove('page-exit');
+    // アニメーションの再実行を保証
+    void app.offsetWidth;
+    app.classList.add('page-enter');
+  },170);
+}
+app.addEventListener('animationend',e=>{if(e.animationName==='page-enter')app.classList.remove('page-enter')});
+window.addEventListener('hashchange',navigateSmooth);render();
+// 公開サイトでは Decap CMS が保存した JSON を読み込みます。
+// file:// で開いた場合は同梱のサンプルデータでプレビューできます。
+if (location.protocol !== 'file:') {
+ fetch('./content/stories.json', {cache:'no-store'})
+  .then(r => {if(!r.ok) throw new Error('content unavailable');return r.json()})
+  .then(data => {if(Array.isArray(data.stories)){stories=data.stories.map(s=>({...s,people:Array.isArray(s.people)?s.people:[],stills:Array.isArray(s.stills)?s.stills:[],records:Array.isArray(s.records)?s.records:[]}));render();}})
+  .catch(err => console.warn('CMSデータの読み込みに失敗しました。サンプルを表示します。',err));
+}
+</script></body></html>
