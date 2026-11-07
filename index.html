@@ -117,13 +117,11 @@ dialog[open]:not(.is-closing)::backdrop{background:#27221eb8}
 
 
 
-/* シナリオ詳細：イメージカラーをアイボリーにごく淡く混ぜた背景 */
+/* シナリオ詳細：プロフィール全身立ち絵と同じ自然なグラデーション */
 .people .person .portrait,
 .people .person .portrait.alt{
-  background:linear-gradient(145deg,
-    color-mix(in srgb,var(--character-accent,#e8ded1) 9%,#fffdfa),
-    color-mix(in srgb,var(--character-accent,#e8ded1) 4%,#fffdfa));
-  border:1px solid color-mix(in srgb,var(--character-accent,#d8cabc) 13%,#fffdfa);
+  background:linear-gradient(145deg,var(--character-pale),#f3ece3 88%);
+  border:0;
 }
 
 </style></head><body><header><a class="brand" href="#/">Our Stories</a><nav><a href="#/">HOME</a></nav></header><main id="app"></main><footer>© OUR STORIES — AN ARCHIVE OF MANY STORIES</footer><dialog id="lightbox"><button class="close" id="close" aria-label="閉じる">×</button><div class="dialog-art" id="dialog-art"></div><p id="dialog-caption"></p></dialog><script>
