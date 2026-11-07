@@ -107,6 +107,14 @@ dialog[open]:not(.is-closing)::backdrop{background:#27221eb8}
 .profile.theme-profile > .details{height:auto}
 @media(max-width:750px){.profile.theme-profile > .portrait{height:480px;min-height:0;padding:14px}}
 @media(max-width:430px){.profile.theme-profile > .portrait{height:420px;padding:12px}}
+/* PC表示：左の立ち絵枠を右のプロフィール情報パネルと同じ高さにする。
+   画像は絶対配置＋containなので、枠の高さが変わっても全身が収まる。 */
+@media(min-width:751px){
+  .profile.theme-profile{align-items:stretch;}
+  .profile.theme-profile > .portrait{height:auto;min-height:0;align-self:stretch;}
+  .profile.theme-profile > .details{height:auto;align-self:stretch;}
+}
+
 
 </style></head><body><header><a class="brand" href="#/">Our Stories</a><nav><a href="#/">HOME</a></nav></header><main id="app"></main><footer>© OUR STORIES — AN ARCHIVE OF MANY STORIES</footer><dialog id="lightbox"><button class="close" id="close" aria-label="閉じる">×</button><div class="dialog-art" id="dialog-art"></div><p id="dialog-caption"></p></dialog><script>
 /* 編集する場所：ここに組み合わせを追加するとHOMEにカードが増えます。
