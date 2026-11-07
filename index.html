@@ -95,6 +95,15 @@ dialog[open]:not(.is-closing)::backdrop{background:#27221eb8}
 .profile.theme-profile > .portrait img{
   display:block;width:100%;height:100%;object-fit:contain;object-position:center center;
 }
+/* プロフィール専用：固定枠の中で画像全体を縮小して表示（シナリオ側は変更しない） */
+.profile.theme-profile > .portrait{position:relative;display:flex;align-items:center;justify-content:center;}
+.profile.theme-profile > .portrait > img{
+  position:absolute;inset:18px;width:calc(100% - 36px);height:calc(100% - 36px);
+  max-width:calc(100% - 36px);max-height:calc(100% - 36px);
+  object-fit:contain!important;object-position:center center!important;
+}
+@media(max-width:750px){.profile.theme-profile > .portrait > img{inset:14px;width:calc(100% - 28px);height:calc(100% - 28px);max-width:calc(100% - 28px);max-height:calc(100% - 28px)}}
+@media(max-width:430px){.profile.theme-profile > .portrait > img{inset:12px;width:calc(100% - 24px);height:calc(100% - 24px);max-width:calc(100% - 24px);max-height:calc(100% - 24px)}}
 .profile.theme-profile > .details{height:auto}
 @media(max-width:750px){.profile.theme-profile > .portrait{height:480px;min-height:0;padding:14px}}
 @media(max-width:430px){.profile.theme-profile > .portrait{height:420px;padding:12px}}
