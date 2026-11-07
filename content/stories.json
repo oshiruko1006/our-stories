@@ -1,247 +1,209 @@
 {
   "stories": [
     {
-      "records": [
-        {
-          "date": "2026-04-12",
-          "scenario": "サンプルシナリオ",
-          "kpc": "探索者 A",
-          "pc": "探索者 B",
-          "end": "END A"
-        },
-        {
-          "date": "2026-06-21",
-          "scenario": "二人の休日",
-          "kpc": "探索者 B",
-          "pc": "探索者 A",
-          "end": "生還"
-        }
-      ],
-      "stills": [
-        {
-          "title": "思い出 01",
-          "image": ""
-        },
-        {
-          "title": "思い出 02",
-          "image": ""
-        }
-      ],
+      "records": [],
+      "stills": [],
       "people": [
         {
-          "color": "#7FA9A5",
-          "family": "父、母、妹",
-          "height": "175cm",
-          "name": "探索者 A",
-          "reading": "たんさくしゃ えー",
-          "dislikes": "大きな音",
+          "color": "#3A8FB7",
+          "family": "？？？",
+          "height": "194cm",
+          "name": "千草",
+          "reading": "チグサ",
+          "dislikes": "難しい話、研究者",
           "label": "HO1",
           "id": "a",
-          "image": "",
-          "quote": "「……まあ、なんとかなるでしょ」",
-          "likes": "読書、紅茶",
-          "birthday": "4月12日",
-          "job": "大学院生",
+          "image": "/images/チグサ.png",
+          "quote": "「後悔すんなよ」",
+          "likes": "肉",
+          "birthday": "？？？",
+          "job": "？？？",
           "stats": {
-            "STR": 60,
-            "CON": 65,
-            "POW": 55,
-            "DEX": 70,
-            "APP": 60,
-            "SIZ": 55,
-            "INT": 75,
-            "EDU": 65
+            "STR": 19,
+            "CON": 20,
+            "POW": 14,
+            "DEX": 17,
+            "APP": 6,
+            "SIZ": 16,
+            "INT": 15,
+            "EDU": 13
           },
-          "age": "24歳",
-          "csUrl": ""
+          "age": "？？？",
+          "csUrl": "https://iachara.com/view/5906934"
         },
         {
-          "color": "#C58E9B",
-          "family": "母、兄",
-          "height": "180cm",
-          "name": "探索者 B",
-          "reading": "たんさくしゃ びー",
-          "dislikes": "人混み",
+          "color": "#FF5722",
+          "family": "妹",
+          "height": "167cm",
+          "name": "楪",
+          "reading": "ユズリハ",
+          "dislikes": "",
           "label": "HO2",
           "id": "b",
-          "image": "",
-          "quote": "「君がそう言うなら、信じるよ」",
-          "likes": "コーヒー、散歩",
-          "birthday": "9月3日",
-          "job": "作家",
+          "image": "/images/ユズリハ.png",
+          "quote": "「この度には、チグサが必要だから」",
+          "likes": "",
+          "birthday": "8月20日",
+          "job": "薬師",
           "stats": {
-            "STR": 70,
-            "CON": 55,
-            "POW": 65,
-            "DEX": 60,
-            "APP": 65,
-            "SIZ": 70,
-            "INT": 70,
-            "EDU": 75
+            "STR": 10,
+            "CON": 16,
+            "POW": 16,
+            "DEX": 16,
+            "APP": 13,
+            "SIZ": 11,
+            "INT": 14,
+            "EDU": 17
           },
-          "age": "25歳",
-          "csUrl": ""
+          "age": "30歳",
+          "csUrl": "https://iachara.com/view/5628120"
         }
       ],
-      "scenario": "サンプルシナリオ",
-      "tone": "",
-      "yomi": "さんぷるしなりお",
-      "pair": "探索者 A × 探索者 B",
+      "scenario": "野狗子と薬師",
+      "tone": null,
+      "yomi": "やくしとくすし",
+      "pair": "",
       "id": "pair-01",
-      "image": "",
-      "description": "ふたりの物語を、ここに。"
+      "image": "/images/再生した日本と富士山の大絶景.png",
+      "description": "2XXX年、人類は絶滅しかけた。\n\n残ったのは、神の啓示にも似た自然と、打ち崩れていく人類の矜持だけ。\nもう数百年間、世界は壊れかけたままだ。\n壊れていることが当たり前の世界で、それでも微かに人々は息をしていた。\n息をし続けるために、明日を迎えるために、世界を壊さないために。\n\nそのためにあなたは、犬と散歩をする。"
     },
     {
       "records": [
         {
-          "date": "2026-05-03",
-          "scenario": "サンプルシナリオ",
-          "kpc": "探索者 C",
-          "pc": "探索者 D",
-          "end": "END B"
+          "date": "2026-01-10",
+          "scenario": "共感覚",
+          "kpc": "七海　奏詞",
+          "pc": "柚木　想",
+          "end": "END　1"
+        },
+        {
+          "scenario": "君がいないと息ができない",
+          "date": "2026-02-23",
+          "kpc": "七海　奏詞",
+          "pc": "柚木　想",
+          "end": "END　1"
+        },
+        {
+          "scenario": "RISTORANTE MOONWALK",
+          "date": "2026-05-06",
+          "kpc": "-",
+          "pc": "柚木　想",
+          "end": "クリア"
+        },
+        {
+          "scenario": "うえからでられない",
+          "date": "2026-06-06",
+          "kpc": "七海　奏詞",
+          "pc": "柚木　想",
+          "end": "うえからでられない"
+        },
+        {
+          "scenario": "夏に逃げ水",
+          "date": "2026-08-29",
+          "kpc": "七海　奏詞",
+          "pc": "柚木　想",
+          "end": "同じ蓮の花"
+        },
+        {
+          "scenario": "墓前に陽炎",
+          "date": "2026-09-28",
+          "kpc": "柚木　想",
+          "pc": "七海　奏詞",
+          "end": "END　A"
         }
       ],
       "stills": [
         {
-          "title": "ふたりの記録",
-          "image": ""
+          "title": "共感覚1",
+          "image": "/images/共感覚1.png"
+        },
+        {
+          "image": "/images/共感覚2.png",
+          "title": "共感覚2"
+        },
+        {
+          "title": "共感覚3",
+          "image": "/images/共感覚3.png"
+        },
+        {
+          "title": "リズムン",
+          "image": "/images/リズムン.png"
+        },
+        {
+          "title": "うえからでられない",
+          "image": "/images/うえからでられない.png"
+        },
+        {
+          "title": "夏に逃げ水",
+          "image": "/images/夏に逃げ水.png"
+        },
+        {
+          "title": "墓前に陽炎",
+          "image": "/images/墓前に陽炎.png"
         }
       ],
       "people": [
         {
-          "color": "#91A8C2",
-          "family": "父、母",
-          "height": "168cm",
-          "name": "探索者 C",
-          "reading": "たんさくしゃ しー",
-          "dislikes": "早起き",
-          "label": "HO1",
+          "color": "#73B8E2",
+          "family": "なし",
+          "height": "179cm",
+          "name": "七海　奏詞",
+          "reading": "ナナミ　ソウジ",
+          "dislikes": "騒音",
+          "label": "KPC",
           "id": "c",
-          "image": "",
-          "likes": "甘いもの",
-          "job": "学生",
+          "image": "/images/七海.png",
+          "quote": "「なら、そんなものに　共感なんて、覚えないでいい」",
+          "likes": "音楽を聴くこと、作詞、コーヒー",
+          "birthday": "1月21日",
+          "job": "営業職",
           "stats": {
-            "STR": 55,
-            "CON": 60,
-            "POW": 60,
-            "DEX": 75,
-            "APP": 70,
-            "SIZ": 50,
-            "INT": 65,
-            "EDU": 60
+            "STR": 13,
+            "CON": 14,
+            "POW": 15,
+            "DEX": 15,
+            "APP": 16,
+            "SIZ": 14,
+            "INT": 16,
+            "EDU": 15
           },
-          "age": "23歳",
-          "csUrl": ""
+          "age": "28歳",
+          "csUrl": "https://iachara.com/view/13387783"
         },
         {
-          "color": "#9B9A80",
-          "family": "一人暮らし",
-          "height": "178cm",
-          "name": "探索者 D",
-          "reading": "たんさくしゃ でぃー",
-          "dislikes": "騒音",
-          "label": "HO2",
+          "color": "#A3BE6B",
+          "family": "父、母、姉",
+          "height": "173cm",
+          "name": "柚木　想",
+          "reading": "ユノキ　ソウ",
+          "dislikes": "ノベ、刺激の強い食べ物(辛いものとか酸っぱいもの)",
+          "label": "PC",
           "id": "d",
-          "image": "",
-          "likes": "静かな場所",
-          "job": "研究員",
+          "image": "/images/柚木.png",
+          "likes": "ミステリー小説、パン屋のサンドイッチ",
+          "birthday": "8月15日",
+          "job": "編集者",
           "stats": {
-            "STR": 60,
-            "CON": 70,
-            "POW": 70,
-            "DEX": 55,
-            "APP": 60,
-            "SIZ": 65,
-            "INT": 80,
-            "EDU": 80
+            "STR": 12,
+            "CON": 12,
+            "POW": 14,
+            "DEX": 12,
+            "APP": 14,
+            "SIZ": 12,
+            "INT": 13,
+            "EDU": 17
           },
-          "age": "26歳",
-          "csUrl": ""
+          "age": "28歳",
+          "csUrl": "https://iachara.com/view/12256482"
         }
       ],
-      "scenario": "サンプルシナリオ",
+      "scenario": "共感覚",
       "tone": "blue",
-      "yomi": "さんぷるしなりお",
-      "pair": "探索者 C × 探索者 D",
+      "yomi": "きょうかんかく",
+      "pair": "",
       "id": "pair-02",
       "image": "",
-      "description": "同じシナリオ、違うふたりの記録。"
-    },
-    {
-      "records": [
-        {
-          "date": "2026-07-18",
-          "scenario": "別のシナリオ",
-          "kpc": "探索者 E",
-          "pc": "探索者 F",
-          "end": "END 1"
-        }
-      ],
-      "stills": [
-        {
-          "title": "記念の一枚",
-          "image": ""
-        }
-      ],
-      "people": [
-        {
-          "color": "#C69D76",
-          "family": "姉",
-          "height": "170cm",
-          "name": "探索者 E",
-          "reading": "たんさくしゃ いー",
-          "dislikes": "退屈",
-          "label": "HO1",
-          "id": "e",
-          "image": "",
-          "likes": "謎解き",
-          "job": "探偵",
-          "stats": {
-            "STR": 65,
-            "CON": 60,
-            "POW": 50,
-            "DEX": 70,
-            "APP": 65,
-            "SIZ": 60,
-            "INT": 75,
-            "EDU": 65
-          },
-          "age": "22歳",
-          "csUrl": ""
-        },
-        {
-          "color": "#9A8DB6",
-          "family": "父、母、弟",
-          "height": "176cm",
-          "name": "探索者 F",
-          "reading": "たんさくしゃ えふ",
-          "dislikes": "虫",
-          "label": "HO2",
-          "id": "f",
-          "image": "",
-          "likes": "古書",
-          "job": "司書",
-          "stats": {
-            "STR": 50,
-            "CON": 55,
-            "POW": 75,
-            "DEX": 60,
-            "APP": 70,
-            "SIZ": 55,
-            "INT": 80,
-            "EDU": 85
-          },
-          "age": "24歳",
-          "csUrl": ""
-        }
-      ],
-      "scenario": "別のシナリオ",
-      "tone": "rose",
-      "yomi": "べつのしなりお",
-      "pair": "探索者 E × 探索者 F",
-      "id": "pair-03",
-      "image": "",
-      "description": "また別の物語。"
+      "description": "「久しぶりだな。覚えてる？」\n\nある日あなたの元に訪れた懐かしい顔。\n渡された手紙と報せを頼りに、あなたは同窓会へ赴き、昔の友人たちと再び旧交を温める。\n\nそれだけのはずだった。"
     }
   ]
 }
