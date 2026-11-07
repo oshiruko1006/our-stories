@@ -22,13 +22,13 @@ collections:
       add_to_top: true
       summary: '{{fields.scenario}}'
       fields:
-      - label: 組み合わせID（変更すると既存リンクが変わります）
+      - label: 組み合わせID（自動生成・変更不可）
         name: id
-        widget: string
+        widget: uuid
+        prefix: 'pair-'
+        use_b32_encoding: true
+        read_only: true
         required: true
-        pattern:
-        - ^[a-zA-Z0-9_-]+$
-        - 半角英数字と - _ のみ
       - label: シナリオ名
         name: scenario
         widget: string
@@ -65,13 +65,13 @@ collections:
         max: 2
         summary: '{{fields.name}}'
         fields:
-        - label: 識別ID（同じ組内で重複不可。半角英数字）
+        - label: 識別ID（自動生成・変更不可）
           name: id
-          widget: string
+          widget: uuid
+          prefix: 'char-'
+          use_b32_encoding: true
+          read_only: true
           required: true
-          pattern:
-          - ^[a-zA-Z0-9_-]+$
-          - 半角英数字と - _ のみ
         - label: 名前
           name: name
           widget: string
