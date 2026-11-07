@@ -5,33 +5,6 @@
       "stills": [],
       "people": [
         {
-          "color": "#3A8FB7",
-          "family": "？？？",
-          "height": "194cm",
-          "name": "千草",
-          "reading": "チグサ",
-          "dislikes": "難しい話、研究者",
-          "label": "HO1",
-          "id": "a",
-          "image": "/images/チグサ.png",
-          "quote": "「後悔すんなよ」",
-          "likes": "肉",
-          "birthday": "？？？",
-          "job": "？？？",
-          "stats": {
-            "STR": 19,
-            "CON": 20,
-            "POW": 14,
-            "DEX": 17,
-            "APP": 6,
-            "SIZ": 16,
-            "INT": 15,
-            "EDU": 13
-          },
-          "age": "？？？",
-          "csUrl": "https://iachara.com/view/5906934"
-        },
-        {
           "color": "#FF5722",
           "family": "妹",
           "height": "167cm",
@@ -57,6 +30,33 @@
           },
           "age": "30歳",
           "csUrl": "https://iachara.com/view/5628120"
+        },
+        {
+          "color": "#3A8FB7",
+          "family": "？？？",
+          "height": "194cm",
+          "name": "千草",
+          "reading": "チグサ",
+          "dislikes": "難しい話、研究者",
+          "label": "HO1",
+          "id": "a",
+          "image": "/images/チグサ.png",
+          "quote": "「後悔すんなよ」",
+          "likes": "肉",
+          "birthday": "？？？",
+          "job": "？？？",
+          "stats": {
+            "STR": 19,
+            "CON": 20,
+            "POW": 14,
+            "DEX": 17,
+            "APP": 6,
+            "SIZ": 16,
+            "INT": 15,
+            "EDU": 13
+          },
+          "age": "？？？",
+          "csUrl": "https://iachara.com/view/5906934"
         }
       ],
       "scenario": "野狗子と薬師",
