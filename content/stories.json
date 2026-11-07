@@ -153,7 +153,7 @@
           "label": "KPC",
           "id": "c",
           "image": "/images/七海.png",
-          "quote": "「お前が願ってくれたんだろ？」",
+          "quote": "「お前が願ってくれたからな」",
           "likes": "音楽を聴くこと、作詞、コーヒー",
           "birthday": "1月21日",
           "job": "営業職",
@@ -203,7 +203,7 @@
       "yomi": "きょうかんかく",
       "pair": "七海×柚木",
       "id": "pair-02",
-      "image": "",
+      "image": "/images/共感覚パネル.png",
       "description": "「共感なんて、覚えないで」"
     }
   ]
