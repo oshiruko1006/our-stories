@@ -1,9 +1,6 @@
 backend:
-  name: github
-  repo: oshiruko1006/our-stories
+  name: git-gateway
   branch: main
-  base_url: https://our-stories-oauth.kocco-and-chiri.workers.dev
-  auth_endpoint: auth
 media_folder: images
 public_folder: /images
 locale: ja
@@ -19,7 +16,8 @@ collections:
     - label: うちよそごとのシナリオカード
       name: stories
       widget: list
-      summary: '{{fields.scenario}} / {{fields.pair}}'
+      add_to_top: true
+      summary: '{{fields.scenario}}'
       fields:
       - label: 組み合わせID（変更すると既存リンクが変わります）
         name: id
@@ -34,10 +32,6 @@ collections:
         required: true
       - label: ふりがな（五十音順に使用）
         name: yomi
-        widget: string
-        required: true
-      - label: 組み合わせ表示名（例：A × B）
-        name: pair
         widget: string
         required: true
       - label: 説明文
@@ -62,6 +56,7 @@ collections:
       - label: 探索者（2人）
         name: people
         widget: list
+        add_to_top: true
         required: true
         min: 2
         max: 2
@@ -195,6 +190,7 @@ collections:
       - label: スチル一覧
         name: stills
         widget: list
+        add_to_top: true
         required: false
         summary: '{{fields.title}}'
         fields:
@@ -209,6 +205,7 @@ collections:
       - label: SESSION RECORDS
         name: records
         widget: list
+        add_to_top: true
         required: false
         summary: '{{fields.date}} / {{fields.scenario}}'
         fields:
