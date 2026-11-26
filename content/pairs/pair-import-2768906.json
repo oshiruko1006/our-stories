@@ -4,9 +4,28 @@
   "yomi": "まくがふぃん",
   "people": [
     {
-      "id": "char-import-2768906-1",
-      "label": "HO1",
+      "gender": "男",
+      "eyes": "水色",
+      "hair": "黒",
+      "color": "#3F51B5",
+      "height": "172",
       "name": "夜三　真白",
+      "reading": "よるみ　ましろ",
+      "label": "HO1",
+      "id": "char-import-2768906-1",
+      "birthday": "12月13日",
+      "job": "刑事",
+      "stats": {
+        "STR": 10,
+        "CON": 10,
+        "POW": 11,
+        "DEX": 11,
+        "APP": 6,
+        "SIZ": 13,
+        "INT": 14,
+        "EDU": 17
+      },
+      "age": "29",
       "csUrl": "https://iachara.com/view/2768906"
     },
     {
