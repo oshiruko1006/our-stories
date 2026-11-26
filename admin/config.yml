@@ -42,7 +42,7 @@ collections:
     required: false
   - label: サムネイル
     name: image
-    widget: image
+    widget: hidden
     required: false
   - label: 仮画像の色
     name: tone
