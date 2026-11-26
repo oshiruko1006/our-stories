@@ -93,6 +93,10 @@ collections:
       name: image
       widget: image
       required: false
+    - label: 探索者サムネイル
+      name: crop
+      widget: string
+      required: false
     - label: 一言セリフ
       name: quote
       widget: text
