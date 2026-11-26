@@ -2,26 +2,68 @@
   "id": "pair-hsrj4uwytvgtrllqk6vqvd6lfe",
   "scenario": "ロトカ・ヴォルテラの愛堕討ち",
   "yomi": "ろとか・ヴぉるてらのあだうち",
+  "description": "「喰らわば堕ちる。惚れたら負けだとか、そんな甘いもので満足するものか」\n",
   "people": [
     {
+      "gender": "男",
+      "eyes": "黒",
+      "hair": "黒",
       "color": "#7FA9A5",
-      "id": "char-lqqkghtchvhjbmkoof23jhhkfm",
-      "label": "HO1",
+      "height": "184",
       "name": "竜胆　紡久",
       "reading": "りんどう　つむぐ",
+      "dislikes": "はっきりしないこと、煙草",
+      "crop": "{\"x\":-21.67,\"y\":25,\"z\":1.47}",
+      "label": "HO1",
+      "weight": "81",
+      "id": "char-lqqkghtchvhjbmkoof23jhhkfm",
       "image": "/images/紡久.png",
-      "crop": "{\"x\":-21.67,\"y\":25,\"z\":1.47}"
+      "likes": "真っ直ぐな人間、和食",
+      "birthday": "4月5日",
+      "job": "極道",
+      "stats": {
+        "STR": 18,
+        "CON": 13,
+        "POW": 12,
+        "DEX": 14,
+        "APP": 15,
+        "SIZ": 15,
+        "INT": 13,
+        "EDU": 17
+      },
+      "age": "24"
     },
     {
+      "gender": "男",
+      "eyes": "藤",
+      "hair": "桜鼠",
       "color": "#BAA7CC",
       "family": "177",
+      "origin": "京都",
+      "height": "177",
       "name": "御門　龍太郎",
       "reading": "みかど　りゅうたろう",
       "dislikes": "脳筋、味付けの濃いもの、辛いもの",
+      "crop": "{\"x\":-17.22,\"y\":39.17,\"z\":1.78}",
       "label": "HO2",
+      "weight": "62",
       "id": "char-my5sc677hbafvdakok23xr5u2a",
+      "image": "/images/龍太郎.png",
       "likes": "落語、ギャンブル",
       "birthday": "9/9",
+      "job": "落語家",
+      "songs": [
+        {
+          "title": "化け猫",
+          "artist": "キタニタツヤ",
+          "url": "https://www.youtube.com/watch?v=lMZUE2SvF_c"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xZdh1klOz9o&list=OLAK5uy_l4gU0RM5Amb0QNTJHRI8Zc9OZa5k0SA_E",
+          "artist": "福山雅治",
+          "title": "聖域"
+        }
+      ],
       "stats": {
         "STR": 8,
         "CON": 10,
@@ -33,9 +75,14 @@
         "EDU": 19
       },
       "age": "34",
-      "csUrl": "https://iachara.com/view/3062835",
-      "image": "/images/龍太郎.png",
-      "crop": "{\"x\":-20.83,\"y\":35.56,\"z\":1.78}"
+      "csUrl": "https://iachara.com/view/3062835"
+    }
+  ],
+  "songs": [
+    {
+      "artist": "Creepy Nuts",
+      "title": "堕天",
+      "url": "https://www.youtube.com/watch?v=HRL5Cp_mPeo"
     }
   ]
 }
