@@ -7,13 +7,18 @@
   "tone": "blue",
   "people": [
     {
+      "gender": "男",
+      "eyes": "空色",
+      "hair": "ハイトーンアッシュ",
       "color": "#73B8E2",
-      "family": "なし",
+      "family": "",
+      "origin": "日本",
       "height": "179cm",
       "name": "七海　奏詞",
       "reading": "ナナミ　ソウジ",
       "dislikes": "騒音",
       "label": "KPC",
+      "weight": "73",
       "id": "c",
       "image": "/images/七海.png",
       "quote": "",
@@ -61,6 +66,9 @@
       "csUrl": "https://iachara.com/view/13387783"
     },
     {
+      "gender": "男",
+      "eyes": "若葉色",
+      "hair": "黒",
       "color": "#A3BE6B",
       "family": "父、母、姉",
       "height": "173cm",
@@ -79,6 +87,11 @@
           "title": "神堕とし奇譚",
           "artist": "廉",
           "url": "https://youtu.be/D5rIyGZGom4?si=dUCY0l6AmoeCejvZ"
+        },
+        {
+          "title": "心拍数#0822",
+          "url": "https://youtu.be/q2PiY-5sTlE?si=Av5PWKaPL9VJ2JVu",
+          "artist": "蝶々P"
         }
       ],
       "stats": {
@@ -145,11 +158,6 @@
       "title": "Sorrows",
       "artist": "kingGnu",
       "url": "https://youtu.be/UbcFMUn_ldY?si=fOPGPE3U-Z3bKsEU"
-    },
-    {
-      "title": "心拍数#0822",
-      "artist": "蝶々P",
-      "url": "https://youtu.be/q2PiY-5sTlE?si=Av5PWKaPL9VJ2JVu"
     }
   ],
   "stills": [
