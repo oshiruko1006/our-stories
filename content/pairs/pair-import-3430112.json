@@ -4,16 +4,83 @@
   "yomi": "うろぼろすのけんか",
   "people": [
     {
-      "id": "char-import-3430112-1",
-      "label": "HO1",
+      "gender": "男",
+      "color": "#9E3D3F",
+      "height": "186",
       "name": "百合　義司",
+      "reading": "ゆり　よしかず",
+      "crop": "{\"x\":0.28,\"y\":-4.72,\"z\":0.86}",
+      "label": "HO1",
+      "id": "char-import-3430112-1",
+      "image": "/images/百合.png",
+      "birthday": "7月24日",
+      "job": "刑事",
+      "songs": [
+        {
+          "title": "PINK",
+          "artist": "キタニタツヤ",
+          "url": "https://www.youtube.com/watch?v=obsbr57gB6w"
+        },
+        {
+          "title": "フフィクサー",
+          "artist": "ぬゆり",
+          "url": "https://www.youtube.com/watch?v=srH34Tjjo9U"
+        },
+        {
+          "title": "本当は夜の端まで、",
+          "artist": "MAISONdes",
+          "url": "https://www.youtube.com/watch?v=sW8805PHK68"
+        }
+      ],
+      "stats": {
+        "STR": 10,
+        "CON": 15,
+        "POW": 14,
+        "DEX": 11,
+        "APP": 6,
+        "SIZ": 16,
+        "INT": 16,
+        "EDU": 16
+      },
+      "age": "35",
       "csUrl": "https://iachara.com/view/3430112"
     },
     {
-      "id": "char-import-3430112-2",
-      "label": "HO2",
+      "gender": "男",
+      "eyes": "竜胆色",
+      "hair": "黒",
+      "color": "#9079AD",
+      "height": "177",
       "name": "柴咲　竜胆",
+      "reading": "しばさき　りんどう",
+      "dislikes": "脂っこいもの",
+      "crop": "{\"x\":-3.06,\"y\":-11.11,\"z\":0.84}",
+      "label": "HO2",
+      "weight": "61",
+      "id": "char-import-3430112-2",
+      "image": "/images/竜胆.png",
+      "likes": "特に無し",
+      "birthday": "8月31日",
+      "job": "精神科医",
+      "stats": {
+        "STR": 8,
+        "CON": 8,
+        "POW": 18,
+        "DEX": 11,
+        "APP": 15,
+        "SIZ": 14,
+        "INT": 17,
+        "EDU": 15
+      },
+      "age": "28",
       "csUrl": "https://iachara.com/view/3430031"
+    }
+  ],
+  "songs": [
+    {
+      "url": "https://www.youtube.com/watch?v=Fj0gkJ3Thqc",
+      "title": "Placebo",
+      "artist": "蜂屋ななし"
     }
   ],
   "stills": [],
