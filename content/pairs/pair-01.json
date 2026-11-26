@@ -7,20 +7,26 @@
   "tone": null,
   "people": [
     {
+      "gender": "男",
+      "eyes": "金",
+      "hair": "千草",
       "color": "#3A8FB7",
       "family": "？？？",
-      "height": "194cm",
+      "origin": "？",
+      "height": "194",
       "name": "千草",
-      "reading": "チグサ",
+      "reading": "ちぐさ",
       "dislikes": "難しい話、研究者",
       "crop": "{\"x\":5,\"y\":26.67,\"z\":1.65}",
       "label": "HO1",
+      "weight": "95",
       "id": "a",
       "image": "/images/チグサ.png",
       "quote": "",
       "likes": "肉",
+      "skin": "褐色",
       "birthday": "？？？",
-      "job": "？？？",
+      "job": "用心棒",
       "stats": {
         "STR": 19,
         "CON": 20,
@@ -31,7 +37,7 @@
         "INT": 15,
         "EDU": 13
       },
-      "age": "？？？",
+      "age": "？",
       "csUrl": "https://iachara.com/view/5906934"
     },
     {
