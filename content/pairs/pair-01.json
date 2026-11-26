@@ -40,11 +40,17 @@
       "height": "167cm",
       "name": "楪",
       "reading": "ユズリハ",
+      "variants": [
+        {
+          "image": "/images/楪2.png",
+          "title": "傘無し"
+        }
+      ],
       "dislikes": "",
       "crop": "{\"x\":-3.33,\"y\":10.83,\"z\":1.77}",
       "label": "HO2",
       "id": "b",
-      "image": "/images/ユズリハ.png",
+      "image": "/images/楪1.webp",
       "quote": "",
       "likes": "",
       "birthday": "8月20日",
