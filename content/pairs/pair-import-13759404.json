@@ -1,0 +1,21 @@
+{
+  "id": "pair-import-13759404",
+  "scenario": "ようこそ！迷冥市役所都市伝説課へ！",
+  "yomi": "ようこそめいめいしやくしょとしでんせつかへ",
+  "people": [
+    {
+      "id": "char-import-13759404-1",
+      "label": "HO1",
+      "name": "蛇目",
+      "csUrl": "https://iachara.com/view/13759404"
+    },
+    {
+      "id": "char-import-13759404-2",
+      "label": "HO2",
+      "name": "狛",
+      "csUrl": "https://iachara.com/view/13758630"
+    }
+  ],
+  "stills": [],
+  "records": []
+}

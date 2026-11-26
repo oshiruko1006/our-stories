@@ -1,0 +1,21 @@
+{
+  "id": "pair-import-4557130",
+  "scenario": "愛罠蜂",
+  "yomi": "あいわなびー",
+  "people": [
+    {
+      "id": "char-import-4557130-1",
+      "label": "HO1",
+      "name": "天ヶ谷 宏介",
+      "csUrl": "https://iachara.com/view/4557130"
+    },
+    {
+      "id": "char-import-4557130-2",
+      "label": "HO2",
+      "name": "榊 雄一郎",
+      "csUrl": "https://iachara.com/view/5126965"
+    }
+  ],
+  "stills": [],
+  "records": []
+}

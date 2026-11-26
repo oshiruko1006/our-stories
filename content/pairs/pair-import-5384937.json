@@ -1,0 +1,21 @@
+{
+  "id": "pair-import-5384937",
+  "scenario": "同窓会",
+  "yomi": "どうそうかい",
+  "people": [
+    {
+      "id": "char-import-5384937-1",
+      "label": "KPC",
+      "name": "夏生 誉",
+      "csUrl": "https://iachara.com/view/5384937"
+    },
+    {
+      "id": "char-import-5384937-2",
+      "label": "PC",
+      "name": "小日向 涼宇",
+      "csUrl": "https://iachara.com/view/5210360"
+    }
+  ],
+  "stills": [],
+  "records": []
+}

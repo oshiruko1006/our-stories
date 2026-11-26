@@ -1,0 +1,21 @@
+{
+  "id": "pair-import-14664422",
+  "scenario": "怪物おにいちゃん",
+  "yomi": "かいぶつおにいちゃん",
+  "people": [
+    {
+      "id": "char-import-14664422-1",
+      "label": "KPC",
+      "name": "？？？",
+      "csUrl": ""
+    },
+    {
+      "id": "char-import-14664422-2",
+      "label": "PC",
+      "name": "安住　雅臣",
+      "csUrl": "https://iachara.com/view/14664422"
+    }
+  ],
+  "stills": [],
+  "records": []
+}

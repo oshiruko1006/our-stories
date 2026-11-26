@@ -1,0 +1,21 @@
+{
+  "id": "pair-import-4329269",
+  "scenario": "累卵",
+  "yomi": "るいらん",
+  "people": [
+    {
+      "id": "char-import-4329269-1",
+      "label": "HO1",
+      "name": "葵 柊奈",
+      "csUrl": "https://iachara.com/view/4329269"
+    },
+    {
+      "id": "char-import-4329269-2",
+      "label": "HO2",
+      "name": "紫焔 燻",
+      "csUrl": "https://iachara.com/view/12569212"
+    }
+  ],
+  "stills": [],
+  "records": []
+}
