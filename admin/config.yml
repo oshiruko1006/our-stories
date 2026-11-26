@@ -190,6 +190,58 @@ collections:
           name: csUrl
           widget: string
           required: false
+        - label: 個人のイメージソング
+          name: songs
+          widget: list
+          required: false
+          summary: '{{fields.title}}'
+          fields:
+          - label: 曲名
+            name: title
+            widget: string
+            required: true
+          - label: アーティスト名
+            name: artist
+            widget: string
+            required: false
+          - label: URL
+            name: url
+            widget: string
+            required: false
+          - label: 分類
+            name: category
+            widget: string
+            required: false
+          - label: コメント
+            name: note
+            widget: text
+            required: false
+      - label: 二人のイメージソング
+        name: songs
+        widget: list
+        required: false
+        summary: '{{fields.title}}'
+        fields:
+        - label: 曲名
+          name: title
+          widget: string
+          required: true
+        - label: アーティスト名
+          name: artist
+          widget: string
+          required: false
+        - label: URL
+          name: url
+          widget: string
+          required: false
+        - label: 分類
+          name: category
+          widget: string
+          required: false
+        - label: コメント
+          name: note
+          widget: text
+          required: false
       - label: スチル一覧
         name: stills
         widget: list
