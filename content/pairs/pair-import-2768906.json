@@ -11,8 +11,10 @@
       "height": "172",
       "name": "夜三　真白",
       "reading": "よるみ　ましろ",
+      "crop": "{\"x\":-6.39,\"y\":1.94,\"z\":1}",
       "label": "HO1",
       "id": "char-import-2768906-1",
+      "image": "/images/真白.png",
       "birthday": "12月13日",
       "job": "刑事",
       "stats": {
@@ -29,9 +31,31 @@
       "csUrl": "https://iachara.com/view/2768906"
     },
     {
-      "id": "char-import-2768906-2",
-      "label": "HO2",
+      "gender": "男",
+      "eyes": "山吹色",
+      "hair": "白",
+      "color": "#F8B500",
+      "height": "179",
       "name": "朝陽　磨墨",
+      "reading": "あさひ　ますみ",
+      "crop": "{\"x\":0.56,\"y\":0.28,\"z\":1}",
+      "label": "HO2",
+      "weight": "68",
+      "id": "char-import-2768906-2",
+      "image": "/images/磨墨.png",
+      "birthday": "7月17日",
+      "job": "刑事",
+      "stats": {
+        "STR": 11,
+        "CON": 13,
+        "POW": 12,
+        "DEX": 16,
+        "APP": 15,
+        "SIZ": 14,
+        "INT": 17,
+        "EDU": 14
+      },
+      "age": "29",
       "csUrl": "https://iachara.com/view/3428278"
     }
   ],
