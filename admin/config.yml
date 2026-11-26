@@ -62,7 +62,8 @@ collections:
     required: true
     min: 2
     max: 2
-    summary: '{{fields.name}}'
+    summary: '{{fields.label}} {{fields.name}}'
+    collapsed: true
     fields:
     - label: 識別ID（自動生成・変更不可）
       name: id
@@ -127,6 +128,7 @@ collections:
     - label: ステータス
       name: stats
       widget: object
+      collapsed: true
       required: false
       fields:
       - label: STR
