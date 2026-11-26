@@ -72,7 +72,7 @@ collections:
       use_b32_encoding: true
       read_only: true
       required: true
-    - label: 名前の前のラベル（HO名・PC・KPCからひとつ）
+    - label: 役割
       name: label
       widget: string
       required: false
