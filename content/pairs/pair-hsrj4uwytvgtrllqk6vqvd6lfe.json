@@ -8,7 +8,9 @@
       "id": "char-lqqkghtchvhjbmkoof23jhhkfm",
       "label": "HO1",
       "name": "竜胆　紡久",
-      "reading": "りんどう　つむぐ"
+      "reading": "りんどう　つむぐ",
+      "image": "/images/紡久.png",
+      "crop": "{\"x\":-21.67,\"y\":25,\"z\":1.47}"
     },
     {
       "color": "#BAA7CC",
@@ -31,7 +33,9 @@
         "EDU": 19
       },
       "age": "34",
-      "csUrl": "https://iachara.com/view/3062835"
+      "csUrl": "https://iachara.com/view/3062835",
+      "image": "/images/龍太郎.png",
+      "crop": "{\"x\":-20.83,\"y\":35.56,\"z\":1.78}"
     }
   ]
 }
