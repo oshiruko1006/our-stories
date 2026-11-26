@@ -2,7 +2,7 @@ const test=require('node:test');const assert=require('node:assert/strict');const
 const read=p=>fs.readFileSync(p,'utf8');
 const original=read('admin/index.html'),html=read('admin-theme-test/index.html'),theme=read('admin-theme-test/theme.js'),css=read('admin-theme-test/cms-theme.css'),adapt=read('admin-theme-test/cms-theme.js');
 const injected="<link rel=\"cms-config-url\" type=\"text/yaml\" href=\"/admin/config.yml\">\n<script src=\"/admin-theme-test/theme.js?v=20261127\"></script>\n<link rel=\"stylesheet\" href=\"/admin-theme-test/theme.css?v=20261127\">\n<link rel=\"stylesheet\" href=\"/admin-theme-test/cms-theme.css?v=20261127\">\n<script defer src=\"/admin-theme-test/cms-theme.js?v=20261127\"></script>";
-test('test page preserves original CMS unchanged',()=>{assert.equal(html.replace(injected,''),original);assert.match(html,/decap-cms@3\.18\.0/);});
+test('test page preserves original CMS unchanged',()=>{assert.equal(html,original);assert.match(html,/decap-cms@3\.18\.0/);});
 test('test page explicitly reuses the production configuration',()=>{assert.match(html,/href="\/admin\/config\.yml"/);const c=read('admin/config.yml');assert.match(c,/repo: oshiruko1006\/our-stories/);assert.match(c,/branch: main/);});
 test('common theme preference and early initialization',()=>{assert.match(theme,/our-stories-theme/);assert.ok(html.indexOf('theme.js')<html.indexOf('decap-cms@'));assert.match(theme,/localStorage/);assert.match(theme,/prefers-color-scheme: dark/);assert.match(theme,/addEventListener\('storage'/);assert.doesNotMatch(theme,/location\.reload\(|window\.location\s*=/);});
 test('all theme scripts parse',()=>{new vm.Script(theme);new vm.Script(adapt);});
