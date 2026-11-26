@@ -72,16 +72,16 @@ collections:
       use_b32_encoding: true
       read_only: true
       required: true
+    - label: 名前の前のラベル（HO名・PC・KPCからひとつ）
+      name: label
+      widget: string
+      required: false
     - label: 名前
       name: name
       widget: string
       required: true
     - label: フリガナ
       name: reading
-      widget: string
-      required: false
-    - label: 名前の前のラベル（HO名・PC・KPCからひとつ）
-      name: label
       widget: string
       required: false
     - label: イメージカラー（#RRGGBB）
