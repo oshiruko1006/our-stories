@@ -131,6 +131,30 @@ collections:
       name: job
       widget: string
       required: false
+    - label: 性別
+      name: gender
+      widget: string
+      required: false
+    - label: 体重
+      name: weight
+      widget: string
+      required: false
+    - label: 出身
+      name: origin
+      widget: string
+      required: false
+    - label: 髪の色
+      name: hair
+      widget: string
+      required: false
+    - label: 瞳の色
+      name: eyes
+      widget: string
+      required: false
+    - label: 肌の色
+      name: skin
+      widget: string
+      required: false
     - label: 家族構成
       name: family
       widget: string
