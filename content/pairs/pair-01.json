@@ -25,7 +25,7 @@
       "quote": "",
       "likes": "肉",
       "skin": "褐色",
-      "birthday": "？？？",
+      "birthday": "？",
       "job": "用心棒",
       "stats": {
         "STR": 19,
@@ -41,6 +41,8 @@
       "csUrl": "https://iachara.com/view/5906934"
     },
     {
+      "gender": "男",
+      "hair": "朱",
       "color": "#FF5722",
       "family": "妹",
       "height": "167cm",
@@ -55,6 +57,7 @@
       "dislikes": "",
       "crop": "{\"x\":-9.72,\"y\":15.56,\"z\":1.13}",
       "label": "HO2",
+      "weight": "58",
       "id": "b",
       "image": "/images/楪_傘有.webp",
       "quote": "",
