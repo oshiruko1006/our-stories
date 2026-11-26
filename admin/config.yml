@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: oshiruko1006/our-stories
-  branch: cms-pair-migration
+  branch: main
   base_url: https://our-stories-oauth.kocco-and-chiri.workers.dev
   auth_endpoint: auth
 media_folder: images
