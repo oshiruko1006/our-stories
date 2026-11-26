@@ -1,0 +1,139 @@
+{
+  "records": [
+    {
+      "date": "2026-01-10",
+      "scenario": "共感覚",
+      "kpc": "七海　奏詞",
+      "pc": "柚木　想",
+      "end": "END　1"
+    },
+    {
+      "scenario": "君がいないと息ができない",
+      "date": "2026-02-23",
+      "kpc": "七海　奏詞",
+      "pc": "柚木　想",
+      "end": "END　1"
+    },
+    {
+      "scenario": "RISTORANTE MOONWALK",
+      "date": "2026-05-06",
+      "kpc": "-",
+      "pc": "柚木　想",
+      "end": "クリア"
+    },
+    {
+      "scenario": "うえからでられない",
+      "date": "2026-06-06",
+      "kpc": "七海　奏詞",
+      "pc": "柚木　想",
+      "end": "うえからでられない"
+    },
+    {
+      "scenario": "夏に逃げ水",
+      "date": "2026-08-29",
+      "kpc": "七海　奏詞",
+      "pc": "柚木　想",
+      "end": "同じ蓮の花"
+    },
+    {
+      "scenario": "墓前に陽炎",
+      "date": "2026-09-28",
+      "kpc": "柚木　想",
+      "pc": "七海　奏詞",
+      "end": "END　A"
+    }
+  ],
+  "stills": [
+    {
+      "title": "共感覚1",
+      "image": "/images/共感覚1.png"
+    },
+    {
+      "image": "/images/共感覚2.png",
+      "title": "共感覚2"
+    },
+    {
+      "title": "共感覚3",
+      "image": "/images/共感覚3.png"
+    },
+    {
+      "title": "リズムン",
+      "image": "/images/リズムン.png"
+    },
+    {
+      "title": "うえからでられない",
+      "image": "/images/うえからでられない.png"
+    },
+    {
+      "title": "夏に逃げ水",
+      "image": "/images/夏に逃げ水.png"
+    },
+    {
+      "title": "墓前に陽炎",
+      "image": "/images/墓前に陽炎.png"
+    }
+  ],
+  "people": [
+    {
+      "color": "#73B8E2",
+      "family": "なし",
+      "height": "179cm",
+      "name": "七海　奏詞",
+      "reading": "ナナミ　ソウジ",
+      "dislikes": "騒音",
+      "label": "KPC",
+      "id": "c",
+      "image": "/images/七海.png",
+      "quote": "",
+      "likes": "音楽を聴くこと、作詞、コーヒー",
+      "birthday": "1月21日",
+      "job": "営業職",
+      "stats": {
+        "STR": 13,
+        "CON": 14,
+        "POW": 15,
+        "DEX": 15,
+        "APP": 16,
+        "SIZ": 14,
+        "INT": 16,
+        "EDU": 15
+      },
+      "age": "28歳",
+      "csUrl": "https://iachara.com/view/13387783"
+    },
+    {
+      "color": "#A3BE6B",
+      "family": "父、母、姉",
+      "height": "173cm",
+      "name": "柚木　想",
+      "reading": "ユノキ　ソウ",
+      "dislikes": "ラノベ、刺激の強い食べ物(辛いものとか酸っぱいもの)",
+      "label": "PC",
+      "id": "d",
+      "image": "/images/柚木.png",
+      "quote": "",
+      "likes": "ミステリー小説、パン屋のサンドイッチ",
+      "birthday": "8月15日",
+      "job": "編集者",
+      "stats": {
+        "STR": 12,
+        "CON": 12,
+        "POW": 14,
+        "DEX": 12,
+        "APP": 14,
+        "SIZ": 12,
+        "INT": 13,
+        "EDU": 17
+      },
+      "age": "28歳",
+      "csUrl": "https://iachara.com/view/12256482"
+    }
+  ],
+  "scenario": "共感覚",
+  "tone": "blue",
+  "yomi": "きょうかんかく",
+  "pair": "七海×柚木",
+  "id": "pair-02",
+  "image": "/images/共感覚パネル.png",
+  "description": "「共感なんて、覚えないで」"
+}
