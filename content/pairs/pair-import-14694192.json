@@ -1,0 +1,21 @@
+{
+  "id": "pair-import-14694192",
+  "scenario": "鰯と柊",
+  "yomi": "いわしとひいらぎ",
+  "people": [
+    {
+      "id": "char-import-14694192-1",
+      "label": "HO1",
+      "name": "文　撫子",
+      "csUrl": "https://iachara.com/view/14694192"
+    },
+    {
+      "id": "char-import-14694192-2",
+      "label": "HO2",
+      "name": "聖　菖蒲",
+      "csUrl": "https://iachara.com/view/14692908"
+    }
+  ],
+  "stills": [],
+  "records": []
+}

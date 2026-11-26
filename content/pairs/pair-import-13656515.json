@@ -1,0 +1,21 @@
+{
+  "id": "pair-import-13656515",
+  "scenario": "NapFrappe",
+  "yomi": "なっぷふらっぺ",
+  "people": [
+    {
+      "id": "char-import-13656515-1",
+      "label": "HO1",
+      "name": "光野 那由多",
+      "csUrl": "https://iachara.com/view/13656515"
+    },
+    {
+      "id": "char-import-13656515-2",
+      "label": "HO2",
+      "name": "Luan・Ward",
+      "csUrl": "https://iachara.com/view/13657425"
+    }
+  ],
+  "stills": [],
+  "records": []
+}

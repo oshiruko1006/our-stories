@@ -1,0 +1,21 @@
+{
+  "id": "pair-import-3430112",
+  "scenario": "ウロボロスの献花",
+  "yomi": "うろぼろすのけんか",
+  "people": [
+    {
+      "id": "char-import-3430112-1",
+      "label": "HO1",
+      "name": "百合 義司",
+      "csUrl": "https://iachara.com/view/3430112"
+    },
+    {
+      "id": "char-import-3430112-2",
+      "label": "HO2",
+      "name": "柴咲 竜胆",
+      "csUrl": "https://iachara.com/view/3430031"
+    }
+  ],
+  "stills": [],
+  "records": []
+}

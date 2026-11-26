@@ -1,0 +1,21 @@
+{
+  "id": "pair-import-6763154",
+  "scenario": "プルガトリウムの夜",
+  "yomi": "ぷるがとりうむのよる",
+  "people": [
+    {
+      "id": "char-import-6763154-1",
+      "label": "HO1",
+      "name": "神々廻 慶",
+      "csUrl": "https://iachara.com/view/6763154"
+    },
+    {
+      "id": "char-import-6763154-2",
+      "label": "HO2",
+      "name": "鷲尾 龍迅",
+      "csUrl": "https://iachara.com/view/6874084"
+    }
+  ],
+  "stills": [],
+  "records": []
+}
