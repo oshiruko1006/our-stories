@@ -287,7 +287,7 @@
 #nc-root [data-testid^="styled-list-item-top-bar-"]{background:#e5e0d8!important}
 @media(max-width:799px){#nc-root [data-testid^="object-control-"]{padding-inline:5px!important}}
 </style><script>
-(()=>{const groups=[['基本情報',['名前','フリガナ','名前の前のラベル']],['立ち絵・イメージカラー',['イメージカラー','立ち絵']],['プロフィール',['一言セリフ','誕生日','年齢','身長','職業','家族構成','好き','苦手']],['ステータス・キャラクターシート',['ステータス','いあきゃら公開CS URL']],['イメージソング',['個人のイメージソング']]];
+(()=>{const groups=[['基本情報',['名前','フリガナ','役割']],['立ち絵・イメージカラー',['イメージカラー','立ち絵']],['プロフィール',['一言セリフ','誕生日','年齢','身長','職業','家族構成','好き','苦手']],['ステータス・キャラクターシート',['ステータス','いあきゃら公開CS URL']],['イメージソング',['個人のイメージソング']]];
 const label=e=>e.querySelector(':scope > div > label')?.textContent?.trim()||'';
 const matches=(s,k)=>s===k||s.startsWith(k+'（')||s.startsWith(k+' (')||s.startsWith(k+' ');
 function run(){for(const e of document.querySelectorAll('#nc-root div[aria-label]')){if(label(e).startsWith('識別ID（自動生成'))e.classList.add('os-id-hidden');}
