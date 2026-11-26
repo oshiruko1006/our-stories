@@ -1,35 +1,11 @@
 {
-  "records": [],
-  "stills": [],
+  "id": "pair-01",
+  "scenario": "野狗子と薬師",
+  "yomi": "やくしとくすし",
+  "description": "息をし続けるために、明日を迎えるために、世界を壊さないために。\nそのためにあなたは、犬と散歩をする。",
+  "image": "/images/再生した日本と富士山の大絶景.png",
+  "tone": null,
   "people": [
-    {
-      "color": "#FF5722",
-      "family": "妹",
-      "height": "167cm",
-      "name": "楪",
-      "reading": "ユズリハ",
-      "dislikes": "",
-      "label": "HO2",
-      "id": "b",
-      "image": "/images/ユズリハ.png",
-      "quote": "",
-      "likes": "",
-      "birthday": "8月20日",
-      "job": "薬師",
-      "stats": {
-        "STR": 10,
-        "CON": 16,
-        "POW": 16,
-        "DEX": 16,
-        "APP": 13,
-        "SIZ": 11,
-        "INT": 14,
-        "EDU": 17
-      },
-      "age": "30歳",
-      "csUrl": "https://iachara.com/view/5628120",
-      "crop": "{\"x\":-3.33,\"y\":10.83,\"z\":1.77}"
-    },
     {
       "color": "#3A8FB7",
       "family": "？？？",
@@ -37,6 +13,7 @@
       "name": "千草",
       "reading": "チグサ",
       "dislikes": "難しい話、研究者",
+      "crop": "{\"x\":5,\"y\":26.67,\"z\":1.65}",
       "label": "HO1",
       "id": "a",
       "image": "/images/チグサ.png",
@@ -55,15 +32,38 @@
         "EDU": 13
       },
       "age": "？？？",
-      "csUrl": "https://iachara.com/view/5906934",
-      "crop": "{\"x\":4.44,\"y\":44.17,\"z\":2.1}"
+      "csUrl": "https://iachara.com/view/5906934"
+    },
+    {
+      "color": "#FF5722",
+      "family": "妹",
+      "height": "167cm",
+      "name": "楪",
+      "reading": "ユズリハ",
+      "dislikes": "",
+      "crop": "{\"x\":0,\"y\":0,\"z\":1}",
+      "label": "HO2",
+      "id": "b",
+      "image": "/images/楪1.png",
+      "quote": "",
+      "likes": "",
+      "birthday": "8月20日",
+      "job": "薬師",
+      "stats": {
+        "STR": 10,
+        "CON": 16,
+        "POW": 16,
+        "DEX": 16,
+        "APP": 13,
+        "SIZ": 11,
+        "INT": 14,
+        "EDU": 17
+      },
+      "age": "30歳",
+      "csUrl": "https://iachara.com/view/5628120"
     }
   ],
-  "scenario": "野狗子と薬師",
-  "tone": null,
-  "yomi": "やくしとくすし",
-  "pair": "千草×楪",
-  "id": "pair-01",
-  "image": "/images/再生した日本と富士山の大絶景.png",
-  "description": "息をし続けるために、明日を迎えるために、世界を壊さないために。\nそのためにあなたは、犬と散歩をする。"
+  "stills": [],
+  "records": [],
+  "pair": "千草×楪"
 }
