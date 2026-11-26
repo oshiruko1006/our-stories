@@ -296,4 +296,19 @@ for(const [name,keys] of groups){const items=fields.filter(e=>keys.some(k=>match
 }}
 let queued=false;const observer=new MutationObserver(()=>{if(!queued){queued=true;requestAnimationFrame(()=>{queued=false;run()})}});observer.observe(document.body,{childList:true,subtree:true});run();
 })();
+</script><style>
+#nc-root .os-import{padding:10px;border:1px solid #d6d0c8;border-radius:6px;margin:8px 0;background:#faf8f4}
+#nc-root .os-import textarea{width:100%;box-sizing:border-box;min-height:80px;padding:8px}
+#nc-root .os-import button{padding:8px 12px;background:#465d50;color:white;border:0;border-radius:5px;margin:6px 0}
+</style><script>
+(()=>{
+const keys=['STR','CON','POW','DEX','APP','SIZ','INT','EDU'];
+function parse(raw){const obj=JSON.parse(raw);const d=obj.data||obj;if(!Array.isArray(d.params))throw Error('駒出力のJSONを貼り付けてください。');const out={};for(const p of d.params){const k=String(p.label||'').trim().toUpperCase();const v=String(p.value??'').trim();if(keys.includes(k)&&/^\d{1,3}$/.test(v))out[k]=Number(v);}if(!Object.keys(out).length)throw Error('能力値が見つかりません。');return out;}
+const label=e=>e.querySelector(':scope > div > label')?.textContent?.trim()||'';
+function run(){for(const field of document.querySelectorAll('#nc-root div[aria-label]')){if(!/^ステータス(?:$|[（ (])/.test(label(field))||field.querySelector('.os-import'))continue;
+const box=document.createElement('div');box.className='os-import';const help=document.createElement('p');help.textContent='いあきゃらのココフォリア駒出力を貼り付け（能力値のみ）';const area=document.createElement('textarea');area.placeholder='駒出力のJSON';area.setAttribute('aria-label','ココフォリア駒出力');const btn=document.createElement('button');btn.type='button';btn.textContent='能力値を取り込む';const msg=document.createElement('p');msg.setAttribute('role','status');box.append(help,area,btn,msg);field.append(box);
+btn.onclick=()=>{try{const vals=parse(area.value);const inputs={};for(const e of field.querySelectorAll('div[aria-label]')){const k=label(e).split(/[（ (]/)[0];const input=e.querySelector('input[type=number],input[type=text],input:not([type])');if(keys.includes(k)&&input)inputs[k]=input;}const found=Object.keys(vals);if(found.some(k=>!inputs[k]))throw Error('先にステータス欄を展開してください。');if(!window.confirm(found.map(k=>k+' '+vals[k]).join(' / ')+' を反映しますか？'))return;for(const k of found){const input=inputs[k];Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set.call(input,String(vals[k]));input.dispatchEvent(new Event('input',{bubbles:true}));input.dispatchEvent(new Event('change',{bubbles:true}));}area.value='';msg.textContent=found.length+'項目を入力しました。数値を確認して保存してください。';}catch(e){msg.textContent=e.message||'取り込めませんでした。';}};
+}}
+let pending=false;new MutationObserver(()=>{if(!pending){pending=true;requestAnimationFrame(()=>{pending=false;run()})}}).observe(document.body,{childList:true,subtree:true});run();
+})();
 </script></body></html>
