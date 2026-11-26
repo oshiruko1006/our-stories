@@ -80,7 +80,7 @@ collections:
       name: name
       widget: string
       required: true
-    - label: フリガナ
+    - label: ふりがな
       name: reading
       widget: string
       required: false
