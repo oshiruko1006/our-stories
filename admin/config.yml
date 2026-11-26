@@ -310,7 +310,7 @@ collections:
     - label: 日付
       name: date
       widget: datetime
-      required: true
+      required: false
       format: YYYY-MM-DD
       date_format: YYYY-MM-DD
       time_format: false
