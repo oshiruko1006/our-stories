@@ -40,11 +40,17 @@
       "height": "167cm",
       "name": "楪",
       "reading": "ユズリハ",
+      "variants": [
+        {
+          "image": "/images/楪_傘無.webp",
+          "title": "傘無し"
+        }
+      ],
       "dislikes": "",
-      "crop": "{\"x\":-7.5,\"y\":8.89,\"z\":1.13}",
+      "crop": "{\"x\":-9.72,\"y\":15.56,\"z\":1.13}",
       "label": "HO2",
       "id": "b",
-      "image": "/images/楪1.png",
+      "image": "/images/楪_傘有.webp",
       "quote": "",
       "likes": "",
       "birthday": "8月20日",
@@ -60,13 +66,7 @@
         "EDU": 17
       },
       "age": "30歳",
-      "csUrl": "https://iachara.com/view/5628120",
-      "variants": [
-        {
-          "image": "/images/楪2.png",
-          "title": "傘無し"
-        }
-      ]
+      "csUrl": "https://iachara.com/view/5628120"
     }
   ],
   "stills": [],
