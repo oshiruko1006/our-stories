@@ -17,6 +17,13 @@
       "image": "/images/真白.png",
       "birthday": "12月13日",
       "job": "刑事",
+      "songs": [
+        {
+          "title": "カムパネルラ",
+          "artist": "米津玄師",
+          "url": "https://www.youtube.com/watch?v=XeFQJ6-XoD0"
+        }
+      ],
       "stats": {
         "STR": 10,
         "CON": 10,
@@ -48,6 +55,18 @@
       "skin": "褐色",
       "birthday": "7月17日",
       "job": "刑事",
+      "songs": [
+        {
+          "title": "IMAGINARY LIKE THE JUSTICE",
+          "artist": "ナナホシ管弦楽団",
+          "url": "https://www.youtube.com/watch?v=_Av1NkJQkkU"
+        },
+        {
+          "title": "心臓",
+          "artist": "TOOBOE",
+          "url": "https://www.youtube.com/watch?v=pjkOB8rXs6E"
+        }
+      ],
       "stats": {
         "STR": 11,
         "CON": 13,
@@ -60,6 +79,23 @@
       },
       "age": "29",
       "csUrl": "https://iachara.com/view/3428278"
+    }
+  ],
+  "songs": [
+    {
+      "title": "午夜の待ち合わせ",
+      "artist": " Hello Sleepwalkers",
+      "url": "https://www.youtube.com/watch?v=J69oCCM1EcI"
+    },
+    {
+      "title": " 逃走劇",
+      "url": "https://www.youtube.com/watch?v=9hzCI5TJEmQ",
+      "artist": "キタニタツヤ"
+    },
+    {
+      "title": "スカー",
+      "url": "https://www.youtube.com/watch?v=pb_fwnVamdI",
+      "artist": "キタニタツヤ"
     }
   ],
   "stills": [],
