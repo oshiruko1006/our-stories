@@ -1,10 +1,14 @@
 {
+  "id": "pair-03",
   "scenario": "ハイフェッツをなぞる病",
   "yomi": "はいふぇっつをなぞるやまい",
   "description": "これは天才と秀才の物語である。",
   "image": "/images/henrik-donnestad-t2sai-aqipi-unsplash.jpg",
   "people": [
     {
+      "gender": "男",
+      "eyes": "黒",
+      "hair": "高麗納戸",
       "color": "#2B4D51",
       "family": "父、母",
       "height": "183cm",
@@ -12,6 +16,7 @@
       "reading": "イスズ　レイ",
       "dislikes": "我慢、肉、漬物、声が大きい（怒鳴ってくる）人",
       "label": "HO天才",
+      "weight": "61",
       "id": "f",
       "image": "/images/五十鈴.png",
       "quote": "「仕方ないじゃん、できちゃったんだからさ」",
@@ -32,6 +37,9 @@
       "csUrl": "https://iachara.com/view/6142970"
     },
     {
+      "gender": "男",
+      "eyes": "黒",
+      "hair": "茶",
       "color": "#AE5765",
       "family": "父、母",
       "height": "175cm",
@@ -104,6 +112,5 @@
       "pc": "村瀬　肇",
       "end": ""
     }
-  ],
-  "id": "pair-03"
+  ]
 }
