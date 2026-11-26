@@ -8,7 +8,9 @@
       "id": "char-lqqkghtchvhjbmkoof23jhhkfm",
       "label": "HO1",
       "name": "竜胆　紡久",
-      "reading": "りんどう　つむぐ"
+      "reading": "りんどう　つむぐ",
+      "image": "/images/紡久.png",
+      "crop": "{\"x\":-21.67,\"y\":25,\"z\":1.47}"
     },
     {
       "color": "#BAA7CC",
@@ -16,6 +18,7 @@
       "name": "御門　龍太郎",
       "reading": "みかど　りゅうたろう",
       "dislikes": "脳筋、味付けの濃いもの、辛いもの",
+      "crop": "{\"x\":-20.83,\"y\":35.56,\"z\":1.78}",
       "label": "HO2",
       "id": "char-my5sc677hbafvdakok23xr5u2a",
       "image": "/images/龍太郎.png",
