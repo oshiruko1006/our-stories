@@ -27,7 +27,8 @@
         "EDU": 17
       },
       "age": "30歳",
-      "csUrl": "https://iachara.com/view/5628120"
+      "csUrl": "https://iachara.com/view/5628120",
+      "crop": "{\"x\":-3.33,\"y\":10.83,\"z\":1.77}"
     },
     {
       "color": "#3A8FB7",
@@ -54,7 +55,8 @@
         "EDU": 13
       },
       "age": "？？？",
-      "csUrl": "https://iachara.com/view/5906934"
+      "csUrl": "https://iachara.com/view/5906934",
+      "crop": "{\"x\":4.44,\"y\":44.17,\"z\":2.1}"
     }
   ],
   "scenario": "野狗子と薬師",
