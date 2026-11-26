@@ -1,4 +1,187 @@
 {
+  "id": "pair-02",
+  "scenario": "共感覚",
+  "yomi": "きょうかんかく",
+  "description": "「共感なんて、覚えないで」",
+  "image": "/images/共感覚パネル.png",
+  "tone": "blue",
+  "people": [
+    {
+      "color": "#73B8E2",
+      "family": "なし",
+      "height": "179cm",
+      "name": "七海　奏詞",
+      "reading": "ナナミ　ソウジ",
+      "dislikes": "騒音",
+      "label": "KPC",
+      "id": "c",
+      "image": "/images/七海.png",
+      "quote": "",
+      "likes": "音楽を聴くこと、作詞、コーヒー",
+      "birthday": "1月21日",
+      "job": "営業職",
+      "songs": [
+        {
+          "title": "わたしは禁忌",
+          "artist": "いよわ",
+          "url": "https://youtu.be/fJCjlfy7j14?si=enY4C0EXoKFsmnW2"
+        },
+        {
+          "title": "自堕落",
+          "artist": "こめだわら",
+          "url": "https://youtu.be/zQ58S43lkP0?si=wlremzuLl5vhoret"
+        },
+        {
+          "title": "1000年生きてる",
+          "artist": "いよわ",
+          "url": "https://youtu.be/3em-J9yYPAo?si=HB8SWp8Je6JIoeC5"
+        },
+        {
+          "title": "月に吠える",
+          "artist": "ヨルシカ",
+          "url": "https://youtu.be/wCN9WliV-ew?si=SjJtnMs_q7yrlyRj"
+        },
+        {
+          "title": "セレナーデ",
+          "artist": "なとり",
+          "url": "https://youtu.be/gNg2Qw5R-Q4?si=ikXLbJVVBlh6iuGI"
+        }
+      ],
+      "stats": {
+        "STR": 13,
+        "CON": 14,
+        "POW": 15,
+        "DEX": 15,
+        "APP": 16,
+        "SIZ": 14,
+        "INT": 16,
+        "EDU": 15
+      },
+      "age": "28歳",
+      "csUrl": "https://iachara.com/view/13387783"
+    },
+    {
+      "color": "#A3BE6B",
+      "family": "父、母、姉",
+      "height": "173cm",
+      "name": "柚木　想",
+      "reading": "ユノキ　ソウ",
+      "dislikes": "ラノベ、刺激の強い食べ物(辛いものとか酸っぱいもの)",
+      "label": "PC",
+      "id": "d",
+      "image": "/images/柚木.png",
+      "quote": "",
+      "likes": "ミステリー小説、パン屋のサンドイッチ",
+      "birthday": "8月15日",
+      "job": "編集者",
+      "songs": [
+        {
+          "title": "神堕とし奇譚",
+          "artist": "廉",
+          "url": "https://youtu.be/D5rIyGZGom4?si=dUCY0l6AmoeCejvZ"
+        }
+      ],
+      "stats": {
+        "STR": 12,
+        "CON": 12,
+        "POW": 14,
+        "DEX": 12,
+        "APP": 14,
+        "SIZ": 12,
+        "INT": 13,
+        "EDU": 17
+      },
+      "age": "28歳",
+      "csUrl": "https://iachara.com/view/12256482"
+    }
+  ],
+  "songs": [
+    {
+      "title": "共感覚おばけ",
+      "artist": "ササノマリイ",
+      "url": "https://youtu.be/gwyrPARCd8g?si=pqAVX7LxrLUnYgbh"
+    },
+    {
+      "title": "SLEEPWALK",
+      "artist": "ヒトリエ",
+      "url": "https://youtu.be/vZQsQRLEyVQ?si=CxAp4PmAZPgqsxcY"
+    },
+    {
+      "title": "うわがき",
+      "artist": "いよわ",
+      "url": "https://youtu.be/T3Son6CzPUk?si=UMecKzbKy7EV_igd"
+    },
+    {
+      "title": "カメレオン",
+      "artist": "kingGnu",
+      "url": "https://youtu.be/BOrdMrh4uKg?si=ge-7T1lm5LtPA_UR"
+    },
+    {
+      "title": "ワンツーミーハー",
+      "artist": "ヒトリエ",
+      "url": "https://youtu.be/v76UQzws0hE?si=fqjl4sQ13_dcGx8T"
+    },
+    {
+      "title": "目眩",
+      "artist": "ヒトリエ",
+      "url": "https://youtu.be/4qGwuVv-hg4?si=zpuVM7ITI5fvk_5P"
+    },
+    {
+      "title": "フィクションブルー",
+      "artist": "Ayase",
+      "url": "https://youtu.be/tqR74vsc6Mc?si=mnufbPPvxWPrAa9q"
+    },
+    {
+      "title": "Pretender",
+      "artist": "Official髭男dism",
+      "url": "https://youtu.be/TQ8WlA2GXbk?si=yzog0GhDd_4b0c1K"
+    },
+    {
+      "title": "ノーダウト",
+      "artist": "Official髭男dism",
+      "url": "https://youtu.be/EHw005ZqCXk?si=SYbaYPMcBQk_tyou"
+    },
+    {
+      "title": "Sorrows",
+      "artist": "kingGnu",
+      "url": "https://youtu.be/UbcFMUn_ldY?si=fOPGPE3U-Z3bKsEU"
+    },
+    {
+      "title": "心拍数#0822",
+      "artist": "蝶々P",
+      "url": "https://youtu.be/q2PiY-5sTlE?si=Av5PWKaPL9VJ2JVu"
+    }
+  ],
+  "stills": [
+    {
+      "title": "共感覚1",
+      "image": "/images/共感覚1.png"
+    },
+    {
+      "image": "/images/共感覚2.png",
+      "title": "共感覚2"
+    },
+    {
+      "title": "共感覚3",
+      "image": "/images/共感覚3.png"
+    },
+    {
+      "title": "リズムン",
+      "image": "/images/リズムン.png"
+    },
+    {
+      "title": "うえからでられない",
+      "image": "/images/うえからでられない.png"
+    },
+    {
+      "title": "夏に逃げ水",
+      "image": "/images/夏に逃げ水.png"
+    },
+    {
+      "title": "墓前に陽炎",
+      "image": "/images/墓前に陽炎.png"
+    }
+  ],
   "records": [
     {
       "date": "2026-01-10",
@@ -43,97 +226,5 @@
       "end": "END　A"
     }
   ],
-  "stills": [
-    {
-      "title": "共感覚1",
-      "image": "/images/共感覚1.png"
-    },
-    {
-      "image": "/images/共感覚2.png",
-      "title": "共感覚2"
-    },
-    {
-      "title": "共感覚3",
-      "image": "/images/共感覚3.png"
-    },
-    {
-      "title": "リズムン",
-      "image": "/images/リズムン.png"
-    },
-    {
-      "title": "うえからでられない",
-      "image": "/images/うえからでられない.png"
-    },
-    {
-      "title": "夏に逃げ水",
-      "image": "/images/夏に逃げ水.png"
-    },
-    {
-      "title": "墓前に陽炎",
-      "image": "/images/墓前に陽炎.png"
-    }
-  ],
-  "people": [
-    {
-      "color": "#73B8E2",
-      "family": "なし",
-      "height": "179cm",
-      "name": "七海　奏詞",
-      "reading": "ナナミ　ソウジ",
-      "dislikes": "騒音",
-      "label": "KPC",
-      "id": "c",
-      "image": "/images/七海.png",
-      "quote": "",
-      "likes": "音楽を聴くこと、作詞、コーヒー",
-      "birthday": "1月21日",
-      "job": "営業職",
-      "stats": {
-        "STR": 13,
-        "CON": 14,
-        "POW": 15,
-        "DEX": 15,
-        "APP": 16,
-        "SIZ": 14,
-        "INT": 16,
-        "EDU": 15
-      },
-      "age": "28歳",
-      "csUrl": "https://iachara.com/view/13387783"
-    },
-    {
-      "color": "#A3BE6B",
-      "family": "父、母、姉",
-      "height": "173cm",
-      "name": "柚木　想",
-      "reading": "ユノキ　ソウ",
-      "dislikes": "ラノベ、刺激の強い食べ物(辛いものとか酸っぱいもの)",
-      "label": "PC",
-      "id": "d",
-      "image": "/images/柚木.png",
-      "quote": "",
-      "likes": "ミステリー小説、パン屋のサンドイッチ",
-      "birthday": "8月15日",
-      "job": "編集者",
-      "stats": {
-        "STR": 12,
-        "CON": 12,
-        "POW": 14,
-        "DEX": 12,
-        "APP": 14,
-        "SIZ": 12,
-        "INT": 13,
-        "EDU": 17
-      },
-      "age": "28歳",
-      "csUrl": "https://iachara.com/view/12256482"
-    }
-  ],
-  "scenario": "共感覚",
-  "tone": "blue",
-  "yomi": "きょうかんかく",
-  "pair": "七海×柚木",
-  "id": "pair-02",
-  "image": "/images/共感覚パネル.png",
-  "description": "「共感なんて、覚えないで」"
+  "pair": "七海×柚木"
 }
