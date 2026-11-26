@@ -1,0 +1,340 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1,interactive-widget=resizes-content"><title>Our Stories | CMS</title><style>/* Test-only: Decap 3.18 responsive editor. Preserve desktop and all native actions. */
+@media (max-width:767px), (pointer:coarse) and (max-width:799px) {
+  #nc-root .vanilla-responsive-shell {
+    width:100%!important;min-width:0!important;max-width:100%!important;
+    box-sizing:border-box!important;padding-top:var(--vanilla-responsive-header-height,104px)!important;
+    height:var(--vanilla-cms-viewport-bottom,100dvh)!important;
+  }
+  #nc-root .vanilla-responsive-header {
+    display:grid!important;grid-template-columns:minmax(0,1fr) auto;
+    grid-template-areas:"back meta" "actions actions";align-items:center;
+    width:100%!important;min-width:0!important;max-width:100%!important;
+    height:auto!important;min-height:0!important;box-sizing:border-box;
+    padding:4px 8px 6px;gap:4px 6px;
+  }
+  #nc-root .vanilla-responsive-header>a:first-child {
+    grid-area:back;min-width:0;height:auto!important;min-height:40px;
+    padding:4px!important;border:0!important;gap:5px;overflow-wrap:anywhere;
+  }
+  #nc-root .vanilla-responsive-header>a:first-child>div:first-child{margin-right:3px!important;flex:none}
+  #nc-root .vanilla-responsive-header>a:first-child>div:last-child{min-width:0}
+  #nc-root .vanilla-responsive-header>a:first-child>div:last-child>div:first-child{font-size:12px;line-height:1.35}
+  #nc-root .vanilla-responsive-header>div:nth-child(2) {
+    grid-area:actions;display:flex!important;flex-wrap:wrap;gap:4px;align-items:center;
+    justify-content:space-between;min-width:0;width:100%;height:auto!important;
+    padding:0!important;border:0!important;
+  }
+  #nc-root .vanilla-responsive-header>div:nth-child(2)>div {
+    min-width:0;max-width:100%;height:auto!important;flex-wrap:wrap;gap:4px;
+  }
+  #nc-root .vanilla-responsive-header>div:nth-child(2) button {
+    margin:0!important;min-width:0;max-width:100%;padding-inline:9px!important;font-size:12px;
+  }
+  #nc-root .vanilla-responsive-header>div:last-child {
+    grid-area:meta;height:auto!important;padding:0!important;border:0!important;min-width:0;
+  }
+  #nc-root .vanilla-responsive-header [role="menu"],
+  #nc-root .vanilla-responsive-header [class*="DropdownList"]{max-width:calc(100vw - 20px)!important}
+  #nc-root .vanilla-responsive-shell>div:last-child{width:100%;min-width:0;max-width:100%}
+  /* Mobile edits use the left control pane only; desktop preview is unchanged. */
+  #nc-root .vanilla-responsive-shell .SplitPane{width:100%!important;min-width:0!important}
+  #nc-root .vanilla-responsive-shell .SplitPane>.Pane1{width:100%!important;min-width:0!important;max-width:100%!important;flex:1 1 100%!important}
+  #nc-root .vanilla-responsive-shell .SplitPane>.Pane2,
+  #nc-root .vanilla-responsive-shell .SplitPane>.Resizer,
+  #nc-root .vanilla-responsive-shell [class*="ViewControls"]{display:none!important}
+  #nc-root .vanilla-responsive-shell [class*="ControlPaneContainer"]{min-width:0;max-width:100%;box-sizing:border-box;padding-inline:8px!important}
+  #nc-root .vanilla-responsive-shell [class*="ControlTopbar"]{gap:6px;flex-wrap:wrap;min-width:0}
+  #nc-root .vanilla-responsive-shell label{max-width:100%;overflow-wrap:anywhere}
+  #nc-root .vanilla-responsive-shell input:not([type="checkbox"]):not([type="radio"]),
+  #nc-root .vanilla-responsive-shell select,
+  #nc-root .vanilla-responsive-shell textarea{box-sizing:border-box;max-width:100%!important;min-width:0}
+  #nc-root .vanilla-responsive-shell [data-testid^="object-control-"]{min-width:0;max-width:100%;box-sizing:border-box;padding-inline:6px!important}
+  #nc-root .vanilla-responsive-shell [data-testid^="styled-list-item-top-bar-"]{min-width:0;max-width:100%;flex-wrap:wrap;overflow-wrap:anywhere}
+  #nc-root .vanilla-responsive-shell .vanilla-md-editor{max-width:100%!important}
+  #nc-root .vanilla-responsive-shell .vanilla-tags-widget,
+  #nc-root .vanilla-responsive-shell .vanilla-batch-paths{min-width:0;max-width:100%;box-sizing:border-box;padding:9px}
+  #nc-root .vanilla-responsive-shell .vanilla-tags-buttons{gap:5px}
+  #nc-root .vanilla-responsive-shell .vanilla-tags-custom{gap:5px}
+  #nc-root .vanilla-responsive-shell .vanilla-batch-grid{grid-template-columns:repeat(auto-fit,minmax(min(120px,100%),1fr))}
+  #nc-root .vanilla-responsive-shell .vanilla-batch-file{max-width:100%;box-sizing:border-box}
+  #nc-root .vanilla-responsive-shell .vanilla-batch-file input{max-width:100%}
+}
+
+/* Mobile compact header; keep native publish/delete/settings actions intact. */
+@media (max-width:767px), (pointer:coarse) and (max-width:799px) {
+  #nc-root .vanilla-responsive-header{padding:3px 8px 5px;gap:2px 5px}
+  #nc-root .vanilla-responsive-header>a:first-child{min-height:30px;padding:2px!important;gap:4px}
+  #nc-root .vanilla-responsive-header>a:first-child>div:first-child{font-size:19px}
+  #nc-root .vanilla-responsive-header>a:first-child>div:last-child>div:first-child{font-size:11px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  #nc-root .vanilla-responsive-header>a:first-child>div:last-child>div:last-child{margin-top:2px;font-size:11px;line-height:1.2}
+  #nc-root .vanilla-responsive-header>div:last-child button{padding:2px!important;min-height:30px;height:auto;min-width:30px}
+  #nc-root .vanilla-responsive-header>div:last-child img,
+  #nc-root .vanilla-responsive-header>div:last-child button>svg{width:24px;height:24px;max-width:24px}
+  #nc-root .vanilla-responsive-header>div:nth-child(2){justify-content:flex-start;gap:3px 6px}
+  #nc-root .vanilla-responsive-header>div:nth-child(2)>div{gap:3px;min-height:0}
+  #nc-root .vanilla-responsive-header>div:nth-child(2)>div:first-child button{
+    min-height:30px;height:30px;line-height:1.25;font-size:11px;padding-inline:8px!important;
+  }
+  #nc-root .vanilla-responsive-header>div:nth-child(2)>div:first-child button[aria-haspopup],
+  #nc-root .vanilla-responsive-header>div:nth-child(2)>div:first-child [class*="Dropdown"]>button{
+    padding-right:24px!important;
+  }
+  #nc-root .vanilla-responsive-header>div:nth-child(2)>div:last-child>div{margin-right:0}
+  #nc-root .vanilla-responsive-header>div:nth-child(2)>div:last-child button,
+  #nc-root .vanilla-responsive-header>div:nth-child(2)>div:last-child a{
+    display:inline-flex;align-items:center;gap:3px;font-size:11px;line-height:1.2;
+    padding:4px!important;min-height:30px;white-space:nowrap;
+  }
+  #nc-root .vanilla-responsive-header>div:nth-child(2)>div:last-child button span{margin-right:0}
+  /* The original toolbar stays mounted for the formatting handlers, but never
+     occupies space in a mobile field. Its fixed clone is mounted in body. */
+  #nc-root .vanilla-responsive-shell .vanilla-md-editor>.vanilla-md-toolbar{display:none!important}
+}
+
+/* One-line mobile editor header: keep the status and native action handlers.
+   The long collection heading is visually hidden, not removed from the link. */
+@media (max-width:767px), (pointer:coarse) and (max-width:799px) {
+  #nc-root .vanilla-responsive-shell{padding-top:var(--vanilla-responsive-header-height,48px)!important}
+  #nc-root .vanilla-responsive-header{
+    grid-template-columns:auto minmax(0,1fr) auto;
+    grid-template-areas:"back actions meta";
+    padding:4px 6px;gap:4px;align-items:center;
+  }
+  #nc-root .vanilla-responsive-header>a:first-child{
+    min-height:36px;min-width:0;padding:0 2px!important;gap:3px;
+  }
+  #nc-root .vanilla-responsive-header>a:first-child>div:first-child{font-size:19px;margin-right:0!important}
+  #nc-root .vanilla-responsive-header>a:first-child>div:last-child>div:first-child{
+    position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;
+    overflow:hidden;clip-path:inset(50%);white-space:nowrap;
+  }
+  #nc-root .vanilla-responsive-header>a:first-child>div:last-child>div:last-child{
+    margin:0;font-size:11px;line-height:1.3;white-space:nowrap;
+  }
+  #nc-root .vanilla-responsive-header>div:nth-child(2){
+    display:flex!important;justify-content:flex-end;flex-wrap:wrap;gap:2px 4px;
+  }
+  #nc-root .vanilla-responsive-header>div:nth-child(2)>div{
+    gap:3px;flex-wrap:wrap;align-items:center;
+  }
+  /* react-aria-menubutton uses role=button, not necessarily a native button. */
+  #nc-root .vanilla-responsive-header>div:nth-child(2)>div:first-child :is(button,[role="button"]){
+    box-sizing:border-box;margin:0!important;height:34px!important;min-height:34px!important;
+    line-height:1.2!important;font-size:11px!important;padding:0 7px!important;
+    display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;
+    min-width:0;
+  }
+  #nc-root .vanilla-responsive-header>div:nth-child(2)>div:first-child :is([aria-haspopup],[class*="DropdownButton"],[class*="PublishButton"],[class*="PublishedToolbarButton"]){
+    padding-right:20px!important;
+  }
+  #nc-root .vanilla-responsive-header>div:nth-child(2)>div:first-child :is([aria-haspopup],[class*="DropdownButton"],[class*="PublishButton"],[class*="PublishedToolbarButton"]):after{
+    top:50%!important;right:7px!important;transform:translateY(-50%);
+  }
+  #nc-root .vanilla-responsive-header>div:nth-child(2)>div:last-child :is(button,a){
+    width:34px;height:34px;min-height:34px;padding:3px!important;justify-content:center;
+  }
+  #nc-root .vanilla-responsive-header>div:nth-child(2)>div:last-child :is(button,a)>span{
+    position:absolute!important;width:1px;height:1px;padding:0;margin:-1px!important;
+    overflow:hidden;clip-path:inset(50%);white-space:nowrap;
+  }
+  #nc-root .vanilla-responsive-header>div:last-child :is(button,[role="button"]){
+    box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;
+    width:34px;height:34px;min-width:34px;min-height:34px;padding:3px!important;
+  }
+  #nc-root .vanilla-responsive-header>div:last-child :is(img,svg){width:24px;height:24px}
+  #nc-root .vanilla-responsive-header>div:last-child [class*="SettingsWrapper"]>a{
+    max-width:42px;padding:2px;font-size:10px;
+  }
+  /* The status link and the account remain reachable on exceptionally narrow screens. */
+  @media(max-width:300px){
+    #nc-root .vanilla-responsive-header{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"back meta" "actions actions"}
+    #nc-root .vanilla-responsive-header>div:nth-child(2){justify-content:flex-start}
+  }
+}
+
+/* Mobile form density. Keep the accepted header and floating toolbar unchanged. */
+@media (max-width:767px), (pointer:coarse) and (max-width:799px) {
+  #nc-root .vanilla-responsive-shell>div:last-child{font-size:13px;line-height:1.5}
+  #nc-root .vanilla-responsive-shell>div:last-child [class*="ControlPaneContainer"]{font-size:13px}
+  /* EditorControl always has an aria-label and a top bar containing its field label. */
+  #nc-root .vanilla-responsive-shell>div:last-child div[aria-label]:has(>div>label[for]){
+    margin-top:11px;
+  }
+  #nc-root .vanilla-responsive-shell>div:last-child div[aria-label]:has(>div>label[for]):first-of-type{
+    margin-top:16px;
+  }
+  #nc-root .vanilla-responsive-shell>div:last-child label[for]{
+    font-size:12px;line-height:1.35;
+  }
+  #nc-root .vanilla-responsive-shell>div:last-child div[aria-label]:has(>div>label[for])>div:first-child>label{
+    padding:3px 6px;
+  }
+  #nc-root .vanilla-responsive-shell>div:last-child :is(input:not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="hidden"]),select,textarea){
+    font-size:14px!important;line-height:1.5;
+  }
+  #nc-root .vanilla-responsive-shell>div:last-child :is(input[type="text"],input[type="url"],input[type="number"],input[type="email"],input:not([type])){
+    padding:8px 10px;min-height:38px;
+  }
+  #nc-root .vanilla-responsive-shell>div:last-child select{
+    height:auto;min-height:40px;padding-block:7px;text-indent:5px;
+  }
+  #nc-root .vanilla-responsive-shell>div:last-child textarea{padding:9px 10px}
+  #nc-root .vanilla-responsive-shell .vanilla-md-editor textarea{
+    font-size:14px!important;line-height:1.6;min-height:150px;padding:9px 10px;
+  }
+  #nc-root .vanilla-responsive-shell .vanilla-md-help,
+  #nc-root .vanilla-responsive-shell>div:last-child [class*="ControlHint"]{
+    font-size:11px;line-height:1.5;margin-top:4px;
+  }
+  #nc-root .vanilla-responsive-shell>div:last-child div[aria-label]:has(>div>label[for])>p{
+    font-size:11px;line-height:1.5;padding-top:4px;
+  }
+  /* Compact collapsed list items, without changing their collapse, reorder or remove actions. */
+  #nc-root .vanilla-responsive-shell [data-testid^="styled-list-item-top-bar-"]{
+    padding-block:3px;min-height:30px;
+  }
+  #nc-root .vanilla-responsive-shell [data-testid^="styled-list-item-top-bar-"]+div{
+    font-size:13px;line-height:1.4;padding:7px 10px;
+  }
+  #nc-root .vanilla-responsive-shell div:has(>[data-testid^="styled-list-item-top-bar-"]){
+    margin-top:10px;
+  }
+  #nc-root .vanilla-responsive-shell [data-testid^="object-control-"]{
+    padding-top:4px;padding-bottom:8px;
+  }
+  #nc-root .vanilla-responsive-shell>div:last-child [class*="ObjectWidgetTopBar"],
+  #nc-root .vanilla-responsive-shell>div:last-child [class*="ListWidgetTopBar"]{
+    font-size:13px;line-height:1.4;padding-block:6px;
+  }
+  #nc-root .vanilla-responsive-shell>div:last-child :is(button,[role="button"]){
+    font-size:12px;
+  }
+  #nc-root .vanilla-responsive-shell .vanilla-tags-label{font-size:12px;margin-bottom:5px}
+  #nc-root .vanilla-responsive-shell .vanilla-tags-group{margin-bottom:9px}
+  #nc-root .vanilla-responsive-shell .vanilla-tag-button{font-size:12px;padding:5px 9px;min-height:30px}
+  #nc-root .vanilla-responsive-shell .vanilla-tags-custom{margin:10px 0}
+  #nc-root .vanilla-responsive-shell .vanilla-batch-paths{font-size:12px}
+  #nc-root .vanilla-responsive-shell .vanilla-batch-paths p{margin-bottom:8px;line-height:1.5}
+  #nc-root .vanilla-responsive-shell .vanilla-batch-actions{gap:6px;margin:6px 0}
+  #nc-root .vanilla-responsive-shell .vanilla-batch-actions button,
+  #nc-root .vanilla-responsive-shell .vanilla-batch-file{font-size:12px;padding:6px 9px}
+}
+</style><link rel="cms-config-url" type="text/yaml" href="/admin/config.yml">
+<script src="/admin-theme-test/theme.js?v=20261127"></script>
+<link rel="stylesheet" href="/admin-theme-test/theme.css?v=20261127">
+<link rel="stylesheet" href="/admin-theme-test/cms-theme.css?v=20261127">
+<script defer src="/admin-theme-test/cms-theme.js?v=20261127"></script></head><body><script src="https://unpkg.com/decap-cms@3.18.0/dist/decap-cms.js"></script><script>/* Decap 3.18 mobile editor layout experiment; no entry data or actions changed. */
+(function () {
+  'use strict';
+  const media = window.matchMedia('(max-width: 767px), (pointer: coarse) and (max-width: 799px)');
+  let shell = null, toolbar = null, observer = null, frame = 0;
+  const position = el => window.getComputedStyle(el).position;
+  function findShell(root) {
+    // Discover the editor through its actual back-link / action / settings header.
+    // The fallback does not depend on Emotion's generated class names.
+    for (const a of root.querySelectorAll('a')) {
+      const bar = a.parentElement, parent = bar?.parentElement;
+      if (!parent || bar.firstElementChild !== a || bar.children.length !== 3 ||
+          parent.firstElementChild !== bar || parent.children.length < 2) continue;
+      const s = window.getComputedStyle(parent), b = window.getComputedStyle(bar);
+      if (parent.classList.contains('vanilla-responsive-shell') ||
+          (s.position === 'absolute' && s.overflowY === 'hidden' &&
+           parseFloat(s.minWidth) >= 800 && b.position === 'absolute' &&
+           b.display === 'flex' && parseFloat(b.minWidth) >= 800)) return [parent, bar];
+    }
+    return [null, null];
+  }
+  function measure() {
+    if (!shell || !toolbar || !media.matches) return;
+    const height = Math.ceil(toolbar.getBoundingClientRect().height);
+    if (height > 0 && height < 350) shell.style.setProperty('--vanilla-responsive-header-height', height+'px');
+  }
+  function clear() {
+    observer?.disconnect();
+    observer = null;
+    shell?.classList.remove('vanilla-responsive-shell');
+    shell?.style.removeProperty('--vanilla-responsive-header-height');
+    toolbar?.classList.remove('vanilla-responsive-header');
+    shell = null; toolbar = null;
+  }
+  function apply() {
+    frame = 0;
+    if (!media.matches) { clear(); return; }
+    const root = document.getElementById('nc-root');
+    if (!root) { clear(); return; }
+    const [next, bar] = findShell(root);
+    if (next !== shell || bar !== toolbar) {
+      clear();
+      if (!next) return;
+      shell = next; toolbar = bar;
+      shell.classList.add('vanilla-responsive-shell', 'vanilla-cms-mobile-shell');
+      toolbar.classList.add('vanilla-responsive-header');
+      if (window.ResizeObserver) {
+        observer = new window.ResizeObserver(measure);
+        observer.observe(toolbar);
+      }
+    }
+    measure();
+  }
+  function schedule() {
+    if (!frame) frame = window.requestAnimationFrame(apply);
+  }
+  new MutationObserver(schedule).observe(document.body, {childList:true, subtree:true});
+  window.addEventListener('resize', schedule);
+  media.addEventListener?.('change', schedule);
+  schedule();
+})();
+</script><style>
+#nc-root .os-section-toggle{display:flex;width:100%;align-items:center;gap:8px;background:#eae7e2;color:#45413c;border:1px solid #d6d0c8;border-radius:6px;padding:10px;margin:12px 0 5px;font-size:13px;font-weight:600;text-align:left;cursor:pointer}
+#nc-root .os-field-hidden{display:none!important}
+#nc-root .os-id-hidden{display:none!important}
+#nc-root [data-testid^="styled-list-item-top-bar-"]{background:#e5e0d8!important}
+@media(max-width:799px){#nc-root [data-testid^="object-control-"]{padding-inline:5px!important}}
+</style><script>
+(()=>{const groups=[['基本情報',['名前','ふりがな','役割']],['立ち絵・イメージカラー',['イメージカラー','立ち絵','立ち絵差分','探索者サムネイル']],['プロフィール',['一言セリフ','誕生日','年齢','身長','職業','性別','体重','出身','髪の色','瞳の色','肌の色','家族構成','好き','苦手']],['ステータス・キャラクターシート',['ステータス','いあきゃら公開CS URL']],['イメージソング',['個人のイメージソング']]];
+const label=e=>e.querySelector(':scope > div > label')?.textContent?.trim()||'';
+const matches=(s,k)=>s===k||s.startsWith(k+'（')||s.startsWith(k+' (')||s.startsWith(k+' ');
+function run(){for(const e of document.querySelectorAll('#nc-root div[aria-label]')){if(label(e).startsWith('識別ID（自動生成'))e.classList.add('os-id-hidden');}
+for(const p of document.querySelectorAll('#nc-root div')){const fields=Array.from(p.children).filter(e=>e.matches('div[aria-label]')&&label(e));if(!fields.some(e=>label(e).startsWith('識別ID（自動生成')))continue;
+for(const [name,keys] of groups){const items=fields.filter(e=>keys.some(k=>matches(label(e),k)));if(!items.length)continue;let btn=Array.from(p.children).find(e=>e.dataset.osGroup===name);if(!btn){btn=document.createElement('button');btn.type='button';btn.className='os-section-toggle';btn.dataset.osGroup=name;btn.setAttribute('aria-expanded',name==='基本情報'?'true':'false');btn.onclick=()=>{btn.setAttribute('aria-expanded',btn.getAttribute('aria-expanded')==='true'?'false':'true');run()};p.insertBefore(btn,items[0]);}const open=btn.getAttribute('aria-expanded')==='true';const title=(open?'▾ ':'▸ ')+name;if(btn.textContent!==title)btn.textContent=title;for(const [i,e] of items.entries()){e.classList.toggle('os-field-hidden',!open);e.classList.toggle('os-group-open',open);e.classList.toggle('os-group-last',open&&i===items.length-1);}}
+}}
+let queued=false;const observer=new MutationObserver(()=>{if(!queued){queued=true;requestAnimationFrame(()=>{queued=false;run()})}});observer.observe(document.body,{childList:true,subtree:true});run();
+})();
+</script><style>
+#nc-root .os-import{padding:10px;border:1px solid #d6d0c8;border-radius:6px;margin:8px 0;background:#faf8f4}
+#nc-root .os-import textarea{width:100%;box-sizing:border-box;min-height:80px;padding:8px}
+#nc-root .os-import button{padding:8px 12px;background:#465d50;color:white;border:0;border-radius:5px;margin:6px 0}
+</style><script>
+(()=>{
+const keys=['STR','CON','POW','DEX','APP','SIZ','INT','EDU'];
+const label=e=>e.querySelector(':scope > div > label')?.textContent?.trim()||'';
+function parse(raw){raw=raw.replace(/^\uFEFF/,'').trim();const out={};if(raw.startsWith('{')){const obj=JSON.parse(raw),d=obj.data||obj;if(!Array.isArray(d.params))throw Error('駒出力JSONを確認してください。');for(const p of d.params){const k=String(p.label).trim().toUpperCase();if(keys.includes(k)&&/^\d{1,3}$/.test(String(p.value)))out[k]=String(p.value);}if(d.name)out['名前']=d.name;if(/^#[0-9a-f]{6}$/i.test(d.color))out['イメージカラー']=d.color;if(/^https:\/\/iachara\.com\/view\/\d+\/?$/.test(d.externalUrl))out['いあきゃら公開CS URL']=d.externalUrl;}else{if(!/^いあきゃらテキスト\s+6版/.test(raw))throw Error('いあきゃら6版のテキスト出力を選択してください。');const basic=raw.split('【基本情報】')[1]?.split(/【[^】]+】/)[0]||'';for(const line of basic.split(/\r?\n/)){for(const part of line.split(/\s+\/\s+/)){const m=part.match(/^\s*(名前|職業|年齢|性別|身長|体重|出身|髪の色|瞳の色|肌の色|誕生日)\s*[:：]\s*(.*?)\s*$/);if(m&&m[2]){if(m[1]==='名前'){const n=m[2].match(/^(.*?)\s+\(([^()]*)\)\s*$/);out['名前']=n?n[1].trim():m[2];if(n&&n[2].trim())out['ふりがな']=n[2].trim();}else if(m[1]==='誕生日'){const v=m[2].normalize('NFKC');const d=v.match(/^(\d{1,2})\s*(?:[/.-]|月)\s*(\d{1,2})\s*日?$/);out[m[1]]=d&&+d[1]>=1&&+d[1]<=12&&+d[2]>=1&&+d[2]<=new Date(Date.UTC(2000,+d[1],0)).getUTCDate()?Number(d[1])+'月'+Number(d[2])+'日':m[2];}else out[m[1]]=m[2];}}}const stats=raw.split('【能力値】')[1]?.split(/【[^】]+】/)[0]||'';for(const line of stats.split(/\r?\n/)){const m=line.match(/^\s*(STR|CON|POW|DEX|APP|SIZ|INT|EDU)\s+(\d{1,3})\s/);if(m)out[m[1]]=m[2];}}if(!Object.keys(out).length)throw Error('取り込める情報がありません。');return out;}
+function run(){for(const field of document.querySelectorAll('#nc-root div[aria-label]')){if(!/^ステータス(?:$|[（ (])/.test(label(field))||field.parentElement.querySelector(':scope > .os-import'))continue;
+const box=document.createElement('div');box.className='os-import';const help=document.createElement('p');help.textContent='いあきゃらから自動入力（駒出力JSON／6版テキスト）';const area=document.createElement('textarea');area.placeholder='出力データを貼り付け';const file=document.createElement('input');file.type='file';file.accept='.txt,.json,text/plain,application/json';file.onchange=async()=>{try{area.value=await file.files[0].text();}catch{}file.value='';};const check=document.createElement('input');check.type='checkbox';const opt=document.createElement('label');opt.append(check,' 入力済みの項目も上書きする');const btn=document.createElement('button');btn.type='button';btn.textContent='データを取り込む';const msg=document.createElement('p');msg.setAttribute('role','status');box.append(help,file,area,opt,document.createElement('br'),btn,msg);const parent=field.parentElement;const first=Array.from(parent.children).find(e=>e.dataset.osGroup==='基本情報'||label(e).startsWith('役割'));parent.insertBefore(box,first||parent.firstChild);
+btn.onclick=()=>{try{const vals=parse(area.value),inputs={};for(const e of [...field.parentElement.children,...field.querySelectorAll('div[aria-label]')]){const k=label(e).split(/[（ (]/)[0];if(!Object.hasOwn(vals,k))continue;const input=e.querySelector('input[type=number],input[type=text],input[type=url],input:not([type])');if(input)inputs[k]=input;}const found=Object.keys(vals).filter(k=>inputs[k]&&(check.checked||!inputs[k].value.trim()));if(!found.length)throw Error('空欄の対象項目がありません。必要に応じて上書きを選択し、ステータス欄を展開してください。');if(!window.confirm(found.map(k=>k+' '+vals[k]).join('\n')+'\nを反映しますか？'))return;for(const k of found){const input=inputs[k];Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set.call(input,String(vals[k]));input.dispatchEvent(new Event('input',{bubbles:true}));input.dispatchEvent(new Event('change',{bubbles:true}));}area.value='';msg.textContent=found.length+'項目を入力しました。内容を確認して保存してください。';}catch(e){msg.textContent=e.message||'取り込めませんでした。';}};
+}}
+let pending=false;new MutationObserver(()=>{if(!pending){pending=true;requestAnimationFrame(()=>{pending=false;run()})}}).observe(document.body,{childList:true,subtree:true});run();
+})();
+</script><style>
+#nc-root .os-section-toggle[aria-expanded="true"]{margin-bottom:0;border-radius:7px 7px 0 0;background:#e5dfd6;border-color:#d6d0c8}
+#nc-root .os-group-open{box-sizing:border-box;background:#faf8f4;border-inline:1px solid #d6d0c8;margin:0!important;padding:10px 9px 4px}
+#nc-root .os-group-open.os-group-last{border-bottom:1px solid #d6d0c8;border-radius:0 0 7px 7px;padding-bottom:12px}
+#nc-root .os-section-toggle{margin-top:10px}
+</style><style>
+.os-crop-editor{display:grid;gap:8px;font-size:13px}.os-crop-editor button{padding:8px;border:1px solid #c8c1b7;border-radius:5px;background:#fffdfa}.os-crop-frame{width:100%;max-width:360px;aspect-ratio:1;position:relative;overflow:hidden;background:#e9e4db;touch-action:none;cursor:grab;margin:auto}.os-crop-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;pointer-events:none}.os-crop-frame:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(to right,transparent 33%,#fff8 33%,#fff8 33.5%,transparent 33.5%,transparent 66%,#fff8 66%,#fff8 66.5%,transparent 66.5%),linear-gradient(to bottom,transparent 33%,#fff8 33%,#fff8 33.5%,transparent 33.5%,transparent 66%,#fff8 66%,#fff8 66.5%,transparent 66.5%);border:1px solid #fff8}.os-crop-editor input[type=range]{width:100%}
+</style><script>
+(()=>{
+const label=e=>e.querySelector(':scope > div > label')?.textContent?.trim()||'';
+function run(){for(const field of document.querySelectorAll('#nc-root div[aria-label]')){if(!label(field).startsWith('探索者サムネイル')||field.querySelector('.os-crop-editor'))continue;const input=field.querySelector('input[type=text],input:not([type])');if(!input)continue;input.style.display='none';const box=document.createElement('div');box.className='os-crop-editor';const open=document.createElement('button');open.type='button';open.textContent='サムネイルを調整';const body=document.createElement('div');body.hidden=true;const msg=document.createElement('p');msg.setAttribute('role','status');box.append(open,body,msg);field.append(box);
+open.onclick=()=>{const source=[...field.parentElement.children].find(e=>/^立ち絵(?:$|[（ (])/.test(label(e)));const original=source?.querySelector('img');const url=original?.src||original?.currentSrc||source?.querySelector('input[type=text],input[type=url]')?.value;if(!url){msg.textContent='先に立ち絵を登録してください。';return;}body.replaceChildren();body.hidden=false;msg.textContent='';let v={x:0,y:0,z:1};try{const p=JSON.parse(input.value);if(p&&[p.x,p.y,p.z].every(Number.isFinite))v={x:p.x,y:p.y,z:p.z};}catch{}const frame=document.createElement('div');frame.className='os-crop-frame';const img=document.createElement('img');img.alt='サムネイルプレビュー';img.src=url;frame.append(img);const help=document.createElement('p');help.textContent='画像をドラッグして位置を調整';const zoom=document.createElement('input');zoom.type='range';zoom.min='.5';zoom.max='4';zoom.step='.01';zoom.value=v.z;zoom.setAttribute('aria-label','拡大率');const reset=document.createElement('button');reset.type='button';reset.textContent='リセット';const apply=document.createElement('button');apply.type='button';apply.textContent='適用';const cancel=document.createElement('button');cancel.type='button';cancel.textContent='キャンセル';body.append(frame,help,zoom,reset,apply,cancel);function paint(){img.style.transform='translate('+v.x+'%,'+v.y+'%) scale('+v.z+')';}paint();zoom.oninput=()=>{v.z=Number(zoom.value);paint()};let drag;frame.onpointerdown=e=>{frame.setPointerCapture(e.pointerId);drag={x:e.clientX,y:e.clientY,a:v.x,b:v.y}};frame.onpointermove=e=>{if(!drag)return;v.x=Math.max(-200,Math.min(200,drag.a+(e.clientX-drag.x)/frame.clientWidth*100));v.y=Math.max(-200,Math.min(200,drag.b+(e.clientY-drag.y)/frame.clientHeight*100));paint()};frame.onpointerup=frame.onpointercancel=()=>{drag=null};reset.onclick=()=>{v={x:0,y:0,z:1};zoom.value=1;paint()};cancel.onclick=()=>{body.hidden=true};apply.onclick=()=>{const value=JSON.stringify({x:+v.x.toFixed(2),y:+v.y.toFixed(2),z:+v.z.toFixed(2)});Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set.call(input,value);input.dispatchEvent(new Event('input',{bubbles:true}));input.dispatchEvent(new Event('change',{bubbles:true}));body.hidden=true;msg.textContent='適用しました。公開ボタンで保存してください。';};};
+}}
+let pending=false;new MutationObserver(()=>{if(!pending){pending=true;requestAnimationFrame(()=>{pending=false;run()})}}).observe(document.body,{childList:true,subtree:true});run();
+})();
+</script><script>
+(()=>{const attempts=new WeakMap();const delays=[1500,3000,6000,12000,20000,30000];function retry(img){if(!img.closest('#nc-root')||!img.src||!/^https?:/.test(img.src))return;const url=new URL(img.src);if(!url.pathname.includes('/images/'))return;url.searchParams.delete('_previewRetry');const key=url.href;let s=attempts.get(img);if(!s||s.key!==key){s={key,n:0,pending:false};attempts.set(img,s)}if(s.pending||s.n>=delays.length)return;s.pending=true;const note=document.createElement('small');note.textContent='画像反映待ち（自動再読み込み中）';note.style.cssText='display:block;color:#817564;font-size:12px';img.after(note);setTimeout(()=>{note.remove();s.pending=false;if(!img.isConnected||attempts.get(img)!==s)return;const current=new URL(img.src);current.searchParams.delete('_previewRetry');if(current.href!==key||img.naturalWidth)return;url.searchParams.set('_previewRetry',String(Date.now()));s.n++;img.src=url.href;},delays[s.n]);}document.addEventListener('error',e=>{if(e.target instanceof HTMLImageElement)retry(e.target)},true);function scan(){document.querySelectorAll('#nc-root img').forEach(img=>{if(img.complete&&!img.naturalWidth)retry(img)})}let queued=false;new MutationObserver(()=>{if(!queued){queued=true;requestAnimationFrame(()=>{queued=false;scan()})}}).observe(document.body,{childList:true,subtree:true});scan();document.addEventListener('load',e=>{if(e.target instanceof HTMLImageElement&&e.target.naturalWidth)attempts.delete(e.target)},true);})();
+</script><script>
+(()=>{const local=new Map();const nativeCreate=URL.createObjectURL.bind(URL);URL.createObjectURL=function(blob){const url=nativeCreate(blob);if(blob instanceof File&&blob.type.startsWith('image/')){local.set(blob.name.normalize('NFC'),url);schedule();}return url;};const norm=s=>String(s).normalize('NFC');function capture(files){for(const f of files||[]){if(!f.type.startsWith('image/')&&!/\.(png|jpe?g|webp|gif|svg|avif)$/i.test(f.name))continue;const k=norm(f.name);const prev=local.get(k);if(prev)URL.revokeObjectURL(prev);local.set(k,URL.createObjectURL(f));}schedule();}
+document.addEventListener('change',e=>{if(e.target instanceof HTMLInputElement&&e.target.type==='file')capture(e.target.files)},true);document.addEventListener('drop',e=>capture(e.dataTransfer?.files),true);
+function fix(img){if(!img.closest('#nc-root')||!img.src||img.src.startsWith('blob:')||img.src.startsWith('data:'))return;let name;try{name=norm(decodeURIComponent(new URL(img.src).pathname.split('/').pop()))}catch{return}const url=local.get(name)||local.get(name.replace(/_previewRetry.*$/,''));if(url&&img.complete&&!img.naturalWidth){img.dataset.osOriginalSrc=img.src;img.src=url;}}
+let queued=false;function schedule(){if(!queued){queued=true;requestAnimationFrame(()=>{queued=false;document.querySelectorAll('#nc-root img').forEach(fix)})}}document.addEventListener('error',e=>{if(e.target instanceof HTMLImageElement)fix(e.target)},true);new MutationObserver(schedule).observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['src']});})();
+</script></body></html>

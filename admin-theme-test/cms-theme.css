@@ -1,0 +1,42 @@
+/* CMS-only palette. No image filters; light mode uses unmodified Decap styles. */
+:root[data-theme="dark"]{color-scheme:dark;--cms-bg:#22211f;--cms-card:#2e2c28;--cms-input:#282722;--cms-line:#47483f;--cms-ink:#e5dfd4;--cms-muted:#bcb9aa;--cms-accent:#b3dfca;--cms-active:#405448}
+html[data-theme="dark"],html[data-theme="dark"] body{background:#22211f!important;color:#e5dfd4}
+html[data-theme="dark"] input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]):not([type=file]),html[data-theme="dark"] textarea,html[data-theme="dark"] select{background-color:#282722;color:#e5dfd4;border-color:#47483f}
+html[data-theme="dark"] input::placeholder,html[data-theme="dark"] textarea::placeholder{color:#bcb9aa;opacity:.8}
+html[data-theme="dark"] input,html[data-theme="dark"] textarea,html[data-theme="dark"] select{accent-color:#88bba3}
+html[data-theme="dark"] a{color:#b3dfca}
+html[data-theme="dark"] :focus-visible{outline-color:#a9d6bf}
+html[data-theme="dark"] .report-inline-editor{color:#e5dfd4}
+html[data-theme="dark"] .report-inline-label,html[data-theme="dark"] .report-inline-pc-head,html[data-theme="dark"] .report-inline-help,html[data-theme="dark"] .vanilla-md-help{color:#bcb9aa}
+html[data-theme="dark"] .report-inline-input,html[data-theme="dark"] .vanilla-md-editor textarea{background:#282722;color:#e5dfd4;border-color:#47483f}
+html[data-theme="dark"] .report-inline-pc-row{background:#2e2c28;border-color:#47483f}
+html[data-theme="dark"] .report-inline-icon,html[data-theme="dark"] .vanilla-md-toolbar button{background:#353a32;color:#e5dfd4;border-color:#648572}
+html[data-theme="dark"] .report-inline-add{background:#405448;color:#b3dfca;border-color:#648572}
+html[data-theme="dark"] .report-inline-remove{color:#f1a2ae}
+/* Preview iframe receives the palette too, including the custom X-post widget. */
+html[data-theme="dark"] div:has(>textarea[aria-label="X投稿用の文章"]){color:#e5dfd4!important}
+html[data-theme="dark"] div:has(>textarea[aria-label="X投稿用の文章"]) p{color:#bcb9aa!important}
+html[data-theme="dark"] textarea[aria-label="X投稿用の文章"]{background:#282722!important;color:#e5dfd4!important;border-color:#47483f!important}
+html[data-theme="dark"] div:has(>textarea[aria-label="X投稿用の文章"]) button{background:#405448!important;color:#e5dfd4!important}
+body > .standalone-theme-bar{position:fixed;inset:auto max(12px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) auto;z-index:2147483000;width:auto;height:auto;margin:0;padding:0;background:none}
+body > .standalone-theme-bar .theme-control{position:relative;inset:auto}
+body > .standalone-theme-bar .theme-toggle{width:40px;height:40px;box-shadow:0 3px 16px #0003}
+body > .standalone-theme-bar .theme-menu{top:auto;bottom:calc(100% + 7px)}
+@media(max-width:600px){body > .standalone-theme-bar .theme-toggle{width:36px;height:36px}}
+
+
+/* Our Stories custom CMS editors and image controls, dark theme only. */
+html[data-theme="dark"] #nc-root{color:#e5dfd4}
+html[data-theme="dark"] :is(#nc-root [role="dialog"],#nc-root [role="menu"],#nc-root [role="listbox"],#nc-root [role="tooltip"]){background-color:#2e2c28;color:#e5dfd4;border-color:#47483f}
+html[data-theme="dark"] :is(#nc-root input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]):not([type=file]),#nc-root textarea,#nc-root select){background-color:#282722;color:#e5dfd4;border-color:#47483f}
+html[data-theme="dark"] #nc-root :is(input,textarea)::placeholder{color:#bcb9aa}
+html[data-theme="dark"] #nc-root :is(input,textarea,select){accent-color:#b3dfca}
+html[data-theme="dark"] :is(.vanilla-md-editor,.vanilla-tags-widget,.vanilla-batch-paths,.os-crop-editor){color:#e5dfd4;border-color:#47483f}
+html[data-theme="dark"] :is(.vanilla-md-toolbar,.vanilla-batch-grid,.vanilla-batch-file,.vanilla-tags-custom,.os-crop-frame){background-color:#2e2c28;color:#e5dfd4;border-color:#47483f}
+html[data-theme="dark"] :is(.vanilla-md-toolbar button,.vanilla-tags-buttons button,.vanilla-batch-actions button,.os-crop-editor button){background-color:#405448;color:#e5dfd4;border-color:#648572}
+html[data-theme="dark"] :is(.vanilla-md-help,.os-crop-editor small,.vanilla-tags-widget small,.vanilla-batch-paths p){color:#bcb9aa}
+html[data-theme="dark"] :is(.os-crop-editor input[type=range],.vanilla-md-toolbar button){accent-color:#b3dfca}
+html[data-theme="dark"] #nc-root :is(input[type=checkbox],input[type=radio]){accent-color:#b3dfca}
+html[data-theme="dark"] :is(.vanilla-responsive-header,.vanilla-responsive-shell){border-color:#47483f}
+html[data-theme="dark"] .os-crop-frame{background-color:#393832}
+/* No filters or transforms applied to uploaded photos, illustrations, or preview imagery. */
