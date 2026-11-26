@@ -93,6 +93,20 @@ collections:
       name: image
       widget: image
       required: false
+    - label: 立ち絵差分
+      name: variants
+      widget: list
+      required: false
+      summary: '{{fields.title}}'
+      fields:
+      - label: 差分名
+        name: title
+        widget: string
+        required: false
+      - label: 画像
+        name: image
+        widget: image
+        required: true
     - label: 探索者サムネイル
       name: crop
       widget: string
