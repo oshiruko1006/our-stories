@@ -13,7 +13,29 @@
       "id": "char-import-6763154-2",
       "label": "HO2",
       "name": "鷲尾　龍迅",
-      "csUrl": "https://iachara.com/view/6874084"
+      "csUrl": "https://iachara.com/view/6874084",
+      "reading": "わしお りゅうじん",
+      "job": "刑事",
+      "age": "25",
+      "gender": "男",
+      "height": "181",
+      "weight": "78",
+      "hair": "黒",
+      "eyes": "黒",
+      "birthday": "10月16日",
+      "likes": "甘いもの、中華料理",
+      "dislikes": "苦いもの、勉強、気の弱い人間、陽気な善性の人間",
+      "color": "#B44740",
+      "stats": {
+        "STR": 75,
+        "CON": 60,
+        "POW": 75,
+        "DEX": 70,
+        "APP": 60,
+        "SIZ": 70,
+        "INT": 80,
+        "EDU": 65
+      }
     }
   ],
   "stills": [],
