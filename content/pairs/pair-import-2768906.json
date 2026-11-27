@@ -7,7 +7,19 @@
       "id": "char-import-2768906-1",
       "label": "HO1",
       "name": "夜三　真白",
-      "csUrl": "https://iachara.com/view/2768906"
+      "csUrl": "https://iachara.com/view/2768906",
+      "songs": [
+        {
+          "title": "パノプティコン",
+          "artist": "キタニタツヤ",
+          "url": "https://youtu.be/H_Z15gXv8WY"
+        },
+        {
+          "title": "冷たい渦",
+          "artist": "キタニタツヤ",
+          "url": "https://youtu.be/lnVKyT-ooWY"
+        }
+      ]
     },
     {
       "id": "char-import-2768906-2",
