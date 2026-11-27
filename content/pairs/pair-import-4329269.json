@@ -13,7 +13,28 @@
       "id": "char-import-4329269-2",
       "label": "HO2",
       "name": "紫焔　燻",
-      "csUrl": "https://iachara.com/view/12569212"
+      "csUrl": "https://iachara.com/view/12569212",
+      "reading": "しえん くゆり",
+      "job": "退魔師",
+      "age": "27",
+      "height": "186",
+      "weight": "72",
+      "hair": "白に近い灰色",
+      "eyes": "花紫",
+      "birthday": "2月4日",
+      "likes": "特になし",
+      "dislikes": "特になし",
+      "gender": "男",
+      "stats": {
+        "STR": 17,
+        "CON": 8,
+        "POW": 17,
+        "DEX": 13,
+        "APP": 14,
+        "SIZ": 15,
+        "INT": 15,
+        "EDU": 18
+      }
     }
   ],
   "stills": [],

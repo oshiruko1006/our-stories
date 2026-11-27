@@ -13,7 +13,27 @@
       "id": "char-import-5154134-2",
       "label": "HO PEACE",
       "name": "三篠　匡也",
-      "csUrl": "https://iachara.com/view/5160674"
+      "csUrl": "https://iachara.com/view/5160674",
+      "reading": "みすず　きょうや",
+      "age": "22",
+      "height": "177",
+      "weight": "61",
+      "hair": "プラチナ",
+      "eyes": "エレクトリックブルー",
+      "birthday": "4月27日",
+      "likes": "女の子、甘めのカクテル、煙草",
+      "dislikes": "男、焼酎",
+      "gender": "男",
+      "stats": {
+        "STR": 9,
+        "CON": 10,
+        "POW": 13,
+        "DEX": 15,
+        "APP": 17,
+        "SIZ": 14,
+        "INT": 18,
+        "EDU": 13
+      }
     }
   ],
   "stills": [],

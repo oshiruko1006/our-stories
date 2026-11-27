@@ -25,7 +25,28 @@
           "artist": "女王蜂",
           "url": "https://youtu.be/sOfieyM0SrA"
         }
-      ]
+      ],
+      "reading": "さかき ゆういちろう",
+      "job": "高校生",
+      "age": "17",
+      "height": "172",
+      "weight": "76",
+      "hair": "黒",
+      "eyes": "黒",
+      "birthday": "8月2日",
+      "likes": "食べること、甘いもの、動物",
+      "dislikes": "運動、勉強（特に数学）",
+      "gender": "男",
+      "stats": {
+        "STR": 16,
+        "CON": 14,
+        "POW": 17,
+        "DEX": 13,
+        "APP": 10,
+        "SIZ": 14,
+        "INT": 14,
+        "EDU": 11
+      }
     }
   ],
   "stills": [],

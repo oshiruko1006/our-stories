@@ -13,7 +13,28 @@
       "id": "char-import-3430112-2",
       "label": "HO2",
       "name": "柴咲　竜胆",
-      "csUrl": "https://iachara.com/view/3430031"
+      "csUrl": "https://iachara.com/view/3430031",
+      "reading": "しばさき りんどう",
+      "job": "精神科医",
+      "age": "28",
+      "height": "177",
+      "weight": "61",
+      "hair": "黒",
+      "eyes": "竜胆色",
+      "birthday": "8月31日",
+      "likes": "人間観察",
+      "dislikes": "脂っこいもの",
+      "gender": "男",
+      "stats": {
+        "STR": 8,
+        "CON": 8,
+        "POW": 18,
+        "DEX": 11,
+        "APP": 15,
+        "SIZ": 14,
+        "INT": 17,
+        "EDU": 15
+      }
     }
   ],
   "stills": [],
