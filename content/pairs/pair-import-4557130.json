@@ -7,7 +7,26 @@
       "id": "char-import-4557130-1",
       "label": "HO1",
       "name": "天ヶ谷　宏介",
-      "csUrl": "https://iachara.com/view/4557130"
+      "csUrl": "https://iachara.com/view/4557130",
+      "reading": "あまがや こうすけ",
+      "job": "洋菓子店のオーナーシェフ",
+      "gender": "男",
+      "height": "184",
+      "weight": "73",
+      "hair": "黒",
+      "eyes": "黒",
+      "birthday": "12月23日",
+      "likes": "自分が好きでやったことで人に喜んでもらうこと",
+      "stats": {
+        "STR": 12,
+        "CON": 11,
+        "POW": 16,
+        "DEX": 13,
+        "APP": 13,
+        "SIZ": 16,
+        "INT": 16,
+        "EDU": 17
+      }
     },
     {
       "id": "char-import-4557130-2",
