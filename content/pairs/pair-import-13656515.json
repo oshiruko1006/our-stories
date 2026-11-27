@@ -13,7 +13,27 @@
       "id": "char-import-13656515-2",
       "label": "HO2",
       "name": "Luan・Ward",
-      "csUrl": "https://iachara.com/view/13657425"
+      "csUrl": "https://iachara.com/view/13657425",
+      "reading": "ルアン・ウォード",
+      "job": "学生",
+      "age": "15",
+      "gender": "男",
+      "height": "166",
+      "weight": "56",
+      "origin": "日本",
+      "hair": "金",
+      "eyes": "ロイヤルブルー",
+      "color": "#02428C",
+      "stats": {
+        "STR": 11,
+        "CON": 14,
+        "POW": 16,
+        "DEX": 12,
+        "APP": 13,
+        "SIZ": 14,
+        "INT": 15,
+        "EDU": 14
+      }
     }
   ],
   "stills": [],
