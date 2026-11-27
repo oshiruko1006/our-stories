@@ -10,7 +10,34 @@
       "name": "竜胆　紡久",
       "reading": "りんどう　つむぐ",
       "image": "/images/紡久.png",
-      "crop": "{\"x\":-21.67,\"y\":25,\"z\":1.47}"
+      "crop": "{\"x\":-21.67,\"y\":25,\"z\":1.47}",
+      "songs": [
+        {
+          "title": "インザバックルーム",
+          "artist": "syudou",
+          "url": "https://youtu.be/eW620xcBnVE"
+        },
+        {
+          "title": "公然の秘密",
+          "artist": "椎名林檎",
+          "url": "https://youtu.be/ETtDJz9t09U"
+        },
+        {
+          "title": "愛のけだもの",
+          "artist": "神はサイコロを振らない × キタニタツヤ",
+          "url": "https://youtu.be/VaNQnNbqvos"
+        },
+        {
+          "title": "ファムファタル",
+          "artist": "ケダルイ",
+          "url": "https://youtu.be/FCj3rAeDfL0"
+        },
+        {
+          "title": "紗痲",
+          "artist": "煮ル果実",
+          "url": "https://youtu.be/tQWMArNo9F0"
+        }
+      ]
     },
     {
       "color": "#BAA7CC",
@@ -35,7 +62,14 @@
         "EDU": 19
       },
       "age": "34",
-      "csUrl": "https://iachara.com/view/3062835"
+      "csUrl": "https://iachara.com/view/3062835",
+      "songs": [
+        {
+          "title": "リードコントロール",
+          "artist": "なるみや",
+          "url": "https://youtu.be/TLWJIPGlFW4"
+        }
+      ]
     }
   ],
   "records": [
