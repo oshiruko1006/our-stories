@@ -7,7 +7,27 @@
       "id": "char-import-5154134-1",
       "label": "HO SEVEN STARS",
       "name": "辻　朔之介",
-      "csUrl": "https://iachara.com/view/5154134"
+      "csUrl": "https://iachara.com/view/5154134",
+      "reading": "つじ さくのすけ",
+      "age": "27",
+      "gender": "男",
+      "height": "179",
+      "weight": "76",
+      "hair": "黒",
+      "eyes": "黒か金",
+      "birthday": "3月13日",
+      "likes": "煙草、辛いもの、ダーリン",
+      "dislikes": "苦いもの(コーヒーとかは平気。ゴーヤとかのえぐみがあるものが苦手)",
+      "stats": {
+        "STR": 15,
+        "CON": 12,
+        "POW": 15,
+        "DEX": 12,
+        "APP": 13,
+        "SIZ": 14,
+        "INT": 16,
+        "EDU": 16
+      }
     },
     {
       "id": "char-import-5154134-2",

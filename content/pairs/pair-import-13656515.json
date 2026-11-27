@@ -7,7 +7,24 @@
       "id": "char-import-13656515-1",
       "label": "HO1",
       "name": "光野　那由多",
-      "csUrl": "https://iachara.com/view/13656515"
+      "csUrl": "https://iachara.com/view/13656515",
+      "reading": "こうの なゆた",
+      "job": "国家警察",
+      "age": "25",
+      "gender": "男",
+      "height": "149",
+      "hair": "白",
+      "eyes": "ピンク",
+      "stats": {
+        "STR": 12,
+        "CON": 13,
+        "POW": 15,
+        "DEX": 14,
+        "APP": 15,
+        "SIZ": 10,
+        "INT": 15,
+        "EDU": 17
+      }
     },
     {
       "id": "char-import-13656515-2",

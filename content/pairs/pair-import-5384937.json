@@ -35,7 +35,29 @@
       "id": "char-import-5384937-2",
       "label": "PC",
       "name": "小日向　涼宇",
-      "csUrl": "https://iachara.com/view/5210360"
+      "csUrl": "https://iachara.com/view/5210360",
+      "reading": "こひなた りょう",
+      "job": "高校教師(体育)",
+      "age": "28",
+      "gender": "男",
+      "height": "183",
+      "hair": "黒",
+      "eyes": "黒",
+      "birthday": "4月14日",
+      "likes": "カツ丼、体を動かすこと",
+      "dislikes": "にんじん、理科",
+      "family": "弟",
+      "color": "#8D93C8",
+      "stats": {
+        "STR": 15,
+        "CON": 16,
+        "POW": 14,
+        "DEX": 12,
+        "APP": 12,
+        "SIZ": 15,
+        "INT": 15,
+        "EDU": 15
+      }
     }
   ],
   "stills": [],

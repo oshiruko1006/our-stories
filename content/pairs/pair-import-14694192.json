@@ -7,7 +7,29 @@
       "id": "char-import-14694192-1",
       "label": "HO1",
       "name": "文　撫子",
-      "csUrl": "https://iachara.com/view/14694192"
+      "csUrl": "https://iachara.com/view/14694192",
+      "reading": "かざり なでしこ",
+      "job": "教祖",
+      "age": "19",
+      "gender": "女",
+      "height": "158",
+      "weight": "56",
+      "hair": "ピンク",
+      "eyes": "ピンク",
+      "birthday": "9月12日",
+      "likes": "花、お喋り",
+      "dislikes": "勉強、教祖らしく大人しくしていること",
+      "color": "#FFE4E1",
+      "stats": {
+        "STR": 12,
+        "CON": 13,
+        "POW": 14,
+        "DEX": 11,
+        "APP": 16,
+        "SIZ": 12,
+        "INT": 12,
+        "EDU": 13
+      }
     },
     {
       "id": "char-import-14694192-2",

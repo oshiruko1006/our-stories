@@ -7,7 +7,25 @@
       "id": "char-import-6763154-1",
       "label": "HO1",
       "name": "神々廻　慶",
-      "csUrl": "https://iachara.com/view/6763154"
+      "csUrl": "https://iachara.com/view/6763154",
+      "reading": "ししば けい",
+      "job": "刑事",
+      "age": "34",
+      "gender": "男",
+      "height": "171",
+      "birthday": "3月26日",
+      "likes": "からあげ、ブラックコーヒー",
+      "dislikes": "酒、煙草、にんじん",
+      "stats": {
+        "STR": 55,
+        "CON": 70,
+        "POW": 65,
+        "DEX": 65,
+        "APP": 70,
+        "SIZ": 60,
+        "INT": 70,
+        "EDU": 90
+      }
     },
     {
       "id": "char-import-6763154-2",

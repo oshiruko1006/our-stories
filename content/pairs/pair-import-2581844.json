@@ -42,7 +42,26 @@
           "artist": "ピコン",
           "url": "https://youtu.be/O0IKk2C4kzg"
         }
-      ]
+      ],
+      "reading": "あさひな いより",
+      "job": "フリーター",
+      "age": "25",
+      "gender": "男",
+      "height": "172",
+      "weight": "63",
+      "hair": "ピンク",
+      "eyes": "黒",
+      "birthday": "5月31日",
+      "stats": {
+        "STR": 12,
+        "CON": 14,
+        "POW": 11,
+        "DEX": 8,
+        "APP": 15,
+        "SIZ": 13,
+        "INT": 9,
+        "EDU": 18
+      }
     }
   ],
   "stills": [],

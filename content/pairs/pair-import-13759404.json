@@ -34,7 +34,26 @@
       "id": "char-import-13759404-2",
       "label": "HO2",
       "name": "狛",
-      "csUrl": "https://iachara.com/view/13758630"
+      "csUrl": "https://iachara.com/view/13758630",
+      "reading": "こま",
+      "job": "都市伝説課職員",
+      "age": "23",
+      "gender": "男",
+      "height": "165",
+      "birthday": "3月13日",
+      "likes": "栗しぐれ、かりんとう、ぶり大根",
+      "dislikes": "海外のスパイス系の料理",
+      "color": "#FCC800",
+      "stats": {
+        "STR": 16,
+        "CON": 16,
+        "POW": 20,
+        "DEX": 14,
+        "APP": 12,
+        "SIZ": 11,
+        "INT": 11,
+        "EDU": 15
+      }
     }
   ],
   "stills": [],

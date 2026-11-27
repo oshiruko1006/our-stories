@@ -32,7 +32,26 @@
       "id": "char-import-5400538-2",
       "label": "PC",
       "name": "泉　清貴",
-      "csUrl": "https://iachara.com/view/5396626"
+      "csUrl": "https://iachara.com/view/5396626",
+      "reading": "いずみ きよたか",
+      "job": "教師",
+      "age": "37",
+      "gender": "男",
+      "height": "173",
+      "birthday": "6月29日",
+      "family": "父、母（一人っ子）",
+      "likes": "家、一人飯、喫煙席のある飲食店、焼き魚",
+      "dislikes": "世間話、ジャンクフード",
+      "stats": {
+        "STR": 13,
+        "CON": 5,
+        "POW": 8,
+        "DEX": 13,
+        "APP": 9,
+        "SIZ": 13,
+        "INT": 11,
+        "EDU": 16
+      }
     }
   ],
   "stills": [],

@@ -13,7 +13,28 @@
       "id": "char-import-14664422-2",
       "label": "PC",
       "name": "安住　雅臣",
-      "csUrl": "https://iachara.com/view/14664422"
+      "csUrl": "https://iachara.com/view/14664422",
+      "reading": "あずみ まさおみ",
+      "job": "高校生",
+      "age": "16",
+      "gender": "男",
+      "height": "169",
+      "hair": "黒",
+      "eyes": "黒",
+      "birthday": "10月14日",
+      "likes": "チンチラ、弓道、ハンバーガー",
+      "dislikes": "生魚、過度に騒がしい場所、人を待たせること",
+      "color": "#622D18",
+      "stats": {
+        "STR": 13,
+        "CON": 12,
+        "POW": 14,
+        "DEX": 14,
+        "APP": 12,
+        "SIZ": 12,
+        "INT": 15,
+        "EDU": 10
+      }
     }
   ],
   "stills": [],

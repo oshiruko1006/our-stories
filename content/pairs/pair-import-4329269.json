@@ -7,7 +7,27 @@
       "id": "char-import-4329269-1",
       "label": "HO1",
       "name": "葵　柊奈",
-      "csUrl": "https://iachara.com/view/4329269"
+      "csUrl": "https://iachara.com/view/4329269",
+      "reading": "あおい ひな",
+      "job": "退魔師",
+      "age": "16",
+      "gender": "女",
+      "height": "161",
+      "hair": "黒",
+      "eyes": "青",
+      "birthday": "3月1日",
+      "likes": "きな粉餅",
+      "color": "#4D5AAF",
+      "stats": {
+        "STR": 14,
+        "CON": 10,
+        "POW": 16,
+        "DEX": 14,
+        "APP": 14,
+        "SIZ": 13,
+        "INT": 15,
+        "EDU": 10
+      }
     },
     {
       "id": "char-import-4329269-2",
