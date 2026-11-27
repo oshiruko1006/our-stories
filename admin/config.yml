@@ -115,6 +115,10 @@ collections:
       name: quote
       widget: text
       required: false
+    - label: 相手の呼び方
+      name: partnerAddress
+      widget: string
+      required: false
     - label: 誕生日
       name: birthday
       widget: string
@@ -259,6 +263,25 @@ collections:
         name: note
         widget: text
         required: false
+  - label: ふたりの関係性
+    name: relationship
+    widget: object
+    required: false
+    collapsed: true
+    fields:
+    - label: 関係性
+      name: type
+      widget: string
+      required: false
+    - label: 記念日
+      name: anniversary
+      widget: string
+      required: false
+      hint: '例：3月2日、2026年3月2日（任意）'
+    - label: 出会い
+      name: meeting
+      widget: text
+      required: false
   - label: 二人のイメージソング
     name: songs
     widget: list
