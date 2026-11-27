@@ -13,7 +13,29 @@
       "id": "char-import-14694192-2",
       "label": "HO2",
       "name": "聖　菖蒲",
-      "csUrl": "https://iachara.com/view/14692908"
+      "csUrl": "https://iachara.com/view/14692908",
+      "reading": "ひじり あやめ",
+      "job": "宗教家",
+      "age": "28",
+      "gender": "男",
+      "height": "183",
+      "weight": "77",
+      "hair": "黒",
+      "eyes": "菖蒲",
+      "birthday": "6月6日",
+      "likes": "撫子",
+      "dislikes": "勉強",
+      "color": "#674196",
+      "stats": {
+        "STR": 14,
+        "CON": 15,
+        "POW": 16,
+        "DEX": 17,
+        "APP": 15,
+        "SIZ": 15,
+        "INT": 14,
+        "EDU": 13
+      }
     }
   ],
   "stills": [],

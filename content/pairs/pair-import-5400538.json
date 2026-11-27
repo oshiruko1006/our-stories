@@ -7,7 +7,26 @@
       "id": "char-import-5400538-1",
       "label": "KPC",
       "name": "高坂　政史",
-      "csUrl": "https://iachara.com/view/5400538"
+      "csUrl": "https://iachara.com/view/5400538",
+      "reading": "こうさか まさちか",
+      "job": "学生",
+      "age": "18",
+      "gender": "男",
+      "height": "169",
+      "weight": "59",
+      "hair": "黒",
+      "birthday": "7月24日",
+      "color": "#70459B",
+      "stats": {
+        "STR": 11,
+        "CON": 16,
+        "POW": 18,
+        "DEX": 14,
+        "APP": 17,
+        "SIZ": 13,
+        "INT": 15,
+        "EDU": 12
+      }
     },
     {
       "id": "char-import-5400538-2",

@@ -7,7 +7,28 @@
       "id": "char-import-13759404-1",
       "label": "HO1",
       "name": "蛇目",
-      "csUrl": "https://iachara.com/view/13759404"
+      "csUrl": "https://iachara.com/view/13759404",
+      "reading": "じゃのめ",
+      "job": "公務員",
+      "age": "28",
+      "gender": "男",
+      "height": "185",
+      "weight": "79",
+      "hair": "サイプレスグリーン",
+      "eyes": "金",
+      "likes": "子供、甘いもの",
+      "dislikes": "暴力",
+      "color": "#264939",
+      "stats": {
+        "STR": 14,
+        "CON": 12,
+        "POW": 24,
+        "DEX": 13,
+        "APP": 14,
+        "SIZ": 15,
+        "INT": 16,
+        "EDU": 14
+      }
     },
     {
       "id": "char-import-13759404-2",

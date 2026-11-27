@@ -7,7 +7,29 @@
       "id": "char-import-2581844-1",
       "label": "PC1",
       "name": "夜城　右京",
-      "csUrl": "https://iachara.com/view/2581844"
+      "csUrl": "https://iachara.com/view/2581844",
+      "reading": "やしろ うきょう",
+      "job": "大学生",
+      "age": "21",
+      "gender": "男",
+      "height": "178",
+      "weight": "69",
+      "hair": "黒",
+      "eyes": "黒",
+      "birthday": "9月29日",
+      "likes": "生き物、パンケーキ、ハンバーグ",
+      "dislikes": "抹茶味のもの、豆やナッツ類、人参",
+      "color": "#398B9C",
+      "stats": {
+        "STR": 11,
+        "CON": 13,
+        "POW": 16,
+        "DEX": 14,
+        "APP": 10,
+        "SIZ": 14,
+        "INT": 15,
+        "EDU": 16
+      }
     },
     {
       "id": "char-import-2581844-2",
