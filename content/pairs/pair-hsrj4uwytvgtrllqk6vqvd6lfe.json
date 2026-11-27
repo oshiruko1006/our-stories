@@ -31,7 +31,34 @@
         "INT": 13,
         "EDU": 17
       },
-      "age": "24"
+      "age": "24",
+      "songs": [
+        {
+          "title": "インザバックルーム",
+          "artist": "syudou",
+          "url": "https://youtu.be/eW620xcBnVE"
+        },
+        {
+          "title": "公然の秘密",
+          "artist": "椎名林檎",
+          "url": "https://youtu.be/ETtDJz9t09U"
+        },
+        {
+          "title": "愛のけだもの",
+          "artist": "神はサイコロを振らない × キタニタツヤ",
+          "url": "https://youtu.be/VaNQnNbqvos"
+        },
+        {
+          "title": "ファムファタル",
+          "artist": "ケダルイ",
+          "url": "https://youtu.be/FCj3rAeDfL0"
+        },
+        {
+          "title": "紗痲",
+          "artist": "煮ル果実",
+          "url": "https://youtu.be/tQWMArNo9F0"
+        }
+      ]
     },
     {
       "gender": "男",
@@ -62,6 +89,11 @@
           "url": "https://www.youtube.com/watch?v=xZdh1klOz9o&list=OLAK5uy_l4gU0RM5Amb0QNTJHRI8Zc9OZa5k0SA_E",
           "artist": "福山雅治",
           "title": "聖域"
+        },
+        {
+          "title": "リードコントロール",
+          "artist": "なるみや",
+          "url": "https://youtu.be/TLWJIPGlFW4"
         }
       ],
       "stats": {
