@@ -13,7 +13,19 @@
       "id": "char-import-4557130-2",
       "label": "HO2",
       "name": "榊　雄一郎",
-      "csUrl": "https://iachara.com/view/5126965"
+      "csUrl": "https://iachara.com/view/5126965",
+      "songs": [
+        {
+          "title": "Bitter",
+          "artist": "ロス",
+          "url": "https://www.uta-net.com/song/332439/"
+        },
+        {
+          "title": "金星",
+          "artist": "女王蜂",
+          "url": "https://www.uta-net.com/song/207730/"
+        }
+      ]
     }
   ],
   "stills": [],
