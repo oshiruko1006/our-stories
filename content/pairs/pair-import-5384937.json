@@ -7,7 +7,29 @@
       "id": "char-import-5384937-1",
       "label": "KPC",
       "name": "夏生　誉",
-      "csUrl": "https://iachara.com/view/5384937"
+      "csUrl": "https://iachara.com/view/5384937",
+      "reading": "なつき ほまれ",
+      "job": "メイクアップアーティスト",
+      "age": "28",
+      "gender": "男",
+      "height": "181",
+      "weight": "72",
+      "hair": "黒",
+      "eyes": "黒",
+      "birthday": "3月2日",
+      "color": "#008E83",
+      "likes": "オシャレ、コスメ、肉",
+      "dislikes": "炭酸、パクチー、だらしない人",
+      "stats": {
+        "STR": 13,
+        "CON": 14,
+        "POW": 15,
+        "DEX": 17,
+        "APP": 14,
+        "SIZ": 15,
+        "INT": 16,
+        "EDU": 14
+      }
     },
     {
       "id": "char-import-5384937-2",
