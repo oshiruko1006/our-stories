@@ -219,6 +219,29 @@
   #nc-root .vanilla-responsive-shell .vanilla-batch-actions button,
   #nc-root .vanilla-responsive-shell .vanilla-batch-file{font-size:12px;padding:6px 9px}
 }
+</style>
+<style>
+/* Profile completeness panel — read-only, isolated from the Decap editor. */
+#os-audit-launch,#os-audit{--audit-bg:#faf7f0;--audit-paper:#fffdfa;--audit-ink:#51483f;--audit-muted:#817568;--audit-line:#d8cabc;--audit-soft:#eee8df;--audit-accent:#76695c;font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;color:var(--audit-ink);box-sizing:border-box}
+#os-audit-launch[data-audit-theme="dark"],#os-audit[data-audit-theme="dark"]{color-scheme:dark;--audit-bg:#201e1c;--audit-paper:#2b2825;--audit-ink:#eee5da;--audit-muted:#b9aa9b;--audit-line:#50473f;--audit-soft:#39332e;--audit-accent:#c6b6a6}
+#os-audit-launch{position:fixed;left:max(16px,env(safe-area-inset-left));bottom:max(16px,calc(env(safe-area-inset-bottom) + 8px));z-index:1001;border:1px solid var(--audit-line);border-radius:24px;padding:9px 14px;display:flex;align-items:center;gap:7px;background:var(--audit-paper);box-shadow:0 3px 14px #0002;font-size:12px;cursor:pointer}
+#os-audit-launch[hidden]{display:none!important}#os-audit-launch svg{width:17px;height:17px}
+#os-audit{width:min(760px,calc(100% - 28px));max-width:none;max-height:calc(100dvh - 28px);padding:0;border:1px solid var(--audit-line);border-radius:12px;background:var(--audit-bg);overflow:auto;margin:auto;overscroll-behavior:contain}
+#os-audit::backdrop{background:#0008}#os-audit *{box-sizing:border-box}#os-audit button,#os-audit input,#os-audit select{font:inherit;color:inherit}#os-audit button,#os-audit select{cursor:pointer}
+#os-audit .audit-head{position:sticky;top:0;z-index:1;background:var(--audit-bg);padding:17px 20px 12px;border-bottom:1px solid var(--audit-line)}
+#os-audit .audit-title{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
+#os-audit h2{font-size:17px;font-weight:600;margin:0}#os-audit .audit-close{border:0;background:transparent;font-size:25px;line-height:1;width:32px;height:32px}
+#os-audit .audit-tools{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:7px}
+#os-audit input,#os-audit select,#os-audit .audit-refresh{border:1px solid var(--audit-line);background:var(--audit-paper);border-radius:6px;min-width:0;padding:8px;font-size:12px}
+#os-audit .audit-summary{display:flex;gap:8px;align-items:baseline;margin-top:11px;font-size:12px;color:var(--audit-muted);flex-wrap:wrap}
+#os-audit .audit-summary strong{color:var(--audit-ink);font-size:18px;font-weight:600}
+#os-audit .audit-body{padding:8px 20px 20px}#os-audit .audit-note{font-size:11px;color:var(--audit-muted);line-height:1.65;margin:6px 0 10px}
+#os-audit .audit-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 12px;align-items:center;border-bottom:1px solid var(--audit-line);padding:11px 0}
+#os-audit .audit-name{font-size:14px;font-weight:600;overflow-wrap:anywhere}#os-audit .audit-scenario{font-size:11px;color:var(--audit-muted);margin-top:2px;overflow-wrap:anywhere}
+#os-audit .audit-edit{font-size:11px;text-decoration:none;color:var(--audit-ink);border:1px solid var(--audit-line);border-radius:5px;padding:7px 9px;background:var(--audit-paper);white-space:nowrap}
+#os-audit .audit-tags{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:4px}#os-audit .audit-tag{font-size:10px;line-height:1.45;background:var(--audit-soft);color:var(--audit-ink);padding:3px 7px;border-radius:4px}#os-audit .audit-tag.is-selected{outline:1px solid var(--audit-accent);font-weight:600}
+#os-audit .audit-empty{font-size:13px;color:var(--audit-muted);padding:20px 0;text-align:center}#os-audit :focus-visible,#os-audit-launch:focus-visible{outline:2px solid var(--audit-accent);outline-offset:2px}
+@media(max-width:500px){#os-audit{width:calc(100% - 16px);max-height:calc(100dvh - 16px)}#os-audit .audit-head{padding:12px}#os-audit .audit-body{padding:5px 12px 14px}#os-audit h2{font-size:15px}#os-audit .audit-tools{grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto;gap:5px}#os-audit input,#os-audit select,#os-audit .audit-refresh{padding:8px 5px;font-size:11px}#os-audit-launch{left:max(12px,env(safe-area-inset-left));bottom:max(12px,calc(env(safe-area-inset-bottom) + 6px))}}
 </style></head><body><script src="https://unpkg.com/decap-cms@3.18.0/dist/decap-cms.js"></script><script>/* Decap 3.18 mobile editor layout experiment; no entry data or actions changed. */
 (function () {
   'use strict';
@@ -333,4 +356,74 @@ let pending=false;new MutationObserver(()=>{if(!pending){pending=true;requestAni
 document.addEventListener('change',e=>{if(e.target instanceof HTMLInputElement&&e.target.type==='file')capture(e.target.files)},true);document.addEventListener('drop',e=>capture(e.dataTransfer?.files),true);
 function fix(img){if(!img.closest('#nc-root')||!img.src||img.src.startsWith('blob:')||img.src.startsWith('data:'))return;let name;try{name=norm(decodeURIComponent(new URL(img.src).pathname.split('/').pop()))}catch{return}const url=local.get(name)||local.get(name.replace(/_previewRetry.*$/,''));if(url&&img.complete&&!img.naturalWidth){img.dataset.osOriginalSrc=img.src;img.src=url;}}
 let queued=false;function schedule(){if(!queued){queued=true;requestAnimationFrame(()=>{queued=false;document.querySelectorAll('#nc-root img').forEach(fix)})}}document.addEventListener('error',e=>{if(e.target instanceof HTMLImageElement)fix(e.target)},true);new MutationObserver(schedule).observe(document.body,{childList:true,subtree:true,attributes:true,attributeFilter:['src']});})();
+</script><script>
+
+/* Profile completeness audit. All results are derived from deployed JSON; no writes. */
+(()=>{
+const statsKeys=['STR','CON','POW','DEX','APP','SIZ','INT','EDU'];
+const fields=[
+ ['reading','ふりがな'],['color','イメージカラー'],['colorName','色の名前'],['image','立ち絵'],['quote','一言セリフ'],['birthday','誕生日'],['age','年齢'],['height','身長'],['weight','体重'],['job','職業'],['gender','性別'],['origin','出身'],['hair','髪の色'],['eyes','瞳の色'],['skin','肌の色'],['family','家族構成'],['likes','好き'],['dislikes','苦手'],['stats','能力値'],['csUrl','CSリンク'],['partnerAddress','相手の呼び方']
+];
+const textValue=v=>String(v??'').normalize('NFKC').trim();
+function blank(v){return /^(?:|[-—–―]+|[?？]+|未設定|未登録|不明)$/.test(textValue(v))}
+function missing(p,k){
+ const v=p[k];
+ if(k==='color')return !/^#[0-9a-f]{6}$/i.test(textValue(v))||textValue(v).toUpperCase()==='#7FA9A5';
+ if(k==='stats')return statsKeys.some(key=>{const n=v?.[key];return blank(n)||!Number.isFinite(Number(n))||Number(n)<0});
+ return blank(v);
+}
+function rowsFrom(data){
+ if(!data||!Array.isArray(data.stories))throw Error('invalid data');
+ return data.stories.flatMap(s=>Array.isArray(s.people)&&s.id?s.people.filter(p=>p&&p.id).map(p=>({id:p.id,pairId:s.id,name:p.name||'名前未入力',reading:p.reading||'',scenario:s.scenario||'シナリオ名未入力',gaps:fields.filter(([k])=>missing(p,k)).map(([k])=>k)})):[]);
+}
+const searchText=v=>textValue(v).toLowerCase();
+function filtered(rows,key,query){
+ const q=searchText(query);
+ return rows.filter(r=>r.gaps.length&&(key==='all'||r.gaps.includes(key))&&(!q||[r.name,r.reading,r.scenario].some(v=>searchText(v).includes(q))));
+}
+function entryLink(row){return '#/collections/pairs/entries/'+encodeURIComponent(row.pairId)}
+function isList(hash){return /^#\/collections\/pairs\/?(?:\?.*)?$/.test(hash)}
+const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e};
+const launch=el('button','','未入力チェック');launch.id='os-audit-launch';launch.type='button';launch.hidden=true;
+const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('fill','none');svg.setAttribute('stroke','currentColor');svg.setAttribute('stroke-width','1.6');svg.setAttribute('stroke-linecap','round');svg.setAttribute('stroke-linejoin','round');svg.setAttribute('aria-hidden','true');const icon=document.createElementNS(svg.namespaceURI,'path');icon.setAttribute('d','M9 5H5v15h14V5h-4M9 3h6v4H9zM8 12l2 2 5-5M8 17h8');svg.append(icon);launch.prepend(svg);
+const dialog=el('dialog');dialog.id='os-audit';dialog.setAttribute('aria-labelledby','os-audit-title');
+const header=el('div','audit-head'),title=el('div','audit-title'),h=el('h2','','プロフィール登録状況');h.id='os-audit-title';
+const close=el('button','audit-close','×');close.type='button';close.setAttribute('aria-label','閉じる');title.append(h,close);
+const tools=el('div','audit-tools'),select=el('select');select.setAttribute('aria-label','未入力項目で絞り込む');const search=el('input');search.type='search';search.placeholder='探索者・シナリオ名';search.setAttribute('aria-label','探索者・シナリオ名で検索');const refresh=el('button','audit-refresh','更新');refresh.type='button';
+tools.append(select,search,refresh);const summary=el('div','audit-summary');summary.setAttribute('role','status');summary.setAttribute('aria-live','polite');header.append(title,tools,summary);
+const body=el('div','audit-body'),note=el('p','audit-note','公開済みのデータをチェックします。CMSで保存した変更はデプロイ後に反映されます。任意項目も含め、空欄は未入力として表示します。'),results=el('div');body.append(note,results);dialog.append(header,body);document.body.append(launch,dialog);
+let rows=[],status='idle',request=0;
+function setOptions(){
+ const selected=select.value||'all';
+ const options=[['all','すべて',rows.filter(r=>r.gaps.length).length],...fields.map(([k,l])=>[k,l,rows.filter(r=>r.gaps.includes(k)).length])];
+ select.replaceChildren(...options.map(([k,l,n])=>{const o=el('option','',l+(status==='ready'?'（'+n+'）':''));o.value=k;return o}));select.value=selected;
+}
+function render(){
+ results.replaceChildren();summary.replaceChildren();
+ if(status!=='ready'){summary.textContent=status==='loading'?'読み込み中…':'読み込めませんでした。更新を押して再試行してください。';return;}
+ const key=select.value||'all',list=filtered(rows,key,search.value),total=rows.filter(r=>r.gaps.length).length;
+ summary.append(el('strong','',String(list.length)+'人'),el('span','','表示中 / 未入力あり '+total+'人・全 '+rows.length+'人'));
+ if(!list.length){results.append(el('p','audit-empty','該当する探索者はいません。'));return;}
+ const frag=document.createDocumentFragment();
+ for(const row of list){
+  const item=el('div','audit-row'),info=el('div');info.append(el('div','audit-name',row.name),el('div','audit-scenario',row.scenario));
+  const edit=el('a','audit-edit','編集 ↗');edit.href=entryLink(row);edit.setAttribute('aria-label',row.name+' のペア編集画面へ');edit.addEventListener('click',()=>dialog.close());
+  const tags=el('div','audit-tags');for(const [k,label] of fields)if(row.gaps.includes(k))tags.append(el('span','audit-tag'+(key===k?' is-selected':''),label));
+  item.append(info,edit,tags);frag.append(item);
+ }
+ results.append(frag);
+}
+async function load(){
+ const token=++request;status='loading';setOptions();render();refresh.disabled=true;
+ try{const response=await fetch('../content/stories.json',{cache:'no-store'});if(!response.ok)throw Error('fetch failed');const data=await response.json();if(token!==request)return;rows=rowsFrom(data);status='ready';}
+ catch(e){if(token!==request)return;rows=[];status='error';console.warn('Profile audit:',e);}
+ finally{if(token===request){refresh.disabled=false;setOptions();render();}}
+}
+const media=matchMedia('(prefers-color-scheme: dark)');
+function theme(){let mode='system';try{mode=localStorage.getItem('our-stories-theme')||'system'}catch{}const dark=mode==='dark'||(mode!=='light'&&media.matches);for(const node of [launch,dialog])node.dataset.auditTheme=dark?'dark':'light'}
+function syncRoute(){launch.hidden=!isList(location.hash);if(launch.hidden&&dialog.open)dialog.close()}
+launch.onclick=()=>{theme();if(!dialog.open){dialog.showModal();load()}};
+close.onclick=()=>dialog.close();refresh.onclick=load;select.onchange=render;search.oninput=render;dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close()}});
+window.addEventListener('hashchange',syncRoute);window.addEventListener('storage',theme);media.addEventListener('change',theme);theme();syncRoute();setOptions();
+})();
 </script></body></html>
