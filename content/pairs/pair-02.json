@@ -63,7 +63,8 @@
         "EDU": 15
       },
       "age": "28歳",
-      "csUrl": "https://iachara.com/view/13387783"
+      "csUrl": "https://iachara.com/view/13387783",
+      "colorName": "空色"
     },
     {
       "gender": "男",
@@ -105,7 +106,8 @@
         "EDU": 17
       },
       "age": "28歳",
-      "csUrl": "https://iachara.com/view/12256482"
+      "csUrl": "https://iachara.com/view/12256482",
+      "colorName": "若葉色"
     }
   ],
   "songs": [

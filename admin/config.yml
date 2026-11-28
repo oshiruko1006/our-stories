@@ -89,6 +89,11 @@ collections:
       widget: string
       required: false
       default: '#7FA9A5'
+    - label: 色の名前
+      name: colorName
+      widget: string
+      required: false
+      hint: '例：ロイヤルブルー（任意）'
     - label: 立ち絵
       name: image
       widget: image
@@ -114,6 +119,10 @@ collections:
     - label: 一言セリフ
       name: quote
       widget: text
+      required: false
+    - label: 相手の呼び方
+      name: partnerAddress
+      widget: string
       required: false
     - label: 誕生日
       name: birthday
@@ -259,6 +268,21 @@ collections:
         name: note
         widget: text
         required: false
+  - label: ふたりの関係性
+    name: relationship
+    widget: object
+    required: false
+    collapsed: true
+    fields:
+    - label: 関係性
+      name: type
+      widget: string
+      required: false
+    - label: 記念日
+      name: anniversary
+      widget: string
+      required: false
+      hint: '例：3月2日、2026年3月2日（任意）'
   - label: 二人のイメージソング
     name: songs
     widget: list
