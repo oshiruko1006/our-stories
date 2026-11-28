@@ -126,7 +126,8 @@
           "artist": "なとり",
           "url": "https://youtu.be/gNg2Qw5R-Q4?si=ikXLbJVVBlh6iuGI"
         }
-      ]
+      ],
+      "colorName": "空色"
     },
     {
       "color": "#A3BE6B",
@@ -160,7 +161,8 @@
           "artist": "廉",
           "url": "https://youtu.be/D5rIyGZGom4?si=dUCY0l6AmoeCejvZ"
         }
-      ]
+      ],
+      "colorName": "若葉色"
     }
   ],
   "scenario": "共感覚",
