@@ -89,6 +89,11 @@ collections:
       widget: string
       required: false
       default: '#7FA9A5'
+    - label: 色の名前
+      name: colorName
+      widget: string
+      required: false
+      hint: '例：ロイヤルブルー（任意）'
     - label: 立ち絵
       name: image
       widget: image
