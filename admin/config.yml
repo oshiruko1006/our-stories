@@ -116,9 +116,10 @@ collections:
       name: crop
       widget: string
       required: false
-    - label: 一言セリフ
+    # Preserve legacy quote values without exposing an input control.
+    - label: 一言セリフ（旧データ保持用）
       name: quote
-      widget: text
+      widget: hidden
       required: false
     - label: 相手の呼び方
       name: partnerAddress
