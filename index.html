@@ -337,16 +337,19 @@ function relationshipMarkup(story){
 /* Comparison routes share the existing fetch status and never mutate character records. */
 const compareMetrics=[['height','身長','cm'],['weight','体重','kg'],['age','年齢','歳'],...['STR','CON','POW','DEX','APP','SIZ','INT','EDU'].map(k=>[k,k,''])];
 const compareState={metric:'height',view:'rank',order:'desc',scenario:'all',selected:null,pickerOpen:false,query:''};
-function comparisonValue(p,key){
+// Known CoC7 pair: retain original profile values, normalize only comparisons.
+const comparison7ePairs=new Set(['pair-import-6763154']);
+function comparisonValue(p,key,pairId){
  const raw=['height','weight','age'].includes(key)?p[key]:p.stats?.[key];
  const value=String(raw??'').normalize('NFKC').trim();
  const suffix=key==='height'?'(?:cm)?':key==='weight'?'(?:kg)?':key==='age'?'(?:歳|才|years?)?':'';
  const match=new RegExp('^(\\d+(?:\\.\\d+)?)\\s*'+suffix+'$','i').exec(value);
  if(!match)return null;const n=Number(match[1]);
- return Number.isFinite(n)&&(key==='height'||key==='weight'?n>0:n>=0)?n:null;
+ if(!Number.isFinite(n)||(key==='height'||key==='weight'?n<=0:n<0))return null;
+ return !['height','weight','age'].includes(key)&&comparison7ePairs.has(pairId)?n/5:n;
 }
 function comparisonPeople(data){
- return data.flatMap(s=>Array.isArray(s.people)&&s.id?s.people.filter(p=>p&&p.id&&String(p.name||'').trim()).map(p=>({key:s.id+'/'+p.id,name:p.name,reading:p.reading||p.name,scenario:s.scenario||'—',pairId:s.id,href:'#/profile/'+esc(s.id)+'/'+esc(p.id),color:relationshipColor(p.color)||'#9C8B7D',values:Object.fromEntries(compareMetrics.map(([k])=>[k,comparisonValue(p,k)]))})):[]);
+ return data.flatMap(s=>Array.isArray(s.people)&&s.id?s.people.filter(p=>p&&p.id&&String(p.name||'').trim()).map(p=>({key:s.id+'/'+p.id,name:p.name,reading:p.reading||p.name,scenario:s.scenario||'—',pairId:s.id,href:'#/profile/'+esc(s.id)+'/'+esc(p.id),color:relationshipColor(p.color)||'#9C8B7D',values:Object.fromEntries(compareMetrics.map(([k])=>[k,comparisonValue(p,k,s.id)]))})):[]);
 }
 function comparisonScope(people,state){return people.filter(p=>state.scenario==='all'||p.pairId===state.scenario)}
 function comparisonRows(people,state){
@@ -372,7 +375,7 @@ function comparisonResultMarkup(people){
  if(birthdayDataStatus!=='ready')return '<p class="compare-empty" role="status">'+(birthdayDataStatus==='loading'?'プロフィールを読み込んでいます…':'プロフィールデータを読み込めませんでした。再読み込みしてください。')+'</p>';
  const state=compareState,key=state.view==='height'?'height':state.metric,unit=compareMetrics.find(m=>m[0]===key)[2],scope=comparisonScope(people,state).filter(p=>state.selected===null||state.selected.has(p.key)),rows=comparisonRows(people,state),stats=comparisonStats(rows);
  const summary='<div class="compare-summary"><strong>'+rows.length+'人を表示</strong><span>未入力・比較不可 '+(scope.length-rows.length)+'人</span></div>';
- const note=!['height','weight','age'].includes(key)?'<p class="compare-note">能力値はCSの登録値をそのまま比較しています。CoC6版と7版では尺度が異なるため、版をまたいだ順位にはご注意ください。</p>':'';
+ const note=!['height','weight','age'].includes(key)?'<p class="compare-note">能力値は6版基準で比較しています。7版の探索者（プルガトリウムの夜）は登録値を5で割って表示しています。</p>':'';
  if(!stats)return summary+note+'<p class="compare-empty">比較できるデータがありません。</p>';
  const footer='<div class="compare-stats">'+[['平均',stats.mean],['最大',stats.max],['最小',stats.min]].map(([l,v])=>'<div><small>'+l+'</small><strong>'+v+(unit?'<small>'+unit+'</small>':'')+'</strong></div>').join('')+'</div>';
  return summary+note+(state.view==='height'?comparisonHeightMarkup(rows):comparisonRankMarkup(rows,unit))+footer;

@@ -7,7 +7,17 @@
       "id": "char-import-6763154-1",
       "label": "HO1",
       "name": "神々廻　慶",
-      "csUrl": "https://iachara.com/view/6763154"
+      "csUrl": "https://iachara.com/view/6763154",
+      "stats": {
+        "STR": 55,
+        "CON": 70,
+        "POW": 65,
+        "DEX": 65,
+        "APP": 70,
+        "SIZ": 60,
+        "INT": 70,
+        "EDU": 90
+      }
     },
     {
       "id": "char-import-6763154-2",
