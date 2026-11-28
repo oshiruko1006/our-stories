@@ -283,10 +283,6 @@ collections:
       widget: string
       required: false
       hint: '例：3月2日、2026年3月2日（任意）'
-    - label: 出会い
-      name: meeting
-      widget: text
-      required: false
   - label: 二人のイメージソング
     name: songs
     widget: list
