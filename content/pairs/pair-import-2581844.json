@@ -4,22 +4,21 @@
   "yomi": "きるきるいきる",
   "people": [
     {
-      "id": "char-import-2581844-1",
-      "label": "PC1",
-      "name": "夜城　右京",
-      "csUrl": "https://iachara.com/view/2581844",
-      "reading": "やしろ うきょう",
-      "job": "大学生",
-      "age": "21",
       "gender": "男",
-      "height": "178",
-      "weight": "69",
-      "hair": "黒",
       "eyes": "黒",
-      "birthday": "9月29日",
-      "likes": "生き物、パンケーキ、ハンバーグ",
-      "dislikes": "抹茶味のもの、豆やナッツ類、人参",
+      "hair": "黒",
       "color": "#398B9C",
+      "height": "178",
+      "name": "夜城　右京",
+      "reading": "やしろ うきょう",
+      "colorName": "オーシャンティール",
+      "dislikes": "抹茶味のもの、豆やナッツ類、人参",
+      "label": "PC1",
+      "weight": "69",
+      "id": "char-import-2581844-1",
+      "likes": "生き物、パンケーキ、ハンバーグ",
+      "birthday": "9月29日",
+      "job": "大学生",
       "stats": {
         "STR": 11,
         "CON": 13,
@@ -29,13 +28,23 @@
         "SIZ": 14,
         "INT": 15,
         "EDU": 16
-      }
+      },
+      "age": "21",
+      "csUrl": "https://iachara.com/view/2581844"
     },
     {
-      "id": "char-import-2581844-2",
-      "label": "PC2",
+      "gender": "男",
+      "eyes": "黒",
+      "hair": "ピンク",
+      "color": "#FEC7EB",
+      "height": "172",
       "name": "朝比奈　依和",
-      "csUrl": "https://iachara.com/view/2557883",
+      "reading": "あさひな いより",
+      "label": "PC2",
+      "weight": "63",
+      "id": "char-import-2581844-2",
+      "birthday": "5月31日",
+      "job": "フリーター",
       "songs": [
         {
           "title": "君の脈で踊りたかった",
@@ -43,15 +52,6 @@
           "url": "https://youtu.be/O0IKk2C4kzg"
         }
       ],
-      "reading": "あさひな いより",
-      "job": "フリーター",
-      "age": "25",
-      "gender": "男",
-      "height": "172",
-      "weight": "63",
-      "hair": "ピンク",
-      "eyes": "黒",
-      "birthday": "5月31日",
       "stats": {
         "STR": 12,
         "CON": 14,
@@ -62,11 +62,10 @@
         "INT": 9,
         "EDU": 18
       },
-      "color": "#FEC7EB"
+      "age": "25",
+      "csUrl": "https://iachara.com/view/2557883"
     }
   ],
-  "stills": [],
-  "records": [],
   "songs": [
     {
       "title": "No title",
@@ -78,5 +77,7 @@
       "artist": "Ayase feat. 初音ミク",
       "url": "https://youtu.be/eZ0E3Rkv0NA"
     }
-  ]
+  ],
+  "stills": [],
+  "records": []
 }
