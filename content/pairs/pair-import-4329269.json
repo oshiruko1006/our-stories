@@ -27,7 +27,8 @@
         "SIZ": 13,
         "INT": 15,
         "EDU": 10
-      }
+      },
+      "colorName": "花色"
     },
     {
       "id": "char-import-4329269-2",
@@ -55,7 +56,8 @@
         "SIZ": 15,
         "INT": 15,
         "EDU": 18
-      }
+      },
+      "colorName": "江戸紫"
     }
   ],
   "stills": [],

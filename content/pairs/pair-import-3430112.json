@@ -43,7 +43,8 @@
         "EDU": 16
       },
       "age": "35",
-      "csUrl": "https://iachara.com/view/3430112"
+      "csUrl": "https://iachara.com/view/3430112",
+      "colorName": "蘇芳"
     },
     {
       "gender": "男",
@@ -73,7 +74,8 @@
         "EDU": 15
       },
       "age": "28",
-      "csUrl": "https://iachara.com/view/3430031"
+      "csUrl": "https://iachara.com/view/3430031",
+      "colorName": "竜胆色"
     }
   ],
   "songs": [
