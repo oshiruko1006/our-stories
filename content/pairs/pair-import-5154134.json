@@ -5,18 +5,19 @@
   "people": [
     {
       "gender": "男",
-      "eyes": "黒か金",
+      "eyes": "金",
       "hair": "黒",
       "color": "#801F1F",
       "height": "179",
       "name": "辻　朔之介",
+      "partnerAddress": "ダーリン、匡也、きょーちゃん、きょうやくん",
       "reading": "つじ さくのすけ",
       "colorName": "ディープクリムゾン",
-      "dislikes": "苦いもの(コーヒーとかは平気。ゴーヤとかのえぐみがあるものが苦手)",
+      "dislikes": "苦いもの（コーヒーとかは平気）",
       "label": "HO SEVEN STARS",
       "weight": "76",
       "id": "char-import-5154134-1",
-      "likes": "煙草、辛いもの、ダーリン",
+      "likes": "煙草、辛いもの、ラーメン",
       "birthday": "3月13日",
       "stats": {
         "STR": 15,
@@ -60,6 +61,9 @@
       "csUrl": "https://iachara.com/view/5160674"
     }
   ],
+  "relationship": {
+    "type": "度の同行者、バディ"
+  },
   "stills": [],
   "records": []
 }
