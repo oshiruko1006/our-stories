@@ -4,19 +4,18 @@
   "yomi": "あいわなびー",
   "people": [
     {
-      "id": "char-import-4557130-1",
-      "label": "HO1",
-      "name": "天ヶ谷　宏介",
-      "csUrl": "https://iachara.com/view/4557130",
-      "reading": "あまがや こうすけ",
-      "job": "洋菓子店のオーナーシェフ",
       "gender": "男",
-      "height": "184",
-      "weight": "73",
-      "hair": "黒",
       "eyes": "黒",
-      "birthday": "12月23日",
+      "hair": "黒",
+      "height": "184",
+      "name": "天ヶ谷　宏介",
+      "reading": "あまがや　こうすけ",
+      "label": "HO1",
+      "weight": "73",
+      "id": "char-import-4557130-1",
       "likes": "自分が好きでやったことで人に喜んでもらうこと",
+      "birthday": "12月23日",
+      "job": "パティシエ/オーナーシェフ",
       "stats": {
         "STR": 12,
         "CON": 11,
@@ -26,13 +25,24 @@
         "SIZ": 16,
         "INT": 16,
         "EDU": 17
-      }
+      },
+      "csUrl": "https://iachara.com/view/4557130"
     },
     {
-      "id": "char-import-4557130-2",
-      "label": "HO2",
+      "gender": "男",
+      "eyes": "黒",
+      "hair": "黒",
+      "color": "#647B55",
+      "height": "172",
       "name": "榊　雄一郎",
-      "csUrl": "https://iachara.com/view/5126965",
+      "reading": "さかき ゆういちろう",
+      "dislikes": "運動、勉強（特に数学）",
+      "label": "HO2",
+      "weight": "76",
+      "id": "char-import-4557130-2",
+      "likes": "食べること、甘いもの、動物",
+      "birthday": "8月2日",
+      "job": "高校生",
       "songs": [
         {
           "title": "Bitter",
@@ -45,18 +55,6 @@
           "url": "https://youtu.be/sOfieyM0SrA"
         }
       ],
-      "reading": "さかき ゆういちろう",
-      "job": "高校生",
-      "age": "17",
-      "gender": "男",
-      "height": "172",
-      "weight": "76",
-      "hair": "黒",
-      "eyes": "黒",
-      "birthday": "8月2日",
-      "likes": "食べること、甘いもの、動物",
-      "dislikes": "運動、勉強（特に数学）",
-      "color": "#647B55",
       "stats": {
         "STR": 16,
         "CON": 14,
@@ -66,7 +64,9 @@
         "SIZ": 14,
         "INT": 14,
         "EDU": 11
-      }
+      },
+      "age": "17",
+      "csUrl": "https://iachara.com/view/5126965"
     }
   ],
   "stills": [],
