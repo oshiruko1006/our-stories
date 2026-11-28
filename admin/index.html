@@ -310,7 +310,7 @@
 #nc-root [data-testid^="styled-list-item-top-bar-"]{background:#e5e0d8!important}
 @media(max-width:799px){#nc-root [data-testid^="object-control-"]{padding-inline:5px!important}}
 </style><script>
-(()=>{const groups=[['基本情報',['名前','ふりがな','役割']],['立ち絵・イメージカラー',['イメージカラー','色の名前','立ち絵','立ち絵差分','探索者サムネイル']],['プロフィール',['一言セリフ','相手の呼び方','誕生日','年齢','身長','職業','性別','体重','出身','髪の色','瞳の色','肌の色','家族構成','好き','苦手']],['ステータス・キャラクターシート',['ステータス','いあきゃら公開CS URL']],['イメージソング',['個人のイメージソング']]];
+(()=>{const groups=[['基本情報',['名前','ふりがな','役割']],['立ち絵・イメージカラー',['イメージカラー','色の名前','立ち絵','立ち絵差分','探索者サムネイル']],['プロフィール',['相手の呼び方','誕生日','年齢','身長','職業','性別','体重','出身','髪の色','瞳の色','肌の色','家族構成','好き','苦手']],['ステータス・キャラクターシート',['ステータス','いあきゃら公開CS URL']],['イメージソング',['個人のイメージソング']]];
 const label=e=>e.querySelector(':scope > div > label')?.textContent?.trim()||'';
 const matches=(s,k)=>s===k||s.startsWith(k+'（')||s.startsWith(k+' (')||s.startsWith(k+' ');
 function run(){for(const e of document.querySelectorAll('#nc-root div[aria-label]')){if(label(e).startsWith('識別ID（自動生成'))e.classList.add('os-id-hidden');}
@@ -362,7 +362,7 @@ let queued=false;function schedule(){if(!queued){queued=true;requestAnimationFra
 (()=>{
 const statsKeys=['STR','CON','POW','DEX','APP','SIZ','INT','EDU'];
 const fields=[
- ['reading','ふりがな'],['color','イメージカラー'],['colorName','色の名前'],['image','立ち絵'],['quote','一言セリフ'],['birthday','誕生日'],['age','年齢'],['height','身長'],['weight','体重'],['job','職業'],['gender','性別'],['origin','出身'],['hair','髪の色'],['eyes','瞳の色'],['skin','肌の色'],['family','家族構成'],['likes','好き'],['dislikes','苦手'],['stats','能力値'],['csUrl','CSリンク'],['partnerAddress','相手の呼び方']
+ ['reading','ふりがな'],['color','イメージカラー'],['colorName','色の名前'],['image','立ち絵'],['birthday','誕生日'],['age','年齢'],['height','身長'],['weight','体重'],['job','職業'],['gender','性別'],['origin','出身'],['hair','髪の色'],['eyes','瞳の色'],['skin','肌の色'],['family','家族構成'],['likes','好き'],['dislikes','苦手'],['stats','能力値'],['csUrl','CSリンク'],['partnerAddress','相手の呼び方']
 ];
 const textValue=v=>String(v??'').normalize('NFKC').trim();
 function blank(v){return /^(?:|[-—–―]+|[?？]+|未設定|未登録|不明)$/.test(textValue(v))}
