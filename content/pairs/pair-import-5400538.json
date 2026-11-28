@@ -4,19 +4,18 @@
   "yomi": "せんせいもうぼくたちしかいませんよ",
   "people": [
     {
-      "id": "char-import-5400538-1",
-      "label": "KPC",
-      "name": "高坂　政史",
-      "csUrl": "https://iachara.com/view/5400538",
-      "reading": "こうさか まさちか",
-      "job": "学生",
-      "age": "18",
       "gender": "男",
-      "height": "169",
-      "weight": "59",
       "hair": "黒",
-      "birthday": "7月24日",
       "color": "#70459B",
+      "height": "169",
+      "name": "高坂　政史",
+      "reading": "こうさか まさちか",
+      "colorName": "ロイヤルパープル",
+      "label": "KPC",
+      "weight": "59",
+      "id": "char-import-5400538-1",
+      "birthday": "7月24日",
+      "job": "学生",
       "stats": {
         "STR": 11,
         "CON": 16,
@@ -26,22 +25,23 @@
         "SIZ": 13,
         "INT": 15,
         "EDU": 12
-      }
+      },
+      "age": "18",
+      "csUrl": "https://iachara.com/view/5400538"
     },
     {
-      "id": "char-import-5400538-2",
-      "label": "PC",
-      "name": "泉　清貴",
-      "csUrl": "https://iachara.com/view/5396626",
-      "reading": "いずみ きよたか",
-      "job": "教師",
-      "age": "37",
       "gender": "男",
-      "height": "173",
-      "birthday": "6月29日",
+      "color": "#884898",
       "family": "父、母（一人っ子）",
-      "likes": "家、一人飯、喫煙席のある飲食店、焼き魚",
+      "height": "173",
+      "name": "泉　清貴",
+      "reading": "いずみ きよたか",
       "dislikes": "世間話、ジャンクフード",
+      "label": "PC",
+      "id": "char-import-5400538-2",
+      "likes": "家、一人飯、喫煙席のある飲食店、焼き魚",
+      "birthday": "6月29日",
+      "job": "教師",
       "stats": {
         "STR": 13,
         "CON": 5,
@@ -52,7 +52,8 @@
         "INT": 11,
         "EDU": 16
       },
-      "color": "#884898"
+      "age": "37",
+      "csUrl": "https://iachara.com/view/5396626"
     }
   ],
   "stills": [],
