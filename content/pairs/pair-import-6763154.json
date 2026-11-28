@@ -4,18 +4,16 @@
   "yomi": "ぷるがとりうむのよる",
   "people": [
     {
-      "id": "char-import-6763154-1",
-      "label": "HO1",
-      "name": "神々廻　慶",
-      "csUrl": "https://iachara.com/view/6763154",
-      "reading": "ししば けい",
-      "job": "刑事",
-      "age": "34",
       "gender": "男",
       "height": "171",
-      "birthday": "3月26日",
-      "likes": "からあげ、ブラックコーヒー",
+      "name": "神々廻　慶",
+      "reading": "ししば けい",
       "dislikes": "酒、煙草、にんじん",
+      "label": "HO1",
+      "id": "char-import-6763154-1",
+      "likes": "からあげ、ブラックコーヒー",
+      "birthday": "3月26日",
+      "job": "刑事",
       "stats": {
         "STR": 55,
         "CON": 70,
@@ -25,25 +23,26 @@
         "SIZ": 60,
         "INT": 70,
         "EDU": 90
-      }
+      },
+      "age": "34",
+      "csUrl": "https://iachara.com/view/6763154"
     },
     {
-      "id": "char-import-6763154-2",
-      "label": "HO2",
-      "name": "鷲尾　龍迅",
-      "csUrl": "https://iachara.com/view/6874084",
-      "reading": "わしお りゅうじん",
-      "job": "刑事",
-      "age": "25",
       "gender": "男",
-      "height": "181",
-      "weight": "78",
-      "hair": "黒",
       "eyes": "黒",
-      "birthday": "10月16日",
-      "likes": "甘いもの、中華料理",
-      "dislikes": "苦いもの、勉強、気の弱い人間、陽気な善性の人間",
+      "hair": "黒",
       "color": "#B44740",
+      "height": "181",
+      "name": "鷲尾　龍迅",
+      "reading": "わしお りゅうじん",
+      "colorName": "燻んだ緋色 色に込める意",
+      "dislikes": "苦いもの、勉強、気の弱い人間、陽気な善性の人間",
+      "label": "HO2",
+      "weight": "78",
+      "id": "char-import-6763154-2",
+      "likes": "甘いもの、中華料理",
+      "birthday": "10月16日",
+      "job": "刑事",
       "stats": {
         "STR": 75,
         "CON": 60,
@@ -53,7 +52,9 @@
         "SIZ": 70,
         "INT": 80,
         "EDU": 65
-      }
+      },
+      "age": "25",
+      "csUrl": "https://iachara.com/view/6874084"
     }
   ],
   "stills": [],
